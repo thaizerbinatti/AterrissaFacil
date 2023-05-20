@@ -1,19 +1,9 @@
 @charset "utf-8";
-@import url(header);
-@import url(main);
-@import url(footer);
-@import url(arquivo1);
-@import url(arquivo2);
-@import url(arquivo3);
-@import url(arquivo4);
 
 body {
 }
 
 header {
-}
-
-main {
 }
 
 footer {
