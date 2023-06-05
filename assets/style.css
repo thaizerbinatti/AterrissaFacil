@@ -4,7 +4,20 @@ body {
 }
 
 header {
+
 }
+
+.parallax{
+    background-image: url("./home/img/imghome.png");
+
+    min-height: 944px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 footer {
     display: grid;
