@@ -1,23 +1,33 @@
 @charset "utf-8";
 
 body {
+    margin: 0%;
+    padding: 0%;
 }
 
-header {
 
+header {
+    
+
+    margin: 0% 0%;
+    padding: 2% 4%;
+    border-bottom: 1px solid black;
 }
 
 .parallax{
-    background-image: url("./home/img/imghome.png");
-
-    min-height: 944px;
-
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
 
+    max-height: 964px;
+    height: auto;
+    max-width: 1440px;
+    width: auto;
+}
+.parallax > img {
+    
+}
 
 footer {
     display: grid;
