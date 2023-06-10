@@ -1,40 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/style.css" />
-    <title>TCC</title>
-  </head>
-  <body>
-    <header>
-      <div class="parallax">
-        <img src="./assets/home/img/BackgroundImage.png" alt="Imagem de fundo do header">
 
-        <div class="btnhome">
-          <button type="submit">
-            <img src="" alt="" srcset="" />
-          </button>
-        </div>
-        <div class="logo-container">
-          <img src="" alt="" srcset="" />
-        </div>
-        <div class="login"></div>
-        <div class="menu">
-          <navbar id="menususpenso"> </navbar>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:wght@300&display=swap"
+    rel="stylesheet">
+  <title>TCC</title>
+</head>
+
+<body>
+  <header>
+    <!-- Intro -->
+    <div class="intro parallax">
+
+      <!-- Logotipo -->
+      <div class="logo-container">
+        <img src="/assets/home/img/logotipo.png" alt="" srcset="" />
       </div>
-    </header>
 
-    <main>
-      <div class="container"></div>
+      <!-- Navbar -->
+      <div>
+        <navbar class="navbar">
+          <ul>
+            <li>Cadastre-se</li>
+            <li><input type="user"></li>
+            <li><input type="password"></li>
+            <li><button class="buttonLogin">Login</button></li>
+          </ul>
+        </navbar>
+      </div>
 
-      <section id="circulocentral"></section>
-    </main>
+      <!-- <div class="login"></div>
+      <div class="btnhome">
+        <button type="submit">
+          <img src="" alt="" srcset="" />
+        </button>
+      </div>
+    </div> -->
+  </header>
 
-    <footer>12345678</footer>
+  <main>
+    <!-- Legenda/Frase -->
+    <section class="parallax">
+      <div class="frase">
+        <p>Descubra o <span class="destaque">mundo</span> através da sua <span class="destaque">alma</span> viajante!
+        </p>
+      </div>
+    </section>
 
-    <script src="./assets/action.js"></script>
-  </body>
+    <!-- Circulo/Direcionamento -->
+    <div>
+      <section class="container parallax">
+        <div id="circulocentral">
+
+        </div>
+      </section>
+
+      <section class="container parallax">
+        <div class="destinos">
+
+        </div>
+      </section>
+
+      <section>
+
+      </section>
+
+      <section>
+
+      </section>
+    </div>
+  </main>
+
+  <!-- <footer>12345678</footer> -->
+
+  <script src="./assets/action.js"></script>
+</body>
+
 </html>

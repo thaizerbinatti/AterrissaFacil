@@ -1,33 +1,126 @@
 @charset "utf-8";
 
 body {
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
 }
 
-
-header {
-    
-
-    margin: 0% 0%;
-    padding: 2% 4%;
-    border-bottom: 1px solid black;
+.intro {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    background: url(/assets/home/img/background-img.jpg) no-repeat bottom center scroll;
+    background-position: 30% 45%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
 
-.parallax{
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    height: 100%;
+    filter: drop-shadow(0px 4px 2px #001A24);
+}
+
+.navbar {
+    position: absolute;
+    width: 430px;
+    height: 50px;
+    left: 900px;
+    top: 20px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+}
+
+.navbar ul {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 600;
+    color: #D9D9D9;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 40px;
+}
+
+.navbar li {
+    display: inline-block;
+    /* ou display: inline-block; */
+    margin: 0;
+    padding-left: 10px;
+}
+
+.navbar input {
+    width: 90px;
+    height: 25px;
+    margin-top: 10px;
+    background: #D9D9D9;
+    border-radius: 50px;
+}
+
+.buttonLogin {
+    width: 59px;
+    height: 35px;
+    left: 1247px;
+    top: 27px;
+    background: #6B901E;
+    border-radius: 50px
+}
+
+.parallax {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
 
-    max-height: 964px;
-    height: auto;
-    max-width: 1440px;
-    width: auto;
+.frase {
+    position: absolute;
+    width: 735px;
+    height: 172px;
+    left: 302px;
+    top: 530px;
+    background: linear-gradient(180deg, #001A24 0%, #0F3A4A 100%);
+    border-radius: 15px;
+    ;
 }
-.parallax > img {
-    
+
+.frase p {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 25px 110px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 63px;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.8;
+    backdrop-filter: blur(2px);
 }
+
+.destaque {
+    color: #00ACEE;
+    font-weight: 400;
+    line-height: 63px;
+}
+
+.container.parallax {
+    display: block;
+    background-color: #0F3A4A;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* .circulocentral {
+    width: 400px;
+    height: 400px;
+    left: 520px;
+    top: 302px;
+    background: url(/assets/home/img/arrailDoCabo.jpg);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+} */
 
 footer {
     display: grid;
