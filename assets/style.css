@@ -10,12 +10,12 @@ body {
     width: 100vw;
     height: 100vh;
     padding: 0;
-    background: url(/assets/home/img/background-img.jpg) no-repeat bottom center scroll;
+    background: url(/assets/home/img/5.png) no-repeat bottom center scroll;
     background-position: 30% 45%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    background-size: contain;
+    -o-background-size: contain;
 }
 
 .logo-container {
@@ -77,27 +77,27 @@ body {
 }
 
 .frase {
+    display: flex;
+    justify-content: center;
     position: absolute;
-    width: 735px;
-    height: 172px;
-    left: 302px;
+    width: 700px;
+    height: 62px;
+    left: 350px;
+    right: 350px;
     top: 530px;
     background: linear-gradient(180deg, #001A24 0%, #0F3A4A 100%);
     border-radius: 15px;
-    ;
 }
 
 .frase p {
-    font-family: 'Roboto Condensed', sans-serif;
-    margin: 25px 110px;
+    margin: 1px 0;
+    font-family: 'Roboto Condensed';
     font-style: normal;
     font-weight: 400;
-    font-size: 45px;
-    line-height: 63px;
+    font-size: 30px;
+    line-height: 35px;
     text-align: center;
-    color: #FFFFFF;
-    opacity: 0.8;
-    backdrop-filter: blur(2px);
+    color: #D9D9D9;
 }
 
 .destaque {

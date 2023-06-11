@@ -1,16 +1,164 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
-    <title>Document</title>
+    <link rel="stylesheet" href="servicos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Serviços</title>
 </head>
+
 <body>
-    <header></header>
-    <main></main>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar-pages">
+            <img class="logo-nav" src="/assets/servicos/img/logotipo.png" alt="">
+            <ul class="nav-itens">
+                <li>Sobre nós</li>
+                <li>Contato</li>
+                <li><button class="menuButton">Menu</button></li>
+                <li><button class="loginButton">Login</button></li>
+            </ul>
+        </nav>
+
+        <!-- Categorias -->
+        <div>
+            <section class="categorias">
+                <a href="" class="opcoesCategorias">Viagens</a>
+                <a href="" class="opcoesCategorias">Destinos</a>
+                <a href="" class="opcoesCategorias">Estações</a>
+                <a href="" class="opcoesCategorias">Profissionais</a>
+                <a href="" class="opcoesCategorias">Blog</a>
+            </section>
+        </div>
+    </header>
+
+    <main>
+        <!-- Caixa de pesquina de destino -->
+        <div>
+            <div class="background-section"></div>
+            <section>
+                <form class="form-destinos">
+                    <h2>Pesquise aqui seu destino:</h2>
+                    <input type="text" class="background-forms" placeholder="Destino">
+                    <select class="form-estacao background-forms">
+                        <option value="">Escolha a Estação</option>
+                        <option value="verao">Verão</option>
+                        <option value="inverno">Inverno</option>
+                        <option value="outono">Outono</option>
+                        <option value="primavera">Primavera</option>
+                    </select>
+                    <div class="custom-control custom-checkbox background-forms">
+                        <input type="checkbox" class="custom-control-input background-forms" id="acessibilidade">
+                        <label class="custom-control-label background-forms" for="acessibilidade">Acessivel</label>
+                    </div>
+                    <button type="submit" class="btn">Pesquisar</button>
+                </form>
+            </section>
+
+            <!-- Destinos mais procurados -->
+            <section class="container-sections">
+                <h2 class="color-text">Destinos mais procurados</h2>
+                <p class="color-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <div class="grid-container">
+                    <div class="image-container">
+                        <img class="image" src="/assets/servicos/img/arrailDoCabo.jpg" alt="Arral do Cabo">
+                        <div class="caption">Arraial do Cabo
+                            <div class="subcaption">Rio de Janeiro</div>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img class="image" src="/assets/servicos/img/arrailDoCabo.jpg" alt="Arral do Cabo">
+                        <div class="caption">Arraial do Cabo
+                            <div class="subcaption">Rio de Janeiro</div>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img class="image" src="/assets/servicos/img/arrailDoCabo.jpg" alt="Arral do Cabo">
+                        <div class="caption">Arraial do Cabo
+                            <div class="subcaption">Rio de Janeiro</div>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img class="image" src="/assets/servicos/img/arrailDoCabo.jpg" alt="Arral do Cabo">
+                        <div class="caption">Arraial do Cabo
+                            <div class="subcaption">Rio de Janeiro</div>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img class="image" src="/assets/servicos/img/arrailDoCabo.jpg" alt="Arral do Cabo">
+                        <div class="caption">Arraial do Cabo
+                            <div class="subcaption">Rio de Janeiro</div>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img class="image" src="/assets/servicos/img/arrailDoCabo.jpg" alt="Arral do Cabo">
+                        <div class="caption">Arraial do Cabo
+                            <div class="subcaption">Rio de Janeiro</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Profissionais -->
+            <section class="container-sections">
+                <h2 class="color-text">Encontre seu profissional</h2>
+                <p class="color-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <div class="container">
+                    <div class="card">
+                        <img class="profile-pic" src="/assets/servicos/img/pessoa1.jpg" alt="Profile 1">
+                        <div class="name">Fulano 1</div>
+                        <div class="profession">Guia Turístico</div>
+                    </div>
+                    <div class="card">
+                        <img class="profile-pic" src="/assets/servicos/img/pessoa1.jpg" alt="Profile 2">
+                        <div class="name">Fulano 2</div>
+                        <div class="profession">Guia Turístico</div>
+                    </div>
+                    <div class="card">
+                        <img class="profile-pic" src="/assets/servicos/img/pessoa1.jpg" alt="Profile 3">
+                        <div class="name">Fulano 3</div>
+                        <div class="profession">Guia Turístico</div>
+                    </div>
+                    <div class="card">
+                        <img class="profile-pic" src="/assets/servicos/img/pessoa1.jpg" alt="Profile 4">
+                        <div class="name">Fulano 4</div>
+                        <div class="profession">Guia Turístico</div>
+                    </div>
+                    <div class="card">
+                        <img class="profile-pic" src="/assets/servicos/img/pessoa1.jpg" alt="Profile 5">
+                        <div class="name">Fulano 5</div>
+                        <div class="profession">Guia Turístico</div>
+                    </div>
+                    <div class="card">
+                        <img class="profile-pic" src="/assets/servicos/img/pessoa1.jpg" alt="Profile 6">
+                        <div class="name">Fulano 6</div>
+                        <div class="profession">Guia Turístico</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
     <footer></footer>
     <script src=""></script>
+
+    <!-- BootStrap 4 -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
