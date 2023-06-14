@@ -10,11 +10,10 @@
     display: flex;
     justify-content: space-between;
     background-color: #001A24;
-    padding: 20px 0;
+    /* padding: 1.2em 1em ; */
 }
 
 .logo-nav {
-    align-items: center;
     background: none;
     width: 110px;
     height: 60px;

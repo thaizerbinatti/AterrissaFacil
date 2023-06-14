@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-body {
+* {
     margin: 0;
     padding: 0;
 }
@@ -9,13 +9,13 @@ body {
     display: block;
     width: 100vw;
     height: 100vh;
-    padding: 0;
+    padding-top: 1em;
     background: url(/assets/home/img/5.png) no-repeat bottom center scroll;
-    background-position: 30% 45%;
-    -webkit-background-size: contain;
+    /* background-position: 30% 45%; */
+    /* -webkit-background-size: contain;
     -moz-background-size: contain;
     background-size: contain;
-    -o-background-size: contain;
+    -o-background-size: contain; */
 }
 
 .logo-container {
@@ -23,7 +23,7 @@ body {
     justify-content: center;
     align-items: baseline;
     height: 100%;
-    filter: drop-shadow(0px 4px 2px #001A24);
+
 }
 
 .navbar {
@@ -34,6 +34,7 @@ body {
     top: 20px;
     background: rgba(255, 255, 255, 0.08);
     border-radius: 20px;
+    margin-bottom: 50px;
 }
 
 .navbar ul {
@@ -69,12 +70,12 @@ body {
     border-radius: 50px
 }
 
-.parallax {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+/* .parallax { */
+/* background-attachment: fixed; */
+/* background-position: center; */
+/* background-repeat: no-repeat; */
+/* background-size: cover; */
+/* } */
 
 .frase {
     display: flex;
@@ -107,22 +108,87 @@ body {
 }
 
 .container.parallax {
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 0.4fr 0.4fr 0.4fr ;
+    /* display: block; */
     background-color: #0F3A4A;
-    width: 100vw;
-    height: 100vh;
+    /* width: 100vw;
+    height: 100vh; */
 }
 
-/* .circulocentral {
+.circulocentral {
+    margin: auto;
     width: 400px;
     height: 400px;
-    left: 520px;
-    top: 302px;
+    border-radius: 50%;
     background: url(/assets/home/img/arrailDoCabo.jpg);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-} */
+    text-align: center;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+}
 
 footer {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(1fr, 2fr));
+}
+.home {
+    grid-column-start: 2;
+    grid-column-end:3 ;
+    grid-row-start:1 ;
+    grid-row-end:2;
+    border-radius: 4em;
+}
+.servico {
+    grid-column-start: 2;
+    grid-column-end:3 ;
+    grid-row-start:2 ;
+    grid-row-end:3;
+}
+.SColaborador {
+    grid-column-start: 2;
+    grid-column-end:3 ;
+    grid-row-start:3 ;
+    grid-row-end:4;
+}
+.PSocial {
+    grid-column-start: 2;
+    grid-column-end:3 ;
+    grid-row-start:4 ;
+    grid-row-end:5;
+}
+.explorar {
+    grid-column-start: 4;
+    grid-column-end:5 ;
+    grid-row-start:1 ;
+    grid-row-end:2;
+    text-align: right;
+}
+.estacoes {
+    grid-column-start: 4;
+    grid-column-end:5 ;
+    grid-row-start:2 ;
+    grid-row-end:3;
+    text-align: right;
+}
+.paises {
+    grid-column-start: 4;
+    grid-column-end:5 ;
+    grid-row-start:3 ;
+    grid-row-end:4;
+    text-align: right;
+}
+.sobre {
+    grid-column-start: 4;
+    grid-column-end:5 ;
+    grid-row-start:4 ;
+    grid-row-end:5;
+    text-align: right;
+}
+a {
+    text-decoration: none;
+
 }
