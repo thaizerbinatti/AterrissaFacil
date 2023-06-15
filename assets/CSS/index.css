@@ -5,10 +5,10 @@
     padding: 0;
 }
 
-.intro {
+.intro_ {
     display: block;
-    width: 100vw;
-    height: 100vh;
+    width: 99vw;
+    height: 70vh;
     padding-top: 1em;
     background: url(/assets/home/img/5.png) no-repeat bottom center scroll;
     /* background-position: 30% 45%; */
@@ -18,7 +18,7 @@
     -o-background-size: contain; */
 }
 
-.logo-container {
+.logo-container_ {
     display: flex;
     justify-content: center;
     align-items: baseline;
@@ -26,7 +26,7 @@
 
 }
 
-.navbar {
+.navbar_ {
     position: absolute;
     width: 430px;
     height: 50px;
@@ -37,7 +37,7 @@
     margin-bottom: 50px;
 }
 
-.navbar ul {
+.navbar_ ul {
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 600;
     color: #D9D9D9;
@@ -46,14 +46,14 @@
     padding-left: 40px;
 }
 
-.navbar li {
+.navbar_ li {
     display: inline-block;
     /* ou display: inline-block; */
     margin: 0;
     padding-left: 10px;
 }
 
-.navbar input {
+.navbar_ input {
     width: 90px;
     height: 25px;
     margin-top: 10px;
@@ -107,14 +107,14 @@
     line-height: 63px;
 }
 
-.container.parallax {
+.container_.parallax_ {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 0.4fr 0.4fr 0.4fr 0.4fr ;
     /* display: block; */
     background-color: #0F3A4A;
-    /* width: 100vw;
-    height: 100vh; */
+    width: 99vw;
+    height: 50vh;
 }
 
 .circulocentral {
@@ -140,55 +140,61 @@ footer {
     grid-column-end:3 ;
     grid-row-start:1 ;
     grid-row-end:2;
-    border-radius: 4em;
+    text-align: end;
 }
 .servico {
     grid-column-start: 2;
     grid-column-end:3 ;
     grid-row-start:2 ;
     grid-row-end:3;
+    text-align: center;
 }
 .SColaborador {
     grid-column-start: 2;
     grid-column-end:3 ;
     grid-row-start:3 ;
     grid-row-end:4;
+    text-align: center;
 }
 .PSocial {
     grid-column-start: 2;
     grid-column-end:3 ;
     grid-row-start:4 ;
     grid-row-end:5;
+    text-align: end;
 }
 .explorar {
     grid-column-start: 4;
     grid-column-end:5 ;
     grid-row-start:1 ;
     grid-row-end:2;
-    text-align: right;
+    text-align: left;
 }
 .estacoes {
     grid-column-start: 4;
     grid-column-end:5 ;
     grid-row-start:2 ;
     grid-row-end:3;
-    text-align: right;
+    text-align: center;
 }
 .paises {
     grid-column-start: 4;
     grid-column-end:5 ;
     grid-row-start:3 ;
     grid-row-end:4;
-    text-align: right;
+    text-align: center;
 }
 .sobre {
     grid-column-start: 4;
     grid-column-end:5 ;
     grid-row-start:4 ;
     grid-row-end:5;
-    text-align: right;
+    text-align: left;
 }
-a {
+section a {
     text-decoration: none;
-
+    color: #D9D9D9;
+}
+section.container_.parallax_ button {
+    border-radius: 4em;
 }
