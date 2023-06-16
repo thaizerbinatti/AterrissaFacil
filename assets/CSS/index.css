@@ -10,7 +10,11 @@
     width: 99vw;
     height: 70vh;
     padding-top: 1em;
-    background: url(/assets/home/img/5.png) no-repeat bottom center scroll;
+    background: url(/assets/img/5.png) no-repeat bottom center scroll;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
     /* background-position: 30% 45%; */
     /* -webkit-background-size: contain;
     -moz-background-size: contain;
@@ -122,7 +126,7 @@
     width: 400px;
     height: 400px;
     border-radius: 50%;
-    background: url(/assets/home/img/arrailDoCabo.jpg);
+    background: url(/assets/img/arrailDoCabo.jpg);
     text-align: center;
     grid-column-start: 3;
     grid-column-end: 4;
