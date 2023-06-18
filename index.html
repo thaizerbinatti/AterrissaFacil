@@ -18,31 +18,36 @@
 
 <body>
   <header>
-    <!-- Intro -->
-    <div class="intro_ parallax_ .frase">
-
+    <section class="inicio">
+      <!-- Navbar -->
+      <navbar class="navbar_">
+        <ul>
+          <li><input type="email" id="email" name="email" placeholder="usuário"></li>
+          <li><input type="password" id="password" name="password" placeholder="senha"></li>
+          <li><button class="btn btn-outline-info btn-sm">Entrar</button></li>
+          <li><button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">☰</button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+              aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">Item 1</div>
+            </div>
+          </li>
+        </ul>
+      </navbar>
       <!-- Logotipo -->
       <div class="logo-container_">
-        <img src="/assets/home/img/logotipo.png" alt="" srcset="" />
-      </div>
-
-      <!-- Navbar -->
-      <div>
-        <navbar class="navbar_">
-          <ul>
-            <li>Cadastre-se</li>
-            <li><input type="user" placeholder="Login"></li>
-            <li><input type="password" placeholder="Senha"></li>
-            <li><button class="buttonLogin">Entrar</button></li>
-          </ul>
-        </navbar>
+        <img src="/assets/img/logotipo.png" alt="" srcset="" />
       </div>
       <!-- Legenda/Frase -->
       <div class="frase">
         <p>Descubra o <span class="destaque">mundo</span> através da sua <span class="destaque">alma</span> viajante!
         </p>
       </div>
-    </div>
+    </section>
   </header>
 
   <main>
@@ -78,11 +83,24 @@
     </section>
 
     <!-- Serviços -->
-    <div>
-      <section>
-
-      </section>
-    </div>
+    <section>
+      <div class="container text-center text-white">
+        <div class="row py-3">
+          <div class="col">
+            <h1>Nossos serviços</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col itens">1 of 2</div>
+          <div class="col itens">2 of 2</div>
+        </div>
+        <div class="row">
+          <div class="col itens">1 of 3</div>
+          <div class="col itens">2 of 3</div>
+          <div class="col itens">3 of 3</div>
+        </div>
+      </div>
+    </section>
 
     <!-- Países -->
     <div>
