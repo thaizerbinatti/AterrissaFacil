@@ -16,17 +16,23 @@
 </head>
 
 <body>
+    <!-- Cabeçalho -->
     <header>
         <!-- Navbar -->
         <nav class="navbar-pages">
-            <ul class="nav-itens">
-                <li>Sobre nós</li>
-                <li>Contato</li>
+            <ul class="itens-navbar">
+                <li><a class="link-nav" href="">Sobre nós</a></li>
+                <li><a class="link-nav" href="">Explorar</a></li>
             </ul>
-            <img class="logo-nav" src="/assets/servicos/img/logotipo.png" alt="">
-            <ul class="nav-itens">
-                <li><button class="menuButton">Menu</button></li>
-                <li><button class="loginButton">Login</button></li>
+            <img class="logo-nav" src="/assets/img/logotipo.png" alt="">
+            <ul class="itens-navbar">
+                <li><button class="btn btn-info btn-sm">Login</button></li>
+                <li><button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">☰</button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                        aria-labelledby="offcanvasRightLabel">
+                    </div>
+                </li>
             </ul>
         </nav>
 
@@ -57,10 +63,6 @@
                         <option value="outono">Outono</option>
                         <option value="primavera">Primavera</option>
                     </select>
-                    <div class="custom-control custom-checkbox background-forms">
-                        <input type="checkbox" class="custom-control-input background-forms" id="acessibilidade">
-                        <label class="custom-control-label background-forms" for="acessibilidade">Acessivel</label>
-                    </div>
                     <button type="submit" class="btn">Pesquisar</button>
                 </form>
             </section>
