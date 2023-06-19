@@ -206,25 +206,67 @@ section.container_.parallax_ button {
     text-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
 }
 
-/* Serviços */
+/* Países */
+
+.section-paises {
+    background: url(/assets/img/home/paises.png) no-repeat bottom center scroll;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.ul-1 {
+    margin-left: 120px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    color: #00ACEE;
+    list-style: none;
+    font-size: 2.3rem;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.ul-2 {
+    margin-left: 120px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: #FFFFFF;
+    list-style: none;
+    font-size: 2.3rem;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Geral */
 
 .section-servicos {
     background: linear-gradient(270deg, rgb(0, 73, 102) 4.44%, #294B28 100%);
 }
 
-.itens {
-    padding: 40px;
-    background-color: #001a247c;
-}
-
-.itens figcaption {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 1.3rem;
-}
-
 .img-icon {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
+}
+
+.col-text {
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 3.0rem;
+    font-weight: 800;
+    color: #D9D9D9;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.col-geral {
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    margin: 50px 15px;
+    color: #00ACEE;
+    border-radius: 10px;
+}
+
+.col-geral p {
+    color: #D9D9D9;
 }
 
 /* Footer */
@@ -330,9 +372,9 @@ section.container_.parallax_ button {
     margin-left: 10px;
     margin-top: 22px;
     color: inherit;
-    opacity: 0.75;git
+    opacity: 0.75;
 }
-/* Responsivo */
-@media only screen and (min-width: 1024px) {}
 
-@media only screen and (max-width: 414px) {}
+/* Responsivo */
+/* @media only screen and (min-width: 1024px)
+@media only screen and (max-width: 414px) */
