@@ -314,6 +314,24 @@ section.container_.parallax_ button {
     opacity: 0.6;
 }
 
+#back-to-top {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background: transparent;
+    font-size: 24px;
+    width: 60px;
+    height: 60px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    margin-left: 10px;
+    margin-top: 22px;
+    color: inherit;
+    opacity: 0.75;git
+}
 /* Responsivo */
 @media only screen and (min-width: 1024px) {}
 
