@@ -1,6 +1,296 @@
 @charset "utf-8";
 @import url(../style.css);
 
-main{
 
+body {
+    background-color: #0f3a4a;
 }
+
+/* cabeçalho */
+
+/* Navbar */
+
+.navbar-pages {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    background-color: #001A24;
+    /* padding: 1.2em 1em ; */
+}
+
+.logo-nav {
+    height: 90px;
+    width: auto;
+}
+
+.itens-navbar {
+    display: inline-flex;
+    align-items: center;
+    background-color: #001A24;
+    color: #D9D9D9;
+    list-style-type: none;
+}
+
+.itens-navbar li {
+    margin: 0 15px;
+}
+
+.link-nav {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Categorias */
+
+.categorias {
+    display: flex;
+    justify-content: space-evenly;
+    background: linear-gradient(180deg, #00ACEE 100%, #00ACEE 0%);
+    padding: 10px 0;
+    margin: 0px 0px;
+}
+
+.opcoesCategorias {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #001A24;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin: 0 20px;
+    align-items: center;
+}
+
+/* Div com imagem de fundo de transição */
+
+header>div:last-child {
+    background-image: url('../img/sobreNos/braços_abertos_viagem2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+    margin-bottom: 50px;
+}
+
+/* main quem somos?, missão, visão e valores */
+
+main {
+    margin: 0px 50px;
+    margin-bottom: -50px;
+}
+
+/* Quem Somos? */
+
+main>div:first-child{
+    margin-bottom: 50px;
+    padding: 5%;
+    background-color: #258db3d0;
+}
+
+.paddinquemsomos {
+    padding: 5%;
+}
+
+/* Missão, Visão, Valores */
+
+main>div:last-child>div{
+    text-align: center;
+    grid-template-rows: repeat(3, 0.1fr);
+}
+
+.textovertical {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-align: center;
+    font-weight: bolder;
+    letter-spacing: 5px;
+}
+
+/* missão */
+
+.miss {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    column-gap: 5px;
+}
+
+/* Visão */
+
+.vis {
+    display: grid;
+    grid-template-columns: 90% 10%;
+    column-gap: 5px;
+}
+
+/* Valores */
+
+.val {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    column-gap: 5px;
+}
+
+/* Cor de fundo missão visão valores e classes estilização geral */
+
+.cormain {
+    background-color: #D9D9D9;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.paddin {
+    padding: 10%;
+}
+
+.flxcolumn {
+    flex-direction: column;
+}
+
+.corspan {
+    font-weight: bolder;
+}
+
+
+/* Fotos Integrantes */
+
+section {
+    margin-bottom: 100px;
+}
+
+section>div>div>div>img {
+    border-radius: 50%;
+}
+
+.section-servicos {
+    background: linear-gradient(270deg, rgb(0, 73, 102) 4.44%, #294B28 100%);
+}
+
+.itens {
+    padding: 40px;
+    background-color: #001a247c;
+}
+
+.itens figcaption {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.3rem;
+}
+
+.img-icon {
+    width: 100px;
+    height: 100px;
+}
+
+
+/* footer */
+
+.footer-clean {
+    padding: 50px 0;
+    background-color: #001a24;
+    color: #ffffff;
+}
+
+.footer-clean h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.footer-clean ul {
+    padding: 0;
+    list-style: none;
+    line-height: 1.6;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.footer-clean ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer-clean ul a:hover {
+    opacity: 1;
+}
+
+.footer-clean .item.social {
+    text-align: right;
+}
+
+@media (max-width:767px) {
+    .footer-clean .item {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-clean .item.social {
+        text-align: center;
+    }
+}
+
+.footer-clean .item.social>a {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin-left: 10px;
+    margin-top: 22px;
+    color: inherit;
+    opacity: 0.75;
+}
+
+.footer-clean .item.social>a:hover {
+    opacity: 0.9;
+}
+
+@media (max-width:991px) {
+    .footer-clean .item.social>a {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width:767px) {
+    .footer-clean .item.social>a {
+        margin-top: 10px;
+    }
+}
+
+.footer-clean .copyright {
+    margin-top: 14px;
+    margin-bottom: 0;
+    font-size: 13px;
+    opacity: 0.6;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background: transparent;
+    font-size: 24px;
+    width: 60px;
+    height: 60px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    margin-left: 10px;
+    margin-top: 22px;
+    color: inherit;
+    opacity: 0.75;git
+}
+/* Responsivo */
+@media only screen and (min-width: 1024px) {}
+
+@media only screen and (max-width: 414px) {}
