@@ -22,31 +22,33 @@
   <header>
     <section class="inicio">
       <!-- Navbar -->
-      <navbar class="navbar_">
-        <ul>
-          <li><input type="email" id="email" name="email" placeholder="usuário"></li>
-          <li><input type="password" id="password" name="password" placeholder="senha"></li>
-          <li><button class="btn btn-outline-info btn-sm">Entrar</button></li>
-          <li><button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">☰</button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
-              aria-labelledby="offcanvasRightLabel">
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasRightLabel">Menu</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      <div class="navbar-container">
+        <navbar class="navbar_">
+          <ul>
+            <li><input type="email" id="email" name="email" placeholder="usuário"></li>
+            <li><input type="password" id="password" name="password" placeholder="senha"></li>
+            <li><button class="btn btn-outline-info btn-sm">Entrar</button></li>
+            <li><button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">☰</button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasRightLabel">Menu</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">Item 1</div>
               </div>
-              <div class="offcanvas-body">Item 1</div>
-            </div>
-          </li>
-        </ul>
-      </navbar>
+            </li>
+          </ul>
+        </navbar>
+      </div>
       <!-- Logotipo -->
       <div class="logo-container_">
-        <img src="/assets/img/logotipo.png" alt="" srcset="" />
+        <img class="logo-img" src="/assets/img/logotipo.png" alt="" srcset="" />
       </div>
       <!-- Legenda/Frase -->
-      <div class="frase">
-        <p>Descubra o <span class="destaque">mundo</span> através da sua <span class="destaque">alma</span> viajante!
+      <div class="frase-container">
+        <p class="frase">Descubra o <span class="destaque">mundo</span> através da sua <span class="destaque">alma</span> viajante!
         </p>
       </div>
     </section>

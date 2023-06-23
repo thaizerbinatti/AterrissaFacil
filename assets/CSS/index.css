@@ -6,10 +6,9 @@
 }
 
 .inicio {
-    display: block;
-    width: 99vw;
+    display: flex;
+    flex-direction: column;
     height: 100vh;
-    padding-top: 1em;
     background: url(/assets/img/5.png) no-repeat bottom center scroll;
     -webkit-background-size: cover;
     -o-background-size: cover;
@@ -17,13 +16,18 @@
     background-size: cover;
 }
 
-.navbar_ {
-    padding: 10px 20px 0 0;
+.navbar-container {
+    height: 15%;
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
+    align-items: center;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: auto;
+    padding-right: 1%;
+}
+
+.navbar_ {
     /* position: fixed; */
-    width: 100%;
     z-index: 100;
 }
 
@@ -38,9 +42,12 @@
 }
 
 .logo-container_ {
-    display: flex;
+    height: 70%;
     justify-content: center;
-    align-items: baseline;
+    align-items: center;
+}
+
+.logo-img {
     max-width: 100%;
     height: auto;
     filter: drop-shadow(0px 4px 2px #001A24);
@@ -53,11 +60,11 @@
 /* background-size: cover; */
 /* } */
 
+.frase-container {
+    height: 15%;
+}
+
 .frase {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    margin-top: 20%;
     border-radius: 15px;
     font-family: 'Roboto Condensed';
     font-style: normal;
@@ -105,12 +112,14 @@ section {
     grid-row-end: 3;
     /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
 }
+
 .explorar {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
-    text-align: left;
+    text-align: center;
+    height: 40%;
 }
 .servico {
     grid-column-start: 2;
@@ -118,6 +127,7 @@ section {
     grid-row-start: 2;
     grid-row-end: 3;
     text-align: center;
+    height: 40%;
 }
 .paises {
     grid-column-start: 4;
@@ -125,6 +135,7 @@ section {
     grid-row-start: 1;
     grid-row-end: 2;
     text-align: center;
+    height: 40%;
 }
 
 .sobre {
@@ -132,7 +143,8 @@ section {
     grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 3;
-    text-align: left;
+    text-align: center;
+    height: 40%;
 }
 
 section a {
