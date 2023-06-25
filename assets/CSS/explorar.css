@@ -2,10 +2,6 @@
 
 @charset "utf-8";
 
-* {
-    background-color: #001A24;
-}
-
 /* Navbar */
 
 .navbar-pages {
@@ -54,9 +50,58 @@
     color: #001A24;
     font-weight: 600;
     font-size: 1.2rem;
-    border-radius: 5px;
     margin: 0 20px;
     align-items: center;
+}
+
+/* Procure seu destino */
+.background-section {
+    background-image: url('/assets/img/explorar/image-explorar.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+
+.form-destinos {
+    background-color: #D9D9D9;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* gap: 10px; */
+}
+
+.form-destinos h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #D9D9D9;
+    font-size: 1.0rem;
+}
+
+.background-forms {
+    background-color: #D9D9D9;
+}
+
+.custom-input {
+    width: 100px;
+}
+
+.form-estacao {
+    width: 200px;
+}
+
+.custom-checkbox {
+    margin-left: 10px;
+}
+
+.btn {
+    background-color: #00ACEE;
+}
+
+/* Carrossel */
+
+.carrossel-imgs {
+    height: 30%;
 }
 
 /* Footer */
