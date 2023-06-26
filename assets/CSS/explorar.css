@@ -104,6 +104,12 @@
     height: 30%;
 }
 
+/* Item oculto */
+.oculto {
+    display: none;
+}
+
+
 /* Footer */
 .footer-clean {
     padding: 50px 0;
