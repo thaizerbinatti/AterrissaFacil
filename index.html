@@ -25,9 +25,34 @@
       <div class="navbar-container">
         <navbar class="navbar_">
           <ul>
-            <li><input type="email" id="email" name="email" placeholder="usuário"></li>
-            <li><input type="password" id="password" name="password" placeholder="senha"></li>
-            <li><button class="btn btn-outline-info btn-sm">Entrar</button></li>
+            <li>
+              <div class="dropdown">
+                <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown"
+                  aria-expanded="false" data-bs-auto-close="outside">
+                  Login
+                </button>
+                <form class="dropdown-menu p-4">
+                  <div class="mb-3">
+                    <label for="exampleDropdownFormEmail2" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleDropdownFormEmail2"
+                      placeholder="email@example.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleDropdownFormPassword2" class="form-label">Senha</label>
+                    <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Senha">
+                  </div>
+                  <div class="mb-3">
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                      <label class="form-check-label" for="dropdownCheck2">
+                        Lembrar-me
+                      </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Entrar</button>
+                </form>
+              </div>
+            </li>
             <li><button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">☰</button>
               <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
@@ -62,12 +87,12 @@
       </div>
       <!-- Logotipo -->
       <div class="logo-container_">
-        <img class="logo-img" src="/assets/img/logotipo.png" alt="" srcset="" />
+        <img class="logo-img" src="/assets/img/home/logo-aterrissa.svg" alt="" srcset="" />
       </div>
       <!-- Legenda/Frase -->
       <div class="frase-container">
-        <p class="frase">Descubra o <span class="destaque">mundo</span> através da sua <span
-            class="destaque">alma</span> viajante!
+        <p class="frase">Descubra o <span class="destaque">mundo</span> através da sua
+          <span class="destaque">alma</span> viajante!
         </p>
       </div>
     </section>
@@ -90,57 +115,64 @@
       <div class="container text-center">
         <div class="row">
           <ul class="col">
-            <li class="explorar-text">E X</li>
-            <li class="text-info explorar-text">P L O</li>
-            <li class="explorar-text">R A R</li>
-            <li class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, esse.</li>
-            <li><button class="mt-4 btn btn-info">botão</button></li>
+            <li class="explorar-text">EX</li>
+            <li class="text-info explorar-text">PLO</li>
+            <li class="explorar-text">RAR</li>
+            <li class="text-white">Explore todas as maravilhas de diversos lugares e aprofunde-se no conhecimento sobre
+              os destinos que você está prestes a visitar.</li>
+            <li><button class="mt-4 btn btn-info rellax">saiba mais</button></li>
           </ul>
-          <img class="col img-explorar" src="/assets/img/explorar.png" alt="imagem-explorar">
+          <img class="col text-center img-explorar" src="/assets/img/home/explorar.png" alt="imagem-explorar">
         </div>
       </div>
     </section>
 
     <!-- Países -->
     <div>
-      <section class="section-paises">
+      <section class="section-paises py-5">
         <ul class="ul-1">
-          <li>H i,</li>
-          <li>O h a y o,</li>
-          <li>H e l l o,</li>
-          <li>Y a s s o u,</li>
-          <li>H a l o!</li>
+          <li>Hi,</li>
+          <li>Ohayo,</li>
+          <li>Hello,</li>
+          <li>Yassou,</li>
+          <li>Halo!</li>
         </ul>
         <ul class="ul-2">
           <li>Descubra a diversidade global:</li>
           <li>Explore nossos destinos ao redor do mundo!</li>
-          <li><button class="btn btn-info btn-lg mt-4">saiba mais</button></li>
+          <li><button class="btn btn-info mt-4">saiba mais</button></li>
         </ul>
       </section>
     </div>
 
     <!-- Geral -->
     <section class="section-servicos">
-      <div class="container">
+      <div class="container py-5">
         <div class="row row-geral">
-          <div class="col col-geral">Compare passagens
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, eos.</p>
-          </div>
-          <div class="col-5 col-text">
-            Conheça nossos conteúdos</div>
-          <div class="col col-geral">Compartilhe experiências
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, eos.</p>
+          <div class="col mt-4 text-center">
+            <h2 class="col-geral text-center">Conheça nosso programa: "Destino para todos!"</h2>
+            <p class="legenda-p">Projeto especialmente desenvolvido para atender às necessidades das pessoas de baixa
+              renda. <br> Descubra agora mesmo as incríveis parcerias e os pacotes gratuitos disponíveis para você
+              explorar o
+              mundo!</p>
+            <button class="btn btn-info mb-5" href="/sN.html">saiba mais</button>
           </div>
         </div>
         <div class="row">
-          <div class="col col-geral">Cadastre-se e seja colaborador
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, eos.</p>
+          <div class="col">
+            <h5 class="col-geral">Cadastre-se e seja colaborador</h5>
+            <p class="legenda-p">É profissional do ramo de turismo? Cadastre-se em nosso site e tenha seu perfil
+              divulgado e recomendado.</p>
           </div>
-          <div class="col-5 col-geral">Amplie seus conhecimentos
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, eos.</p>
+          <div class="col-5">
+            <h5 class="col-geral">Compartilhe suas experiências</h5>
+            <p class="legenda-p">Compartilhe e descubra dicas valiosas sobre diferentes destinos, e eleve sua
+              experiência a um novo nível.</p>
           </div>
-          <div class="col col-geral">Encontre o profissional ideal
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, eos.</p>
+          <div class="col">
+            <h5 class="col-geral">Amplie seus conhecimentos</h5>
+            <p class="legenda-p">Explore a riqueza cultural, descubra pontos turísticos imperdíveis, confira roteiros
+              recomendados e mergulhe na culinária local, entre outras experiências enriquecedoras.</p>
           </div>
         </div>
       </div>

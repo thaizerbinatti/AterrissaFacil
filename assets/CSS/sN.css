@@ -1,6 +1,9 @@
 @charset "utf-8";
 @import url(../style.css);
 
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 body {
     background-color: #0f3a4a;
@@ -64,7 +67,7 @@ body {
 /* Div com imagem de fundo de transição */
 
 header>div:last-child {
-    background-image: url('../img/sobreNos/braços_abertos_viagem2.jpg');
+    background-image: url('../img/sobreNos/sobre-nos.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -75,13 +78,13 @@ header>div:last-child {
 /* main quem somos?, missão, visão e valores */
 
 main {
-    margin: 0px 50px;
+    margin: 0px 150px;
     margin-bottom: -50px;
 }
 
 /* Quem Somos? */
 
-main>div:first-child{
+main>div:first-child {
     margin-bottom: 50px;
     padding: 5%;
     background-color: #258db3d0;
@@ -93,7 +96,7 @@ main>div:first-child{
 
 /* Missão, Visão, Valores */
 
-main>div:last-child>div{
+main>div:last-child>div {
     text-align: center;
     grid-template-rows: repeat(3, 0.1fr);
 }
@@ -288,9 +291,9 @@ section>div>div>div>img {
     margin-left: 10px;
     margin-top: 22px;
     color: inherit;
-    opacity: 0.75;git
+    opacity: 0.75;
 }
-/* Responsivo */
-@media only screen and (min-width: 1024px) {}
 
-@media only screen and (max-width: 414px) {}
+/* Responsivo
+@media only screen and (min-width: 1024px) {}
+@media only screen and (max-width: 414px) {} */
