@@ -1,7 +1,8 @@
 @charset "utf-8";
 
 * {
-    background-color: #001A24;
+    margin: 0;
+    padding: 0;
 }
 
 /* Navbar */
@@ -57,195 +58,27 @@
     align-items: center;
 }
 
-/* Sections */
-
-.color-text {
-    color: #fff;
+main {
+    margin: 50px 150px;
 }
 
-/* Forms Destino */
-.background-section {
-    background-image: url('/assets/img/servicos/praia.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 50vh;
+/* Destinos BR */
+
+.img-br {
+    width: 100%;
+    height: auto;
 }
 
-.form-destinos {
-    background-color: #D9D9D9;
-    padding: 10px 0;
-    margin: 0px 150px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    /* gap: 10px; */
-}
-
-.form-destinos h2 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #D9D9D9;
-    font-size: 1.0rem;
-}
-
-.background-forms {
-    background-color: #D9D9D9;
-}
-
-.custom-input {
-    width: 100px;
-}
-
-.form-estacao {
-    width: 200px;
-}
-
-.custom-checkbox {
-    margin-left: 10px;
-}
-
-.btn {
-    background-color: #00ACEE;
-}
-
-/* Grid */
-
-.section-destinos {
-    margin: 100px 90px;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.image-container {
-    position: relative;
-}
+/* Países */
 
 .image {
     display: inline;
-    width: 350px;
-    height: 250px;
+    width: 104%;
+    height: 100%;
 }
 
-.caption {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    padding: 10px;
-    width: 350px;
-    box-sizing: border-box;
-    font-size: 20px;
-    font-weight: 600;
-}
-
-.subcaption {
-    background: none;
-    font-size: 14px;
-    margin-top: 5px;
-}
-
-/* Estações */
-
-.section-estacoes {
-    margin: 30px 90px;
-}
-
-.container-estacoes {
-    padding: 0 40px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.card-estacoes {
-    margin: 15px 15px;
-    border: solid 2px #fff;
-    background-color: #fff;
-    color: black;
-    border-radius: 10px;
-}
-
-.card-estacoes h3 {
-    text-align: center;
-    background-color: #fff;
-}
-
-.ul-estacoes {
-    text-align: left;
-    background-color: #fff;
-}
-
-.ul-estacoes li {
-    background-color: #fff;
-}
-
-.img-estacoes {
-    border-radius: 10px;
-    width: 300px;
-    height: 200px;
-}
-
-/* Melhores pacotes */
-
-.section-pacotes {
-    margin: 30px 90px;
-}
-
-.container-pacotes {
-    display: flex;
-    justify-content: space-between;
-}
-
-.card-pacotes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #fff;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    padding: 10px;
-    max-width: 300px;
-    margin: 10px;
-}
-
-.img-pacotes {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-.card-content {
-    background-color: #fff;
-    color: #000;
-    text-align: center;
-}
-
-.card-content h2 {
-    background-color: #fff;
-    color: #000;
-    font-size: 18px;
-    margin-bottom: 5px;
-}
-
-.price {
-    background-color: #fff;
-    color: #000;
-    font-size: 16px;
-    margin-bottom: 10px;
-}
 
 /* Profissionais */
-
-.section-profissionais {
-    margin: 40px 90px;
-}
 
 .container-profissionais {
     display: flex;
@@ -271,7 +104,6 @@
 .nome {
     font-weight: bold;
     margin-bottom: 5px;
-    background-color: #fff;
 }
 
 .profissao {
@@ -279,10 +111,6 @@
     background-color: #fff;
 }
 
-/* Trabalhe conosco */
-.section-tconosco {
-    margin: 30px 90px 0px 90px;
-}
 
 /* Footer */
 .footer-clean {
