@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@300&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/CSS/explorar.css">
+    <title>Explorar</title>
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar-pages">
+            <ul class="itens-navbar">
+                <li><a class="link-nav" href="/index.html">Home</a></li>
+                <li><a class="link-nav" href="/sN.html">Sobre nós</a></li>
+            </ul>
+            <img class="logo-nav" src="/assets/img/logotipo.png" alt="">
+            <ul class="itens-navbar">
+                <li><button class="btn btn-info btn-sm">Login</button></li>
+                <li><button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">☰</button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title text-white" id="offcanvasRightLabel">Menu</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="icon-link mb-3" href="/index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="icon-link mb-3" href="/sN.html">Sobre nós</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="icon-link mb-3" href="/servicos.html">Serviços</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="icon-link mb-3" href="/explorar.html">Explorar</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="icon-link" href="/pS.html">Países</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Categorias -->
+        <div>
+            <section class="categorias">
+                <a href="" class="opcoesCategorias">Primavera</a>
+                <a href="" class="opcoesCategorias">Verão</a>
+                <a href="" class="opcoesCategorias">Outono</a>
+                <a href="" class="opcoesCategorias">Inverno</a>
+                <a href="" class="opcoesCategorias">Blog</a>
+            </section>
+        </div>
+    </header>
+
+    <main>
+        <!-- Caixa de pesquisa de destino -->
+        <div class="background-section"></div>
+        <section>
+            <form class="form-destinos">
+                <h2>Pesquise seu destino:</h2>
+                <input type="text" class="background-forms" placeholder="Destino">
+                <select class="form-estacao background-forms">
+                    <option value="">Escolha a Estação</option>
+                    <option value="verao">Verão</option>
+                    <option value="inverno">Inverno</option>
+                    <option value="outono">Outono</option>
+                    <option value="primavera">Primavera</option>
+                </select>
+                <button type="submit" class="btn">Pesquisar</button>
+            </form>
+        </section>
+        <section class="container">
+            <div>
+                <h2 class="mt-5">Verão</h2>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div id="carouselExampleCaptions" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/assets/img/explorar/bonito.png" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Bonito - Mato Grosso do Sul</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/assets/img/explorar/arraial.png" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Arraial do Cabo - Rio de Janeiro</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/assets/img/explorar/jericoacoara.png" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Jericoacoara - Ceará</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bonito - MT -->
+            <div class="border p-0 mt-2">
+                <div class="row">
+                    <h4 class="mt-1 p-3">&#10102; Bonito - Mato Grosso do Sul</h4>
+                </div>
+                <div class="row">
+                    <div class="col px-5">
+                        <h5 class="text-center bg-info">Top 5 - Melhores Destinos</h5>
+                        <ol>
+                            <li>Grutas de São Miguel: Explore impressionantes cavernas de calcário, incluindo a famosa
+                                "Gruta do Lago Azul".</li>
+                            <li>Rio da Prata: Desfrute de uma incrível experiência de flutuação em um rio de águas
+                                cristalinas.</li>
+                            <li>Abismo Anhumas: Aventure-se em uma descida de rapel para explorar um lago subterrâneo
+                                impressionante.</li>
+                            <li>Estância Mimosa: Caminhe por trilhas, visite cachoeiras e piscinas naturais em meio a
+                                uma mata preservada.</li>
+                            <li>Rio Sucuri: Faça um relaxante passeio de flutuação e maravilhe-se com a variedade de
+                                peixes e vegetação subaquática.</li>
+                        </ol>
+                    </div>
+                    <div class="col px-5">
+                        <h5 class="text-center bg-info">Hotéis Populares</h5>
+                        <ol>
+                            <li>Hotel Zagaia Eco Resort: Luxuoso resort com amplas comodidades e acomodações
+                                confortáveis em meio à natureza.</li>
+                            <li>Wetiga Hotel: Localizado no centro de Bonito, oferece quartos aconchegantes, piscina e
+                                restaurante.</li>
+                            <li>Hotel Pousada Surucuá: Pousada encantadora com quartos confortáveis, piscina e café da
+                                manhã delicioso.</li>
+                            <li>Marruá Hotel: Localização privilegiada, quartos espaçosos, piscina, sauna e restaurante.
+                            </li>
+                            <li>Pousada Arte da Natureza: Pousada encantadora com jardins, quartos bem decorados,
+                                piscina e restaurante.</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col px-5">
+                        <h5 class="text-center bg-primary-subtle">Roteiros</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, fugit?</p>
+                    </div>
+                    <div class="col px-5">
+                        <h5 class="text-center bg-primary-subtle">Restaurantes</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, fugit?</p>
+                    </div>
+                    <div class="col px-5 mb-1">
+                        <h5 class="text-center bg-primary-subtle">Curiosidades</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, fugit?</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Ver mais / ver menos -->
+            <div class="text-center">
+                <a id="ver-mais-link" class="btn btn-sm my-3" href="#">Ver mais</a>
+                <div id="conteudo-oculto" class="oculto">
+
+                    <!-- Arraial do Cabo - RJ -->
+                    <div class="border p-0 mt-2">
+                        <div class="row">
+                            <h4 class="text-start mt-1 p-3">&#10103; Arraial do Cabo - Rio de Janeiro</h4>
+                        </div>
+                        <div class="row">
+                            <div class="col px-5">
+                                <h5 class="text-center bg-info">Top 5 - Melhores Destinos</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, fugit?</p>
+                            </div>
+                            <div class="col px-5">
+                                <h5 class="text-center bg-info">Hotéis Populares</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, fugit?</p>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col px-5">
+                                <h5 class="text-center bg-primary-subtle">Roteiros</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, fugit?</p>
+                            </div>
+                            <div class="col px-5">
+                                <h5 class="text-center bg-primary-subtle">Restaurantes</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, fugit?</p>
+                            </div>
+                            <div class="col px-5 mb-1">
+                                <h5 class="text-center bg-primary-subtle">Curiosidades</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, fugit?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Jericoacoara - CE -->
+                    <div class="border p-0 my-4">
+                        <div class="row">
+                            <h4 class="text-start mt-1 p-3">&#10104; Jericoacoara - Ceará</h4>
+                        </div>
+                        <div class="row">
+                            <div class="col px-5">
+                                <h5 class="text-center bg-info">Top 5 - Melhores Destinos</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, fugit?</p>
+                            </div>
+                            <div class="col px-5">
+                                <h5 class="text-center bg-info">Hotéis Populares</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, fugit?</p>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col px-5">
+                                <h5 class="text-center bg-primary-subtle">Roteiros</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, fugit?</p>
+                            </div>
+                            <div class="col px-5">
+                                <h5 class="text-center bg-primary-subtle">Restaurantes</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, fugit?</p>
+                            </div>
+                            <div class="col px-5 mb-1">
+                                <h5 class="text-center bg-primary-subtle">Curiosidades</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, fugit?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <div class="footer-clean">
+        <footer>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Mapa Site</h3>
+                        <ul>
+                            <li><a href="#">Serviços</a></li>
+                            <li><a href="#">Viagens</a></li>
+                            <li><a href="#">Destinos</a></li>
+                            <li><a href="#">Estações</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Sobre</h3>
+                        <ul>
+                            <li><a href="#">Empresa</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Profissionais</h3>
+                        <ul>
+                            <li><a href="#">Trabalhe Conosco</a></li>
+                            <li><a href="#">Guias Turisticos</a></li>
+                            <li><a href="#">Social</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a
+                            href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i
+                                class="icon ion-social-snapchat"></i></a><a href="#"><i
+                                class="icon ion-social-instagram"></i></a>
+                        <p class="copyright">Aterissa Facil © 2022</p>
+                    </div>
+                </div>
+            </div>
+            <button id="back-to-top" class="btn ion-chevron-up"></button>
+        </footer>
+    </div>
+
+
+    <!-- Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
+    <script src="./assets/JavaScript/explorar.js"></script>
+</body>
+
+</html>
