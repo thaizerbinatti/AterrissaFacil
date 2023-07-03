@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background: url(./assets/img/5.png) no-repeat bottom center scroll;
+    background: url(/assets/img/5.png) no-repeat bottom center scroll;
     -webkit-background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;
@@ -104,7 +104,7 @@ section {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    background: url(./assets/img/home/teste3.jpg);
+    background: url(/assets/img/home/teste3.jpg);
     text-align: center;
     grid-column-start: 3;
     grid-column-end: 4;
@@ -186,7 +186,7 @@ section.container_.parallax_ button {
 /* Países */
 
 .section-paises {
-    background: url(./assets/img/home/paises.png) no-repeat bottom center scroll;
+    background: url(/assets/img/home/paises.png) no-repeat bottom center scroll;
     background-size: cover;
     display: flex;
     justify-content: center;
