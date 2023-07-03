@@ -70,6 +70,8 @@
     align-items: center;
 }
 
+/* Sections */
+
 .container-padding {
     padding: 10px 150px;
 }
@@ -77,6 +79,12 @@
 @media screen and (max-width: 768px) {
     .container-padding {
         padding: 10px 5px;
+    }
+}
+
+@media screean and (max-width: 1440px) {
+    .container-padding {
+        padding: 10px 100px;
     }
 }
 
