@@ -26,9 +26,9 @@
                 <li><a class="link-nav" href="./index.html">Home</a></li>
                 <li><a class="link-nav" href="./sN.html">Sobre nós</a></li>
             </ul>
-            <img class="logo-nav" src="./assets/img/logotipo.png" alt="">
+            <a href="./index.html"><img class="logo-nav" src="./assets/img/home/logo-aterrissa.svg"
+                    alt="logo-aterrissa"></a>
             <ul class="itens-navbar">
-                <li><button class="btn btn-info btn-sm">Login</button></li>
                 <li><button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">☰</button>
                     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
@@ -65,17 +65,18 @@
         <!-- Categorias -->
         <div>
             <section class="categorias">
-                <a href="" class="opcoesCategorias">Destinos</a>
-                <a href="" class="opcoesCategorias">Países</a>
-                <a href="" class="opcoesCategorias">Profissionais</a>
-                <a href="" class="opcoesCategorias">Trabalhe conosco</a>
+                <a href="#pacotes-nacionais" class="opcoesCategorias">pacotes nacionais</a>
+                <a href="#pacotes-internacionais" class="opcoesCategorias">pacotes internacionais</a>
+                <a href="#profissionais" class="opcoesCategorias">profissionais</a>
+                <a href="#trabalhe-conosco" class="opcoesCategorias">trabalhe conosco</a>
+                <a href="#destino-para-todos" class="opcoesCategorias">programa "Destino para todos"</a>
             </section>
         </div>
     </header>
 
     <main>
         <!-- Slides -->
-        <div class="row mb-5">
+        <div class="container-padding row mb-5">
             <div class="col">
                 <div id="carouselExampleCaptions" class="carousel slide">
                     <div class="carousel-indicators">
@@ -121,197 +122,278 @@
                 </div>
             </div>
         </div>
-        
-        <!-- Destinos por estações -->
-        <section>
+
+        <!-- Pacotes de viagens nacionais -->
+        <section class="container-padding container-fluid my-5" id="pacotes-nacionais">
             <div>
-                <h2>Destinos do Brasil para conhecer em cada estação</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, veniam.</p>
+                <h2 class="text-titulo mb-3">Pacotes nacionais</h2>
             </div>
-            <div class="row">
-                <div class="col">
-                    <div class="card mb-3" style="max-width: 540px;">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="./assets/img/servicos/verao2.jpg" class="img-br img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Verão</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
-                                    <button class="btn btn-sm btn-secondary">saiba mais</button>
-                                </div>
-                            </div>
+            <div class="row border-bottom">
+                <div class="col my-2 text-center">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/assets/img/servicos/arrailDoCabo.jpg" class="img-cards img-thumbnail" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Pacote Arraial do Cabo</h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">Áereo + hotel</h6>
+                            <p class="card-text">Á partir de:</p>
+                            <p class="text-primary text-uppercase fs-5 fw-bold card-text">R$000,00</p>
+                            <button class="btn btn-success">Comprar</button>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card mb-3" style="max-width: 540px;">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="./assets/img/servicos/outono.jpg" class="img-br img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Outono</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
-                                    <button class="btn btn-sm btn-secondary">saiba mais</button>
-                                </div>
-                            </div>
+                <div class="col my-2 text-center">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/assets/img/servicos/bonito-matogrosso.jpg" class="img-cards img-thumbnail" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Pacote Bonito</h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">Áereo + hotel</h6>
+                            <p class="card-text">Á partir de:</p>
+                            <p class="text-primary text-uppercase fs-5 fw-bold card-text">R$000,00</p>
+                            <button class="btn btn-success">Comprar</button>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="card mb-3" style="max-width: 540px;">
-                            <div class="row g-0">
-                                <div class="col-md-4">
-                                    <img src="./assets/img/servicos/inverno.jpg" class="img-br img-fluid rounded-start" alt="...">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Inverno</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit longer.
-                                        </p>
-                                        <button class="btn btn-sm btn-secondary">saiba mais</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card mb-3" style="max-width: 540px;">
-                            <div class="row g-0">
-                                <div class="col-md-4">
-                                    <img src="./assets/img/servicos/primavera.jpg" class="img-br img-fluid rounded-start" alt="...">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Primavera</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit longer.
-                                        </p>
-                                        <button class="btn btn-sm btn-secondary">saiba mais</button>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="col my-2 text-center">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/assets/img/servicos/gramado-rs.jpg" class="img-cards img-thumbnail" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Pacote Gramado</h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">Áereo + hotel</h6>
+                            <p class="card-text">Á partir de:</p>
+                            <p class="text-primary text-uppercase fs-5 fw-bold card-text">R$000,00</p>
+                            <button class="btn btn-success">Comprar</button>
                         </div>
                     </div>
                 </div>
+                <div class="col my-2 text-center">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/assets/img/servicos/lencois-maranhenses.jpg" class="img-cards img-thumbnail"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Pacote Lençóis Maranhenses</h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">Áereo + hotel</h6>
+                            <p class="card-text">Á partir de:</p>
+                            <p class="text-primary text-uppercase fs-5 fw-bold card-text">R$000,00</p>
+                            <button class="btn btn-success">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col my-2 text-center">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/assets/img/servicos/lencois-maranhenses.jpg" class="img-cards img-thumbnail"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Pacote Lençóis Maranhenses</h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">Áereo + hotel</h6>
+                            <p class="card-text">Á partir de:</p>
+                            <p class="text-primary text-uppercase fs-5 fw-bold card-text">R$000,00</p>
+                            <button class="btn btn-success">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col my-2 text-center">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/assets/img/servicos/lencois-maranhenses.jpg" class="img-cards img-thumbnail"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Pacote Lençóis Maranhenses</h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">Áereo + hotel</h6>
+                            <p class="card-text">Á partir de:</p>
+                            <p class="text-primary text-uppercase fs-5 fw-bold card-text">R$000,00</p>
+                            <button class="btn btn-success">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-
-        <!-- Países -->
-        <section class="mt-5">
-            <h2 class="color-text">Explore destinos do mundo a fora!</h2>
-            <p class="color-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, esse?</p>
-            <div class="row mb-3">
-                <div class="col">
-                    <img class="image" src="./assets/img/servicos/tokyo.webp" alt="Arraial do Cabo">
-                </div>
-                <div class="col">
-                    <img class="image" src="./assets/img/servicos/indonesia.jpg" alt="Arraial do Cabo">
-                </div>
+        <!-- Pacotes de viagens internacionais -->
+        <section class="container-padding container-fluid my-3" id="pacotes-internacionais">
+            <div>
+                <h2 class="text-titulo mb-3">Pacotes internacionais</h2>
             </div>
-            <div class="row">
-                <div class="col">
-                    <img class="image" src="./assets/img/servicos/gramado-rs.jpg" alt="Arraial do Cabo">
+            <div class="row border-bottom">
+                <div class="col my-2 text-center">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/assets/img/servicos/tokyo.webp" class="img-cards img-thumbnail" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Tokyo - Japão</h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">Áereo + hotel</h6>
+                            <p class="card-text">Á partir de:</p>
+                            <p class="text-primary text-uppercase fs-5 fw-bold card-text">R$000,00</p>
+                            <button class="btn btn-success">Comprar</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="col">
-                    <img class="image" src="./assets/img/servicos/bonito-matogrosso.jpg" alt="Arraial do Cabo">
+                <div class="col my-2 text-center">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/assets/img/servicos/indonesia.jpg" class="img-cards img-thumbnail" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Indonésia</h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">Áereo + hotel</h6>
+                            <p class="card-text">Á partir de:</p>
+                            <p class="text-primary text-uppercase fs-5 fw-bold card-text">R$000,00</p>
+                            <button class="btn btn-success">Comprar</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="col">
-                    <img class="image" src="./assets/img/servicos/lencois-maranhenses.jpg" alt="Arraial do Cabo">
+                <div class="col my-2 text-center">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/assets/img/servicos/camposDoJordao.png" class="img-cards img-thumbnail" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Pacote Gramado</h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">Áereo + hotel</h6>
+                            <p class="card-text">Á partir de:</p>
+                            <p class="text-primary text-uppercase fs-5 fw-bold card-text">R$000,00</p>
+                            <button class="btn btn-success">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col my-2 text-center">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/assets/img/servicos/lencois-maranhenses.jpg" class="img-cards img-thumbnail"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Pacote Lençóis Maranhenses</h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">Áereo + hotel</h6>
+                            <p class="card-text">Á partir de:</p>
+                            <p class="text-primary text-uppercase fs-5 fw-bold card-text">R$000,00</p>
+                            <button class="btn btn-success">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col my-2 text-center">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/assets/img/servicos/lencois-maranhenses.jpg" class="img-cards img-thumbnail"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Pacote Lençóis Maranhenses</h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">Áereo + hotel</h6>
+                            <p class="card-text">Á partir de:</p>
+                            <p class="text-primary text-uppercase fs-5 fw-bold card-text">R$000,00</p>
+                            <button class="btn btn-success">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col my-2 text-center">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/assets/img/servicos/lencois-maranhenses.jpg" class="img-cards img-thumbnail"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Pacote Lençóis Maranhenses</h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">Áereo + hotel</h6>
+                            <p class="card-text">Á partir de:</p>
+                            <p class="text-primary text-uppercase fs-5 fw-bold card-text">R$000,00</p>
+                            <button class="btn btn-success">Comprar</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
 
         <!-- Profissionais -->
-        <section class="mt-5">
-            <h2>Encontre seu profissional</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-            <div class="container-profissionais">
-                <div class="card card-style">
-                    <img class="profile-pic" src="./assets/img/servicos/pessoa1.jpg" alt="Profile 1">
-                    <div class="nome">Guilherme Silva</div>
-                    <div class="profissao">Guia Turístico</div>
-                    <button class="btn btn-info btn-sm mt-2">Contato</button>
-                </div>
-                <div class="card card-style">
-                    <img class="profile-pic" src="./assets/img/servicos/gabriel.jpg" alt="Profile 2">
-                    <div class="nome">Gabriel Gonçalves</div>
-                    <div class="profissao">Animador Turístico</div>
-                    <button class="btn btn-info btn-sm mt-2">Contato</button>
-                </div>
-                <div class="card card-style">
-                    <img class="profile-pic" src="./assets/img/servicos/rosana.jpg" alt="Profile 3">
-                    <div class="nome">Rosana Bittencourt</div>
-                    <div class="profissao">Consultora de Viagens</div>
-                    <button class="btn btn-info btn-sm mt-2">Contato</button>
-                </div>
-                <div class="card card-style">
-                    <img class="profile-pic" src="./assets/img/servicos/nikolas.jpg" alt="Profile 4">
-                    <div class="nome">Nikolas Meneses</div>
-                    <div class="profissao">Guia Turístico</div>
-                    <button class="btn btn-info btn-sm mt-2">Contato</button>
-                </div>
-                <div class="card card-style">
-                    <img class="profile-pic" src="./assets/img/servicos/priscila.jpg" alt="Profile 5">
-                    <div class="nome">Priscila Assis</div>
-                    <div class="profissao">Agente de Turismo</div>
-                    <button class="btn btn-info btn-sm mt-2">Contato</button>
+        <section class="container-padding mt-5"  id="profissionais">
+            <h2 class="text-titulo">Encontre seu profissional</h2>
+            <p class="text-center">Entre em contato com nossos profissionais de turismo, e tenha uma viagem perfeita!
+            </p>
+            <div class="container-sm">
+                <div class="row border-bottom">
+                    <div class="col card card-style">
+                        <img class="profile-pic" src="./assets/img/servicos/pessoa1.jpg" alt="Profile 1">
+                        <div class="nome">Guilherme Silva</div>
+                        <div class="profissao">Guia Turístico</div>
+                        <button class="btn btn-info btn-sm mt-5">Contato</button>
+                    </div>
+                    <div class="col card card-style">
+                        <img class="profile-pic" src="./assets/img/servicos/gabriel.jpg" alt="Profile 2">
+                        <div class="nome">Gabriel Gonçalves</div>
+                        <div class="profissao">Animador Turístico</div>
+                        <button class="btn btn-info btn-sm mt-5">Contato</button>
+                    </div>
+                    <div class="col card card-style">
+                        <img class="profile-pic" src="./assets/img/servicos/rosana.jpg" alt="Profile 3">
+                        <div class="nome">Rosana Bittencourt</div>
+                        <div class="profissao">Consultora de Viagens</div>
+                        <button class="btn btn-info btn-sm mt-4">Contato</button>
+                    </div>
+                    <div class="col card card-style">
+                        <img class="profile-pic" src="./assets/img/servicos/nikolas.jpg" alt="Profile 4">
+                        <div class="nome">Nikolas Meneses</div>
+                        <div class="profissao">Guia Turístico</div>
+                        <button class="btn btn-info btn-sm mt-5">Contato</button>
+                    </div>
+                    <div class="col card card-style">
+                        <img class="profile-pic" src="./assets/img/servicos/priscila.jpg" alt="Profile 5">
+                        <div class="nome">Priscila Assis</div>
+                        <div class="profissao">Agente de Turismo</div>
+                        <button class="btn btn-info btn-sm mt-5">Contato</button>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Trabalhe Conosco -->
-        <section class="mt-5">
-            <h2>Trabalhe conosco</h2>
-            <p>Destaque sua empresa ou seu perfil no Aterrissa Fácil!</p>
-            <div>
-                <form>
+        <section class="container-padding my-5" id="trabalhe-conosco">
+            <h2 class="text-titulo2">Trabalhe conosco</h2>
+            <p class="text-center">Nos envie seus dados e destaque seu perfil no Aterrissa Fácil! Entraremos em contato.
+            </p>
+            <div class="border-bottom">
+                <form id="formulario">
                     <div class="mb-3">
                         <label for="nome" class="form-label">Nome</label>
                         <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
                     </div>
-
                     <div class="mb-3">
                         <label for="profissao" class="form-label">Profissão</label>
                         <input type="text" class="form-control" id="profissao" placeholder="Digite sua profissão"
                             required>
                     </div>
-
                     <div class="mb-3">
                         <label for="endereco" class="form-label">Endereço</label>
                         <input type="text" class="form-control" id="endereco" placeholder="Digite seu endereço"
                             required>
                     </div>
-
                     <div class="mb-3">
-                        <label for="cep" class="form-label">CEP</label>
-                        <input type="text" class="form-control" id="cep" placeholder="Digite seu CEP" required>
+                        <label for="endereco" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="email" placeholder="Digite seu email" required>
                     </div>
-
-                    <div class="mb-3">
-                        <label class="form-check-label">Sou:</label>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="tipo" id="empresa" value="empresa"
-                                required>
-                            <label class="form-check-label" for="empresa">Empresa</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="tipo" id="profissional"
-                                value="profissional" required>
-                            <label class="form-check-label" for="profissional">Profissional</label>
-                        </div>
-                    </div>
-
-                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <button type="submit" class="mb-2 btn btn-primary">Enviar</button>
                 </form>
+            </div>
+        </section>
+
+        <!-- Destino para todos -->
+        <section class="container-padding" id="destino-para-todos">
+            <div class="border-bottom mb-5">
+                <h3 class="text-titulo2">Programa "Destino para todos"</h3>
+                <p>Gostaria de desfrutar de viagens gratuitas, juntamente com todos os benefícios e suporte oferecidos
+                    pelo Aterrissa Fácil? Conheça agora o nosso programa exclusivo que pode proporcionar a você uma
+                    experiência de viagem incrível!</p>
+                <h5>Como funciona?</h5>
+                <p>O programa "Destino para Todos" oferece experiências de viagem incríveis para pessoas de baixa renda.
+                    Ao se inscrever, você concorre a um dos cinco pacotes individuais de viagem disponíveis a cada dois
+                    meses. Os pacotes incluem hospedagem, transporte e atividades no destino escolhido. Para participar,
+                    cadastre seu e-mail abaixo e receba os formulários de inscrição. Siga os passos indicados para
+                    completar sua inscrição.</p>
+                <ol>
+                    <li>Preencha o campo abaixo com o seu endereço de e-mail para receber o formulário de
+                        inscrição.</li>
+                    <li class="list-unstyled"><input type="email" class="form-control" id="email"
+                            placeholder="Digite seu email" required></li>
+                    <li>Após cadastrar o seu e-mail, você receberá um e-mail automático contendo o formulário
+                        de identificação e o formulário socioeconômico como anexos.</li>
+                    <li>Abra os anexos e preencha os formulários de forma completa e precisa. O formulário de
+                        identificação visa coletar informações pessoais básicas, como nome, idade e documentos de
+                        identificação. Já o formulário socioeconômico busca compreender melhor a sua situação financeira
+                        atual.</li>
+                    <li>Após o envio dos formulários, aguarde a análise e seleção dos candidatos. Os
+                        participantes escolhidos serão contatados diretamente para mais informações e orientações sobre
+                        a viagem.</li>
+                </ol>
+                <p>Aproveite essa oportunidade única de explorar novos destinos e desfrutar de uma experiência de viagem
+                    incrível, mesmo com recursos limitados. Inscreva-se agora no programa "Destino para Todos" e dê o
+                    primeiro passo rumo a uma aventura inesquecível!</p>
             </div>
         </section>
     </main>
