@@ -43,6 +43,7 @@
 .categorias {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     background: linear-gradient(180deg, #00ACEE 100%, #00ACEE 0%);
     padding: 10px 0;
 }

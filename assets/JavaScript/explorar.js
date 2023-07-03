@@ -5,9 +5,9 @@ verMaisLink.addEventListener("click", function (event) {
     event.preventDefault();
     if (conteudoOculto.style.display === "none") {
         conteudoOculto.style.display = "block";
-        verMaisLink.textContent = "Ver menos";
+        verMaisLink.textContent = "ver menos";
     } else {
         conteudoOculto.style.display = "none";
-        verMaisLink.textContent = "Ver mais";
+        verMaisLink.textContent = "ver mais";
     }
 });
