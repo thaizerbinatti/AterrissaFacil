@@ -67,11 +67,11 @@ body {
 /* Div com imagem de fundo de transição */
 
 header>div:last-child {
-    background-image: url('../img/sobreNos/sobre-nos.jpg');
+    background-image: url('../img/sobreNos/mike-swigunski-6SgLJg7kM7E-unsplash.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 50vh;
+    height: 100vh;
     margin-bottom: 50px;
 }
 
@@ -92,6 +92,7 @@ main>div:first-child {
 
 .paddinquemsomos {
     padding: 5%;
+    font-family: sans-serif;
 }
 
 /* Missão, Visão, Valores */
@@ -224,19 +225,6 @@ section>div>div>div>img {
     text-align: right;
 }
 
-@media (max-width:767px) {
-    .footer-clean .item {
-        text-align: center;
-        padding-bottom: 20px;
-    }
-}
-
-@media (max-width: 768px) {
-    .footer-clean .item.social {
-        text-align: center;
-    }
-}
-
 .footer-clean .item.social>a {
     font-size: 24px;
     width: 40px;
@@ -254,18 +242,6 @@ section>div>div>div>img {
 
 .footer-clean .item.social>a:hover {
     opacity: 0.9;
-}
-
-@media (max-width:991px) {
-    .footer-clean .item.social>a {
-        margin-top: 40px;
-    }
-}
-
-@media (max-width:767px) {
-    .footer-clean .item.social>a {
-        margin-top: 10px;
-    }
 }
 
 .footer-clean .copyright {
@@ -292,8 +268,259 @@ section>div>div>div>img {
     margin-top: 22px;
     color: inherit;
     opacity: 0.75;
+    git
 }
 
-/* Responsivo
-@media only screen and (min-width: 1024px) {}
-@media only screen and (max-width: 414px) {} */
+/* Medias Responsivas */
+
+/* 480px // Extra small screen
+768px // Small screen
+992px // Medium screen
+1200px // Large screen
+1600px // Extra Large screen
+1900px // Extra Large screen */
+
+
+@media (max-width:480px) {
+
+    /*  Alteração Navbar */
+
+    header>nav>ul:first-child {
+        display: none;
+    }
+
+    .logo-nav {
+        height: 80px;
+        width: auto;
+    }
+
+    .navbar-pages {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 15px 0 0 0;
+        margin-bottom: 0;
+        /* padding: 1.2em 1em ; */
+    }
+
+    .itens-navbar {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: flex-end;
+        height: 100%;
+        width: 100%;
+        padding: 0 0;
+    }
+
+    .itens-navbar li {
+        margin: 0 15px;
+    }
+
+    /* Missão, Visão, Valores */
+
+    main {
+        margin: 0px 0px;
+        margin-bottom: -50px;
+        margin-bottom: 20px;
+    }
+
+
+    .textovertical {
+        writing-mode: horizontal-tb;
+        text-align: center;
+        font-weight: bolder;
+        align-items: center;
+        justify-items: center;
+        letter-spacing: 5px;
+        margin-bottom: 1px;
+    }
+
+    /* missão  */
+
+    .miss,
+    .vis,
+    .val {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 20px;
+
+    }
+
+    .vis {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* troca a ordem da visão */
+    .vis div:last-child {
+        order: -1;
+    }
+
+    /* Medidas Footer */
+    .footer-clean .item.social>a {
+        margin-top: 10px;
+    }
+
+    .footer-clean .item {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .footer-clean .item.social {
+        text-align: center;
+    }
+}
+
+@media (min-width: 481px) {
+
+    /* Ajustando magin da main */
+
+    main {
+        margin: 0px 50px;
+        margin-bottom: -50px;
+    }
+
+    /* Alteração Nav bar */
+
+    .itens-navbar {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        row-gap: 15px;
+        height: 100%;
+        width: 100%;
+        padding: 0 0;
+    }
+
+    header>nav>ul:first-child {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Medidas Footer */
+    .footer-clean .item.social>a {
+        margin-top: 10px;
+    }
+
+    .footer-clean .item {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .footer-clean .item.social {
+        text-align: center;
+    }
+}
+
+@media (max-width:991px) {
+
+    /* Logo tamanho */
+
+    .logo-nav {
+        height: 150px;
+        width: auto;
+    }
+
+    /* Medidas Footer */
+    .footer-clean .item.social>a {
+        margin-top: 40px;
+    }
+
+    /* tamanho letras */
+
+    header {
+        font-size: larger;
+    }
+
+    .textovertical {
+        font-size: x-large;
+    }
+
+    main {
+        font-size: larger;
+    }
+
+    section {
+        font-size: larger;
+    }
+
+    .opcoesCategorias {
+        font-size: large;
+    }
+
+    .itens figcaption {
+        font-size: large;
+    }
+
+    .footer-clean h3 {
+        font-size: larger;
+    }
+
+    .footer-clean ul {
+        font-size: large;
+    }
+
+    .footer-clean .copyright {
+        font-size: large;
+    }
+
+    #back-to-top {
+        font-size: x-large;
+    }
+
+}
+
+@media (min-width:992px) {
+
+    /* Configuração letras maiores */
+
+    header {
+        font-size: x-large;
+    }
+
+    .textovertical {
+        font-size: xx-large;
+    }
+
+    main {
+        font-size: x-large;
+    }
+
+    section {
+        font-size: x-large;
+    }
+
+    .opcoesCategorias {
+        font-size: larger;
+    }
+
+    .itens figcaption {
+        font-size: larger;
+    }
+
+    .footer-clean h3 {
+        font-size: x-large;
+    }
+
+    .footer-clean ul {
+        font-size: larger;
+    }
+
+    .footer-clean .copyright {
+        font-size: larger;
+    }
+
+    #back-to-top {
+        font-size: xx-large;
+    }
+
+    /* Tamanho imagem empresa */
+
+    .logo-nav {
+        height: 170px;
+        width: auto;
+    }
+}
