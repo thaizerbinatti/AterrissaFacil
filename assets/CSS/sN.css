@@ -1,12 +1,9 @@
-@charset "utf-8";
-@import url(../style.css);
-
 * {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
 }
-
 body {
-    background-color: #0f3a4a;
+    background-color: #ffffff;
 }
 
 /* cabeçalho */
@@ -15,11 +12,10 @@ body {
 
 .navbar-pages {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 0;
     background-color: #001A24;
-    /* padding: 1.2em 1em ; */
 }
 
 .logo-nav {
@@ -48,56 +44,41 @@ body {
 
 .categorias {
     display: flex;
+    /* flex-wrap: wrap; */
     justify-content: space-evenly;
+    align-items: center;
     background: linear-gradient(180deg, #00ACEE 100%, #00ACEE 0%);
     padding: 10px 0;
-    margin: 0px 0px;
 }
 
 .opcoesCategorias {
-    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #00ACEE;
     color: #001A24;
-    font-weight: 600;
-    font-size: 1.2rem;
+    text-decoration: none;
+    font-size: 1.1rem;
     border-radius: 5px;
-    margin: 0 20px;
     align-items: center;
+}
+
+section {
+    
+    padding: 10px 150px;
 }
 
 /* Div com imagem de fundo de transição */
 
-header>div:last-child {
-    background-image: url('../img/sobreNos/mike-swigunski-6SgLJg7kM7E-unsplash.jpg');
+.imgheader {
+    background-image: url('/assets/img/sobreNos/mike-swigunski-6SgLJg7kM7E-unsplash.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
-    margin-bottom: 50px;
+    height: 50vh;
 }
 
-/* main quem somos?, missão, visão e valores */
-
-main {
-    margin: 0px 150px;
-    margin-bottom: -50px;
-}
-
-/* Quem Somos? */
-
-main>div:first-child {
-    margin-bottom: 50px;
-    padding: 5%;
-    background-color: #258db3d0;
-}
-
-.paddinquemsomos {
-    padding: 5%;
-    font-family: sans-serif;
-}
 
 /* Missão, Visão, Valores */
 
-main>div:last-child>div {
+main>div:last-child>div{
     text-align: center;
     grid-template-rows: repeat(3, 0.1fr);
 }
@@ -157,14 +138,7 @@ main>div:last-child>div {
     font-weight: bolder;
 }
 
-
-/* Fotos Integrantes */
-
-section {
-    margin-bottom: 100px;
-}
-
-section>div>div>div>img {
+.imgIntegrantes {
     border-radius: 50%;
 }
 
@@ -270,256 +244,3 @@ section>div>div>div>img {
     opacity: 0.75;
 }
 
-/* Medias Responsivas */
-
-/* 480px // Extra small screen
-768px // Small screen
-992px // Medium screen
-1200px // Large screen
-1600px // Extra Large screen
-1900px // Extra Large screen */
-
-
-@media (max-width:480px) {
-
-    /*  Alteração Navbar */
-
-    header>nav>ul:first-child {
-        display: none;
-    }
-
-    .logo-nav {
-        height: 80px;
-        width: auto;
-    }
-
-    .navbar-pages {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        padding: 15px 0 0 0;
-        margin-bottom: 0;
-        /* padding: 1.2em 1em ; */
-    }
-
-    .itens-navbar {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        align-items: flex-end;
-        height: 100%;
-        width: 100%;
-        padding: 0 0;
-    }
-
-    .itens-navbar li {
-        margin: 0 15px;
-    }
-
-    /* Missão, Visão, Valores */
-
-    main {
-        margin: 0px 0px;
-        margin-bottom: -50px;
-        margin-bottom: 20px;
-    }
-
-
-    .textovertical {
-        writing-mode: horizontal-tb;
-        text-align: center;
-        font-weight: bolder;
-        align-items: center;
-        justify-items: center;
-        letter-spacing: 5px;
-        margin-bottom: 1px;
-    }
-
-    /* missão  */
-
-    .miss,
-    .vis,
-    .val {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        margin-bottom: 20px;
-
-    }
-
-    .vis {
-        display: flex;
-        flex-direction: column;
-    }
-
-    /* troca a ordem da visão */
-    .vis div:last-child {
-        order: -1;
-    }
-
-    /* Medidas Footer */
-    .footer-clean .item.social>a {
-        margin-top: 10px;
-    }
-
-    .footer-clean .item {
-        text-align: center;
-        padding-bottom: 20px;
-    }
-
-    .footer-clean .item.social {
-        text-align: center;
-    }
-}
-
-@media (min-width: 481px) {
-
-    /* Ajustando magin da main */
-
-    main {
-        margin: 0px 50px;
-        margin-bottom: -50px;
-    }
-
-    /* Alteração Nav bar */
-
-    .itens-navbar {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: flex-end;
-        row-gap: 15px;
-        height: 100%;
-        width: 100%;
-        padding: 0 0;
-    }
-
-    header>nav>ul:first-child {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    /* Medidas Footer */
-    .footer-clean .item.social>a {
-        margin-top: 10px;
-    }
-
-    .footer-clean .item {
-        text-align: center;
-        padding-bottom: 20px;
-    }
-
-    .footer-clean .item.social {
-        text-align: center;
-    }
-}
-
-@media (max-width:991px) {
-
-    /* Logo tamanho */
-
-    .logo-nav {
-        height: 150px;
-        width: auto;
-    }
-
-    /* Medidas Footer */
-    .footer-clean .item.social>a {
-        margin-top: 40px;
-    }
-
-    /* tamanho letras */
-
-    header {
-        font-size: larger;
-    }
-
-    .textovertical {
-        font-size: x-large;
-    }
-
-    main {
-        font-size: larger;
-    }
-
-    section {
-        font-size: larger;
-    }
-
-    .opcoesCategorias {
-        font-size: large;
-    }
-
-    .itens figcaption {
-        font-size: large;
-    }
-
-    .footer-clean h3 {
-        font-size: larger;
-    }
-
-    .footer-clean ul {
-        font-size: large;
-    }
-
-    .footer-clean .copyright {
-        font-size: large;
-    }
-
-    #back-to-top {
-        font-size: x-large;
-    }
-
-}
-
-@media (min-width:992px) {
-
-    /* Configuração letras maiores */
-
-    header {
-        font-size: x-large;
-    }
-
-    .textovertical {
-        font-size: xx-large;
-    }
-
-    main {
-        font-size: x-large;
-    }
-
-    section {
-        font-size: x-large;
-    }
-
-    .opcoesCategorias {
-        font-size: larger;
-    }
-
-    .itens figcaption {
-        font-size: larger;
-    }
-
-    .footer-clean h3 {
-        font-size: x-large;
-    }
-
-    .footer-clean ul {
-        font-size: larger;
-    }
-
-    .footer-clean .copyright {
-        font-size: larger;
-    }
-
-    #back-to-top {
-        font-size: xx-large;
-    }
-
-    /* Tamanho imagem empresa */
-
-    .logo-nav {
-        height: 170px;
-        width: auto;
-    }
-}
