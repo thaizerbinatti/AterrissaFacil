@@ -24,3 +24,11 @@ function mostrarMensagemEnviado() {
     mensagem.style.color = 'green';
     formulario.appendChild(mensagem);
 }
+
+// Formulário do projeto social
+document.getElementById("enviar-email").addEventListener("click", function () {
+    alert("Email foi salvo. Aguarde para receber o formulário.");
+});
+
+
+
