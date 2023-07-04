@@ -82,9 +82,9 @@
     }
 }
 
-@media screean and (max-width: 1440px) {
+@media screen and (min-width: 1440px) {
     .container-padding {
-        padding: 10px 100px;
+        padding: 10px 90px;
     }
 }
 
@@ -233,4 +233,9 @@
     margin-bottom: 0;
     font-size: 13px;
     opacity: 0.6;
+}
+
+.justifyitem {
+    display: grid;
+    justify-content: center;
 }
