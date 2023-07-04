@@ -77,11 +77,28 @@
     display: none;
 }
 
+/* Sections */
+.titulos-estacoes {
+    text-align: center;
+    border-bottom: 1px solid #000;
+    font-size: 3.0rem;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.7rem;
+}
+
 /* Scroll sections */
 
 .custom-scroll {
     height: 250px;
     overflow-y: auto;
+}
+
+/* Comentarios */
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
 }
 
 /* Footer */
