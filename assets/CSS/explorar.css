@@ -77,6 +77,15 @@
     display: none;
 }
 
+/* Sections */
+.titulos-estacoes {
+    text-align: center;
+    border-bottom: 1px solid #000;
+    font-size: 3.0rem;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.7rem;
+}
+
 /* Scroll sections */
 
 .custom-scroll {
