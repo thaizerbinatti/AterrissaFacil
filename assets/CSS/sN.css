@@ -238,7 +238,7 @@ main>div:last-child>div{
     position: fixed;
     bottom: 50px;
     right: 50px;
-    background: transparent;
+    background: none;
     font-size: 24px;
     width: 60px;
     height: 60px;
@@ -246,10 +246,10 @@ main>div:last-child>div{
     display: inline-block;
     text-align: center;
     border-radius: 50%;
-    border: 2px solid #ccc;
+    border: 2px solid #00ACEE;
     margin-left: 10px;
     margin-top: 22px;
-    color: inherit;
+    color: #00ACEE;
     opacity: 0.75;
 }
 
@@ -261,27 +261,97 @@ main>div:last-child>div{
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 0.7rem;
 }
-@media (max-width:767px) {
+@media (max-width:789px) {
+
+    /*  Alteração Navbar */
+    main>section {
+        margin: 5px;
+        padding: 5px;
+    }
+    header>nav>ul:first-child {
+        display: none;
+    }
+
+    .logo-nav {
+        height: 80px;
+        width: auto;
+    }
+
+    .navbar-pages {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 15px 0 0 0;
+        margin-bottom: 0;
+        /* padding: 1.2em 1em ; */
+    }
+
+    .itens-navbar {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: flex-end;
+        height: 100%;
+        width: 100%;
+        padding: 0 0;
+    }
+
+    .itens-navbar li {
+        margin: 0 15px;
+    }
+
+    /* Missão, Visão, Valores */
+
+    main {
+        margin: 0px 0px;
+        margin-bottom: -50px;
+        margin-bottom: 20px;
+    }
+
+
+    .textovertical {
+        writing-mode: horizontal-tb;
+        text-align: center;
+        font-weight: bolder;
+        align-items: center;
+        justify-items: center;
+        letter-spacing: 5px;
+        margin-bottom: 1px;
+    }
+
+    /* missão  */
+
+    .miss,
+    .vis,
+    .val {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 20px;
+
+    }
+
+    .vis {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* troca a ordem da visão */
+    .vis div:last-child {
+        order: -1;
+    }
+
+    /* Medidas Footer */
+    .footer-clean .item.social>a {
+        margin-top: 10px;
+    }
+
     .footer-clean .item {
         text-align: center;
         padding-bottom: 20px;
     }
-}
 
-@media (max-width: 768px) {
     .footer-clean .item.social {
         text-align: center;
-    }
-}
-
-@media (max-width:991px) {
-    .footer-clean .item.social>a {
-        margin-top: 40px;
-    }
-}
-
-@media (max-width:767px) {
-    .footer-clean .item.social>a {
-        margin-top: 10px;
     }
 }

@@ -174,3 +174,22 @@ main>div>form>input {
     font-size: 13px;
     opacity: 0.6;
 }
+
+#back-to-top {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background: none;
+    font-size: 24px;
+    width: 60px;
+    height: 60px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid #00ACEE;
+    margin-left: 10px;
+    margin-top: 22px;
+    color: #00ACEE;
+    opacity: 0.75;
+}
