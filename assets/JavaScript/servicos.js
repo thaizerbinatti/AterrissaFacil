@@ -1,3 +1,8 @@
+var btn = document.querySelector("#back-to-top");
+btn.addEventListener("click", function () {
+    window.scrollTo(0, 0);
+});
+
 // Scroll categorias
 const opcoesCategorias = document.getElementsByClassName('opcoesCategorias');
 for (let i = 0; i < opcoesCategorias.length; i++) {
@@ -26,8 +31,16 @@ function mostrarMensagemEnviado() {
 }
 
 // Formulário do projeto social
-document.getElementById("enviar-email").addEventListener("click", function () {
-    alert("Email foi salvo. Aguarde para receber o formulário.");
+document.getElementById('enviar-email').addEventListener('click', function (event) {
+    event.preventDefault(); // Evita o envio do formulário
+
+    var email = document.getElementById('email').value;
+    var mensagemDiv = document.getElementById('mensagem');
+
+    if (email !== '') {
+        var mensagem = 'Obrigada, aguarde o link do formulário no seu email.';
+        mensagemDiv.innerHTML = mensagem;
+    }
 });
 
 

@@ -43,7 +43,7 @@
 }
 
 .logo-container_ {
-    height: 70%;
+    height: 65%;
     justify-content: center;
     align-items: center;
 }
@@ -54,15 +54,8 @@
     filter: drop-shadow(0px 4px 2px #001A24);
 }
 
-/* .parallax { */
-/* background-attachment: fixed; */
-/* background-position: center; */
-/* background-repeat: no-repeat; */
-/* background-size: cover; */
-/* } */
-
 .frase-container {
-    height: 15%;
+    height: 20%;
 }
 
 .frase {
@@ -75,6 +68,30 @@
     text-align: center;
     color: #D9D9D9;
     filter: drop-shadow(0px 4px 2px #001A24);
+}
+
+@media screen and (max-width: 768px) {
+    .frase {
+        font-size: 1.9rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .frase-container {
+        margin-bottom: 10px;
+        height: 30%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .frase-container {
+        margin-bottom: 10px;
+        height: 35%;
+    }
+
+    .frase {
+        font-size: 1.4;
+    }
 }
 
 .destaque {
@@ -97,19 +114,6 @@ section {
     background: #0F3A4A;
     padding-top: 3em;
     padding-bottom: 3em;
-}
-
-.circulocentral {
-    margin: auto;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    background: url(/assets/img/home/teste3.jpg);
-    text-align: center;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 3;
 }
 
 .explorar {
@@ -167,6 +171,20 @@ section.container_.parallax_ button {
     max-width: 70%;
     height: auto;
 }
+
+/* @media screen and (max-width: 768px) {
+    .img-explorar {
+        max-width: 65%;
+        max-height: auto;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .img-explorar {        
+        max-width: 30%;
+        max-height: auto;
+    }
+} */
 
 .pag-explorar li {
     list-style: none;
@@ -228,6 +246,15 @@ section.container_.parallax_ button {
     }
 }
 
+@media (max-width: 500px) {
+
+    .ul-1,
+    .ul-2 {
+        font-size: 1.5rem;
+    }
+}
+
+
 /* Geral */
 
 .section-servicos {
@@ -254,6 +281,12 @@ section.container_.parallax_ button {
     color: #00ACEE;
     font-weight: 600;
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 450px) {
+    .col-geral {
+        font-size: 1.1rem;
+    }
 }
 
 .legenda-p {
