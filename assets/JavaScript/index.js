@@ -1,10 +1,27 @@
+// Efeito scroll revel
+
+window.sr = ScrollReveal({ reset: true })
+
+sr.reveal('.revel-1', { duration: 2000 })
+
+sr.reveal('.revel-2', { duration: 1000 })
+
+sr.reveal('.revel-3', { duration: 1000 })
+
+sr.reveal('.revel-4', { duration: 1000 })
+
+sr.reveal('.revel-5', { duration: 1000 })
+
+// Botão volta ao topo
+
 var btn = document.querySelector("#back-to-top");
 btn.addEventListener("click", function () {
     window.scrollTo(0, 0);
 });
 
+// Função redirecionar para a página
 function redirecionarPagina() {
-    var emailInput = document.getElementBy("exampleDropdownFormEmail2");
+    var emailInput = document.getElementById("exampleDropdownFormEmail2");
     var senhaInput = document.getElementById("exampleDropdownFormPassword2");
 
     var email = emailInput.value;
@@ -23,17 +40,4 @@ formulario.addEventListener("submit", function (event) {
     redirecionarPagina();
 });
 
-// Efeito scroll revel
-
-window.sr = ScrollReveal({reset:true})
-
-sr.reveal('.revel-1', {duration: 2000})
-
-sr.reveal('.revel-2', {duration: 1000})
-
-sr.reveal('.revel-3', {duration: 1000})
-
-sr.reveal('.revel-4', {duration: 1000})
-
-sr.reveal('.revel-5', {duration: 1000})
 
