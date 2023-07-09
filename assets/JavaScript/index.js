@@ -23,3 +23,17 @@ formulario.addEventListener("submit", function (event) {
     redirecionarPagina();
 });
 
+// Efeito scroll revel
+
+window.sr = ScrollReveal({reset:true})
+
+sr.reveal('.revel-1', {duration: 2000})
+
+sr.reveal('.revel-2', {duration: 1000})
+
+sr.reveal('.revel-3', {duration: 1000})
+
+sr.reveal('.revel-4', {duration: 1000})
+
+sr.reveal('.revel-5', {duration: 1000})
+

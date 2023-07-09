@@ -402,3 +402,9 @@ section.container_.parallax_ button {
 /* Responsivo */
 /* @media only screen and (min-width: 1024px)
 @media only screen and (max-width: 414px) */
+
+/* efeito revelar */
+
+.revel-1, .revel-2, .revel-3, .revel-4, .revel-5 {
+    visibility: hidden;
+}

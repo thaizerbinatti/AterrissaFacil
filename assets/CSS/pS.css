@@ -61,6 +61,13 @@ main>div>form>input {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+/* cor branca selecione pais caixa de busca */
+
+.branco {
+    color: white;
+    font-weight: 650;
+}
+
 /* Sections */
 
 .container-padding {
@@ -193,3 +200,19 @@ main>div>form>input {
     color: #00ACEE;
     opacity: 0.75;
 }
+
+@media (min-width:469px) {
+
+    /* Menu fixo */
+    
+    .menu_fixo {
+        position: fixed;
+        z-index: 9999;
+        margin-top: -90px;
+        width: 100%;
+    }
+    
+    body {
+        padding-top: 90px;
+    }
+    }

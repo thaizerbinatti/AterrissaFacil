@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    min-height: 50vw;
+    align-items: center;
+    justify-content: center;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.static1 {
+    position: absolute;
+    background: white;
+}
+
+.static1:hover {
+    opacity: 0;
+    cursor: pointer;
+}
