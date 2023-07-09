@@ -13,13 +13,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@300&family=Roboto:wght@300&display=swap"
         rel="stylesheet">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./assets/CSS/servicos.css">
     <title>Serviços</title>
 </head>
 
 <body>
     <!-- Cabeçalho -->
-    <header>
+    <header class="menu_fixo">
         <!-- Navbar -->
         <nav class="navbar-pages">
             <ul class="itens-navbar">
@@ -28,48 +29,60 @@
             </ul>
             <a href="./index.html"><img class="logo-nav" src="./assets/img/home/logo-aterrissa.svg"
                     alt="logo-aterrissa"></a>
-            <ul class="itens-navbar">
-                <li><button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">☰</button>
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
-                        aria-labelledby="offcanvasRightLabel" style="background-color: #001A24;">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title text-white" id="offcanvasRightLabel">Menu</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
+            <div class="alinhar_carrinho">
+                <!-- Carrinho Navbar -->
+                <div class="carrinho">
+                    <p id="contador"></p>
+                </div>
+                <ul class="itens-navbar">
+                    <li><button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">☰</button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                            aria-labelledby="offcanvasRightLabel" style="background-color: #001A24;">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title text-white" id="offcanvasRightLabel">Menu</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="icon-link mb-3 text-white text-decoration-none"
+                                            href="./index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="icon-link mb-3 text-white text-decoration-none"
+                                            href="./servicos.html">Serviços</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="icon-link mb-3 text-white text-decoration-none"
+                                            href="./explorar.html">Explorar</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="icon-link mb-3 text-white text-decoration-none"
+                                            href="./pS.html">Países</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="icon-link mb-3 text-white text-decoration-none" href="./sN.html">Sobre
+                                            nós</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="offcanvas-body">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="icon-link mb-3 text-white text-decoration-none" href="./index.html">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="icon-link mb-3 text-white text-decoration-none" href="./servicos.html">Serviços</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="icon-link mb-3 text-white text-decoration-none" href="./explorar.html">Explorar</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="icon-link mb-3 text-white text-decoration-none" href="./pS.html">Países</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="icon-link mb-3 text-white text-decoration-none" href="./sN.html">Sobre nós</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-            </ul>
+                    </li>
+                </ul>
+                </div>
+            </div>
         </nav>
 
         <!-- Categorias -->
         <div>
             <section class="categorias">
-                <a href="#pacotes-nacionais" class="opcoesCategorias">pacotes nacionais</a>
-                <a href="#pacotes-internacionais" class="opcoesCategorias">pacotes internacionais</a>
-                <a href="#profissionais" class="opcoesCategorias">profissionais</a>
-                <a href="#trabalhe-conosco" class="opcoesCategorias">trabalhe conosco</a>
-                <a href="#destino-para-todos" class="opcoesCategorias">programa "Destino para todos"</a>
+                <a href="#pacotes-nacionais" class="opcoesCategorias">Pacotes nacionais</a>
+                <a href="#pacotes-internacionais" class="opcoesCategorias">Pacotes internacionais</a>
+                <a href="#profissionais" class="opcoesCategorias">Profissionais</a>
+                <a href="#trabalhe-conosco" class="opcoesCategorias">Trabalhe conosco</a>
+                <a href="#destino-para-todos" class="opcoesCategorias">Programa "Destino para todos"</a>
             </section>
         </div>
     </header>
@@ -138,7 +151,7 @@
                                 <h6 class="card-subtitle mb-2 text-body-secondary">Áereo + hotel</h6>
                                 <p class="card-text">Á partir de:</p>
                                 <p class="text-primary text-uppercase fs-5 fw-bold card-text">R$699,99</p>
-                                <button class="btn btn-success">Comprar</button>
+                                <button class="btn btn-success incrementar-carrinho">Comprar</button>
                             </div>
                         </div>
                     </div>
@@ -151,7 +164,7 @@
                                 <h6 class="card-subtitle mb-2 text-body-secondary">Áereo + hotel</h6>
                                 <p class="card-text">Á partir de:</p>
                                 <p class="text-primary text-uppercase fs-5 fw-bold card-text">R$1099,99</p>
-                                <button class="btn btn-success">Comprar</button>
+                                <button class="btn btn-success incrementar-carrinho">Comprar</button>
                             </div>
                         </div>
                     </div>
@@ -163,7 +176,7 @@
                                 <h6 class="card-subtitle mb-2 text-body-secondary">Áereo + hotel</h6>
                                 <p class="card-text">Á partir de:</p>
                                 <p class="text-primary text-uppercase fs-5 fw-bold card-text">R$699,99</p>
-                                <button class="btn btn-success">Comprar</button>
+                                <button class="btn btn-success incrementar-carrinho">Comprar</button>
                             </div>
                         </div>
                     </div>
@@ -178,7 +191,7 @@
                                 <h6 class="card-subtitle mb-2 text-body-secondary">Áereo + hotel</h6>
                                 <p class="card-text">Á partir de:</p>
                                 <p class="text-primary text-uppercase fs-5 fw-bold card-text">R$1099,99</p>
-                                <button class="btn btn-success">Comprar</button>
+                                <button class="btn btn-success incrementar-carrinho">Comprar</button>
                             </div>
                         </div>
                     </div>
@@ -191,7 +204,7 @@
                                 <h6 class="card-subtitle mb-2 text-body-secondary">Áereo + hotel</h6>
                                 <p class="card-text">Á partir de:</p>
                                 <p class="text-primary text-uppercase fs-5 fw-bold card-text">R$999,99</p>
-                                <button class="btn btn-success">Comprar</button>
+                                <button class="btn btn-success incrementar-carrinho">Comprar</button>
                             </div>
                         </div>
                     </div>
@@ -204,7 +217,7 @@
                                 <h6 class="card-subtitle mb-2 text-body-secondary">Áereo + hotel</h6>
                                 <p class="card-text">Á partir de:</p>
                                 <p class="text-primary text-uppercase fs-5 fw-bold card-text">R$499,99</p>
-                                <button class="btn btn-success">Comprar</button>
+                                <button class="btn btn-success incrementar-carrinho">Comprar</button>
                             </div>
                         </div>
                     </div>
@@ -227,7 +240,7 @@
                                 <h6 class="card-subtitle mb-2 text-body-secondary">Áereo + hotel</h6>
                                 <p class="card-text">Á partir de:</p>
                                 <p class="text-primary text-uppercase fs-5 fw-bold card-text">R$3999,99</p>
-                                <button class="btn btn-success">Comprar</button>
+                                <button class="btn btn-success incrementar-carrinho">Comprar</button>
                             </div>
                         </div>
                     </div>
@@ -239,7 +252,7 @@
                                 <h6 class="card-subtitle mb-2 text-body-secondary">Áereo + hotel</h6>
                                 <p class="card-text">Á partir de:</p>
                                 <p class="text-primary text-uppercase fs-5 fw-bold card-text">R$2999,99</p>
-                                <button class="btn btn-success">Comprar</button>
+                                <button class="btn btn-success incrementar-carrinho">Comprar</button>
                             </div>
                         </div>
                     </div>
@@ -251,7 +264,7 @@
                                 <h6 class="card-subtitle mb-2 text-body-secondary">Áereo + hotel</h6>
                                 <p class="card-text">Á partir de:</p>
                                 <p class="text-primary text-uppercase fs-5 fw-bold card-text">R$2199,99</p>
-                                <button class="btn btn-success">Comprar</button>
+                                <button class="btn btn-success incrementar-carrinho">Comprar</button>
                             </div>
                         </div>
                     </div>
@@ -265,7 +278,7 @@
                                 <h6 class="card-subtitle mb-2 text-body-secondary">Áereo + hotel</h6>
                                 <p class="card-text">Á partir de:</p>
                                 <p class="text-primary text-uppercase fs-5 fw-bold card-text">R$1899,99</p>
-                                <button class="btn btn-success">Comprar</button>
+                                <button class="btn btn-success incrementar-carrinho">Comprar</button>
                             </div>
                         </div>
                     </div>
@@ -277,7 +290,7 @@
                                 <h6 class="card-subtitle mb-2 text-body-secondary">Áereo + hotel</h6>
                                 <p class="card-text">Á partir de:</p>
                                 <p class="text-primary text-uppercase fs-5 fw-bold card-text">R$3999,99</p>
-                                <button class="btn btn-success">Comprar</button>
+                                <button class="btn btn-success incrementar-carrinho">Comprar</button>
                             </div>
                         </div>
                     </div>
@@ -289,7 +302,7 @@
                                 <h6 class="card-subtitle mb-2 text-body-secondary">Áereo + hotel</h6>
                                 <p class="card-text">Á partir de:</p>
                                 <p class="text-primary text-uppercase fs-5 fw-bold card-text">R$4999,99</p>
-                                <button class="btn btn-success">Comprar</button>
+                                <button class="btn btn-success incrementar-carrinho">Comprar</button>
                             </div>
                         </div>
                     </div>

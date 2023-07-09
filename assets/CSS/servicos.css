@@ -6,6 +6,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
 /* Navbar */
 
 .navbar-pages {
@@ -39,6 +40,38 @@
     text-decoration: none;
 }
 
+/* Carrinho Navbar */
+
+.carrinho {
+    background-image: url(/assets/img/servicos/cart.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    filter: invert(100%);
+    height: 50px;
+    width: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 12px;
+    padding-left: 3px;
+    margin-bottom: 20px;
+}
+
+.carrinho p {
+    filter: invert(100%);
+    color: #00ACEE;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Alinhar carrinho */
+
+.alinhar_carrinho {
+    display: flex;
+}
+
+
 @media screen and (max-width: 600px) {
     .navbar-pages .itens-navbar:first-child {
         display: none;
@@ -58,6 +91,11 @@
     align-items: center;
     background: linear-gradient(180deg, #00ACEE 100%, #00ACEE 0%);
     padding: 10px 0;
+}
+
+.categorias a {
+    color: white;
+    font-weight: 650;
 }
 
 .opcoesCategorias {
@@ -247,6 +285,7 @@
 #destino-para-todos {
     padding: 0 10rem;
 }
+
 #back-to-top {
     position: fixed;
     bottom: 50px;
@@ -264,4 +303,58 @@
     margin-top: 22px;
     color: #00ACEE;
     opacity: 0.75;
+}
+
+/* medias responsivas */
+
+@media (max-width:468px) {
+    /* aproximar carrinho menu lateral */
+
+    .itens-navbar li {
+        margin: 0 15px 0 -25px;
+    }
+
+    /* Afastar logo do carrinho */
+
+    .logo-nav {
+        margin-left: 5px;
+    }
+
+    /* Remover paddings que quebram tranalhe conosco e destino para todos */
+
+    #trabalhe-conosco {
+        padding: 0;
+    }
+    
+    #destino-para-todos {
+        padding: 0;
+    }
+
+    /* Diminuir espaço entre os titluos pois estava ocasionando quebra */
+
+    .text-titulo {
+        font-size: 2.0rem;
+        letter-spacing: 0.4rem;
+    }
+    
+    .text-titulo2 {
+        font-size: 2.0rem;
+        letter-spacing: 0.4rem;
+    }
+}
+
+@media (min-width:469px) {
+
+/* Menu fixo */
+
+.menu_fixo {
+    position: fixed;
+    z-index: 9999;
+    margin-top: -165px;
+    width: 100%;
+}
+
+body {
+    padding-top: 165px;
+}
 }
