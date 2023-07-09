@@ -1,3 +1,8 @@
+var btn = document.querySelector("#back-to-top");
+btn.addEventListener("click", function () {
+    window.scrollTo(0, 0);
+});
+
 // Ver mais e ver menos
 var verMaisLink = document.getElementById("ver-mais-link");
 var conteudoOculto = document.getElementById("conteudo-oculto");
