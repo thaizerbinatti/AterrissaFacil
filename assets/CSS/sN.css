@@ -157,6 +157,8 @@ main>div:last-child>div {
 
 .imgIntegrantes {
     border-radius: 50%;
+    height: 150px;
+    width: 150px;
 }
 
 .section-servicos {
@@ -284,6 +286,8 @@ main>div:last-child>div {
     height: 40px;
 }
 
+/* Arredondamento github dos integrantes */
+
 @media (max-width:789px) {
 
     /*  Alteração Navbar */
@@ -383,6 +387,7 @@ main>div:last-child>div {
         text-align: center;
     }
 
+
 }
 
 @media (max-width:468px) {
@@ -390,6 +395,13 @@ main>div:last-child>div {
     font-size: 2.0rem;
     letter-spacing: 0.4rem;
 }
+
+/* Diminuir fotos integrantes */
+.imgIntegrantes {
+    height: 110px;
+    width: 110px;
+}
+
 }
 
 @media (min-width:469px) {
