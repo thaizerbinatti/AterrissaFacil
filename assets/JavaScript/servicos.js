@@ -19,14 +19,23 @@ btn.addEventListener("click", function () {
 });
 
 // Scroll categorias
-const opcoesCategorias = document.getElementsByClassName('opcoesCategorias');
-for (let i = 0; i < opcoesCategorias.length; i++) {
-    opcoesCategorias[i].addEventListener('click', function (e) {
-        e.preventDefault();
-        const sectionId = this.getAttribute('href').substring(1);
-        const section = document.getElementById(sectionId);
-        if (section) {
-            section.scrollIntoView({ behavior: 'smooth' });
+var linksCategorias = document.getElementsByClassName('opcoesCategorias');
+for (var i = 0; i < linksCategorias.length; i++) {
+    linksCategorias[i].addEventListener('click', function (event) {
+        event.preventDefault();
+
+        var targetId = this.getAttribute('href');
+        var targetElement = document.querySelector(targetId);
+
+        if (targetElement) {
+            var categoriaHeight = document.querySelector('.categorias').offsetHeight;
+
+            var targetOffset = targetElement.offsetTop - categoriaHeight - 100;
+
+            window.scrollTo({
+                top: targetOffset,
+                behavior: 'smooth'
+            });
         }
     });
 }
@@ -46,7 +55,7 @@ function mostrarMensagemEnviado() {
 
     setTimeout(function () {
         mensagem.remove();
-    }, 4000);
+    }, 3000);
 
     formulario.reset();
 }
