@@ -65,9 +65,22 @@ body {
 }
 
 .secPadding {
-
     padding: 10px 150px;
     margin-bottom: 2rem;
+}
+
+@media (max-width:789px) {
+    .secPadding {
+        padding: 10px 50px;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .secPadding {
+        padding: 10px 30px;
+        margin-bottom: 2rem;
+    }
 }
 
 section {
@@ -80,17 +93,6 @@ section {
     color: white;
     font-weight: 650;
 }
-
-/* Div com imagem de fundo de transição */
-
-.imgheader {
-    background-image: url('/assets/img/sobreNos/mike-swigunski-6SgLJg7kM7E-unsplash.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 50vh;
-}
-
 
 /* Missão, Visão, Valores */
 
@@ -391,31 +393,31 @@ main>div:last-child>div {
 }
 
 @media (max-width:468px) {
-.text-titulo {
-    font-size: 2.0rem;
-    letter-spacing: 0.4rem;
-}
+    .text-titulo {
+        font-size: 2.0rem;
+        letter-spacing: 0.4rem;
+    }
 
-/* Diminuir fotos integrantes */
-.imgIntegrantes {
-    height: 110px;
-    width: 110px;
-}
+    /* Diminuir fotos integrantes */
+    .imgIntegrantes {
+        height: 110px;
+        width: 110px;
+    }
 
 }
 
 @media (min-width:469px) {
 
     /* Menu fixo */
-    
+
     .menu_fixo {
         position: fixed;
         z-index: 9999;
         margin-top: -165px;
         width: 100%;
     }
-    
+
     body {
         padding-top: 165px;
     }
-    }
+}

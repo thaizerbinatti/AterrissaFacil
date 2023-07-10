@@ -323,11 +323,11 @@
     /* Remover paddings que quebram tranalhe conosco e destino para todos */
 
     #trabalhe-conosco {
-        padding: 0;
+        padding: 0 15px;
     }
-    
+
     #destino-para-todos {
-        padding: 0;
+        padding: 0 15px;
     }
 
     /* Diminuir espaço entre os titluos pois estava ocasionando quebra */
@@ -336,7 +336,7 @@
         font-size: 2.0rem;
         letter-spacing: 0.4rem;
     }
-    
+
     .text-titulo2 {
         font-size: 2.0rem;
         letter-spacing: 0.4rem;
@@ -349,18 +349,28 @@
     }
 }
 
+@media (max-width:768px) {
+    #trabalhe-conosco {
+        padding: 0 55px;
+    }
+
+    #destino-para-todos {
+        padding: 0 55px;
+    }
+}
+
 @media (min-width:469px) {
 
-/* Menu fixo */
+    /* Menu fixo */
 
-.menu_fixo {
-    position: fixed;
-    z-index: 9999;
-    margin-top: -165px;
-    width: 100%;
-}
+    .menu_fixo {
+        position: fixed;
+        z-index: 9999;
+        margin-top: -165px;
+        width: 100%;
+    }
 
-body {
-    padding-top: 165px;
-}
+    body {
+        padding-top: 165px;
+    }
 }
