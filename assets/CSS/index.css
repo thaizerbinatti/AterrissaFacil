@@ -24,7 +24,7 @@
     margin-top: 0;
     margin-right: 0;
     margin-left: auto;
-    padding-right: 1%;
+    padding-right: 2%;
 }
 
 .navbar_ {
@@ -54,6 +54,23 @@
     filter: drop-shadow(0px 4px 2px #001A24);
 }
 
+@media screen and (max-width: 768px) {
+    .logo-container_ {
+        display: flex;
+        height: 65%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-img {
+        max-width: 90%;
+        height: auto;
+        filter: drop-shadow(0px 4px 2px #001A24);
+        ;
+    }
+}
+
+
 .frase-container {
     height: 20%;
 }
@@ -77,6 +94,10 @@
 }
 
 @media screen and (max-width: 500px) {
+    .frase {
+        font-size: 1.6rem;
+    }
+
     .frase-container {
         margin-bottom: 10px;
         height: 30%;
@@ -116,41 +137,7 @@ section {
     padding-bottom: 3em;
 }
 
-.explorar {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    text-align: center;
-    height: 40%;
-}
-
-.servico {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    text-align: center;
-    height: 40%;
-}
-
-.paises {
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    text-align: center;
-    height: 40%;
-}
-
-.sobre {
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    text-align: center;
-    height: 40%;
-}
+/* Sections */
 
 section a {
     text-decoration: none;
@@ -168,23 +155,9 @@ section.container_.parallax_ button {
 }
 
 .img-explorar {
-    max-width: 70%;
+    max-width: 100%;
     height: auto;
 }
-
-/* @media screen and (max-width: 768px) {
-    .img-explorar {
-        max-width: 65%;
-        max-height: auto;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    .img-explorar {        
-        max-width: 30%;
-        max-height: auto;
-    }
-} */
 
 .pag-explorar li {
     list-style: none;
@@ -199,6 +172,12 @@ section.container_.parallax_ button {
     font-size: 4.8rem;
     text-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
     letter-spacing: 0.7rem;
+}
+
+@media screen and (max-width: 500px) {
+    .explorar-text {
+        font-size: 3.5rem;
+    }
 }
 
 /* Países */
@@ -405,6 +384,10 @@ section.container_.parallax_ button {
 
 /* efeito revelar */
 
-.revel-1, .revel-2, .revel-3, .revel-4, .revel-5 {
+.revel-1,
+.revel-2,
+.revel-3,
+.revel-4,
+.revel-5 {
     visibility: hidden;
 }
