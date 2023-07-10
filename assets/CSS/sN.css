@@ -65,25 +65,34 @@ body {
 }
 
 .secPadding {
-
     padding: 10px 150px;
     margin-bottom: 2rem;
+}
+
+@media (max-width:789px) {
+    .secPadding {
+        padding: 10px 50px;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .secPadding {
+        padding: 10px 30px;
+        margin-bottom: 2rem;
+    }
 }
 
 section {
     padding: 10px 17rem;
 }
 
-/* Div com imagem de fundo de transição */
+/* cor letra branca categorias */
 
-.imgheader {
-    background-image: url('/assets/img/sobreNos/mike-swigunski-6SgLJg7kM7E-unsplash.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 50vh;
+.categorias a {
+    color: white;
+    font-weight: 650;
 }
-
 
 /* Missão, Visão, Valores */
 
@@ -150,6 +159,8 @@ main>div:last-child>div {
 
 .imgIntegrantes {
     border-radius: 50%;
+    height: 150px;
+    width: 150px;
 }
 
 .section-servicos {
@@ -270,6 +281,15 @@ main>div:last-child>div {
     letter-spacing: 0.7rem;
 }
 
+/* redes sociais integrantes */
+
+.redes_sociais img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Arredondamento github dos integrantes */
+
 @media (max-width:789px) {
 
     /*  Alteração Navbar */
@@ -284,15 +304,18 @@ main>div:last-child>div {
 
     .logo-nav {
         height: 80px;
+        margin-left: 10px;
         width: auto;
     }
 
     .navbar-pages {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: 80% 20%;
+        justify-content: end;
+        align-content: top;
         padding: 15px 0 0 0;
         margin-bottom: 0;
+        margin-top: -20px;
         /* padding: 1.2em 1em ; */
     }
 
@@ -308,6 +331,7 @@ main>div:last-child>div {
 
     .itens-navbar li {
         margin: 0 15px;
+        margin-bottom: 13px;
     }
 
     /* Missão, Visão, Valores */
@@ -363,5 +387,37 @@ main>div:last-child>div {
 
     .footer-clean .item.social {
         text-align: center;
+    }
+
+
+}
+
+@media (max-width:468px) {
+    .text-titulo {
+        font-size: 2.0rem;
+        letter-spacing: 0.4rem;
+    }
+
+    /* Diminuir fotos integrantes */
+    .imgIntegrantes {
+        height: 110px;
+        width: 110px;
+    }
+
+}
+
+@media (min-width:469px) {
+
+    /* Menu fixo */
+
+    .menu_fixo {
+        position: fixed;
+        z-index: 9999;
+        margin-top: -165px;
+        width: 100%;
+    }
+
+    body {
+        padding-top: 165px;
     }
 }

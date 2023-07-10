@@ -20,42 +20,47 @@
 
 <body data-bs-spy="scroll" data-bs-target="#navbar">
     <!-- Cabeçalho -->
-    <header>
+    <header class="menu_fixo">
         <!-- Navbar -->
         <nav class="navbar-pages">
             <ul class="itens-navbar">
                 <li><a class="link-nav" href="./index.html"></a></li>
                 <li><a class="link-nav" href="./sN.html"></a></li>
             </ul>
-            <a href="./index.html"><img class="logo-nav" src="./assets/img/home/logo-aterrissa.svg" alt="logo-aterrissa"></a>
+            <a href="./index.html"><img class="logo-nav" src="./assets/img/home/logo-aterrissa.svg"
+                    alt="logo-aterrissa"></a>
             <ul class="itens-navbar">
                 <li><button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">☰</button>
                     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
                         aria-labelledby="offcanvasRightLabel" style="background-color: #001A24;">
                         <div class="offcanvas-header">
-                            <h5 class="offcanvas-title text-white" id="offcanvasRightLabel">Menu</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
                                 aria-label="Close"></button>
                         </div>
                         <div class="offcanvas-body">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                  <a class="icon-link mb-3 text-white text-decoration-none" href="./index.html">Home</a>
+                                    <a class="icon-link mb-3 text-white text-decoration-none"
+                                        href="./index.html">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                  <a class="icon-link mb-3 text-white text-decoration-none" href="./servicos.html">Serviços</a>
+                                    <a class="icon-link mb-3 text-white text-decoration-none"
+                                        href="./servicos.html">Serviços</a>
                                 </li>
                                 <li class="nav-item">
-                                  <a class="icon-link mb-3 text-white text-decoration-none" href="./explorar.html">Explorar</a>
+                                    <a class="icon-link mb-3 text-white text-decoration-none"
+                                        href="./explorar.html">Explorar</a>
                                 </li>
                                 <li class="nav-item">
-                                  <a class="icon-link mb-3 text-white text-decoration-none" href="./pS.html">Países</a>
+                                    <a class="icon-link mb-3 text-white text-decoration-none"
+                                        href="./pS.html">Países</a>
                                 </li>
                                 <li class="nav-item">
-                                  <a class="icon-link mb-3 text-white text-decoration-none" href="./sN.html">Sobre nós</a>
+                                    <a class="icon-link mb-3 text-white text-decoration-none" href="./sN.html">Sobre
+                                        nós</a>
                                 </li>
-                              </ul>
+                            </ul>
                         </div>
                     </div>
                 </li>
@@ -66,7 +71,7 @@
         <!-- Caixa de Busca -->
         <div class="py-2 container-busca">
             <div class="row">
-                <h4>Selecione o país:</h4>
+                <h4 class="branco">Selecione o país:</h4>
             </div>
             <form class="row">
                 <input type="text" id="searchInput" placeholder="Digite sua busca">
@@ -82,50 +87,50 @@
             </form>
         </div>
 
-        <!-- Japão -->
-        <section class="mt-5" id="japao">
+        <!-- EUA -->
+        <section class="mt-4" id="eua">
             <div class="container-padding">
                 <div>
-                    <h2 class="titulos-paises text-center">Ohayo, Japão!</h2>
+                    <h2 class="titulos-paises text-center">Hello, Estados Unidos!</h2>
                 </div>
                 <div class="row">
                     <div class="col">
-                        <div id="carouselExampleCaptions1" class="carousel slide">
+                        <div id="carouselExampleCaptions4" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="0"
+                                <button type="button" data-bs-target="#carouselExampleCaptions4" data-bs-slide-to="0"
                                     class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="1"
+                                <button type="button" data-bs-target="#carouselExampleCaptions4" data-bs-slide-to="1"
                                     aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="2"
+                                <button type="button" data-bs-target="#carouselExampleCaptions4" data-bs-slide-to="2"
                                     aria-label="Slide 3"></button>
                             </div>
                             <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="./assets/img/paises/tokyo.png" class="d-block w-100" alt="...">
+                                <div class="carousel-item active" data-bs-interval="3000">
+                                    <img src="./assets/img/paises/nova-york.png" class="d-block w-100" alt="...">
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>Tokyo</h5>
+                                        <h5>Nova York</h5>
                                     </div>
                                 </div>
-                                <div class="carousel-item">
-                                    <img src="./assets/img/paises/quioto.png" class="d-block w-100" alt="...">
+                                <div class="carousel-item" data-bs-interval="3000">
+                                    <img src="./assets/img/paises/los-angeles.png" class="d-block w-100" alt="...">
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>Quioto</h5>
+                                        <h5>Los Angeles</h5>
                                     </div>
                                 </div>
-                                <div class="carousel-item">
-                                    <img src="./assets/img/paises/osaka.png" class="d-block w-100" alt="...">
+                                <div class="carousel-item" data-bs-interval="3000">
+                                    <img src="./assets/img/paises/san-francisco.png" class="d-block w-100" alt="...">
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>Osaka</h5>
+                                        <h5>San Francisco</h5>
                                     </div>
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button"
-                                data-bs-target="#carouselExampleCaptions1" data-bs-slide="prev">
+                                data-bs-target="#carouselExampleCaptions4" data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Previous</span>
                             </button>
                             <button class="carousel-control-next" type="button"
-                                data-bs-target="#carouselExampleCaptions1" data-bs-slide="next">
+                                data-bs-target="#carouselExampleCaptions4" data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Next</span>
                             </button>
@@ -135,193 +140,78 @@
                 <div class="border-bottom border-secondary-subtle pb-3 row my-5">
                     <div class="col-4">
                         <div id="list-example" class="list-group">
-                            <a class="list-group-item list-group-item-action" href="#japao-item-1">Melhores Destinos</a>
-                            <a class="list-group-item list-group-item-action" href="#japao-item-2">Roteiros</a>
-                            <a class="list-group-item list-group-item-action" href="#japao-item-3">Para gastar pouco</a>
-                            <a class="list-group-item list-group-item-action" href="#japao-item-4">Moeda</a>
-                            <a class="list-group-item list-group-item-action" href="#japao-item-5">Cultura</a>
-                            <a class="list-group-item list-group-item-action" href="#japao-item-6">Curiosidades</a>
+                            <a class="list-group-item list-group-item-action" href="#eua-item-1">Melhores Destinos</a>
+                            <a class="list-group-item list-group-item-action" href="#eua-item-2">Roteiros</a>
+                            <a class="list-group-item list-group-item-action" href="#eua-item-3">Para gastar pouco</a>
+                            <a class="list-group-item list-group-item-action" href="#eua-item-4">Moeda</a>
+                            <a class="list-group-item list-group-item-action" href="#eua-item-5">Cultura</a>
+                            <a class="list-group-item list-group-item-action" href="#eua-item-6">Curiosidades</a>
                         </div>
                     </div>
                     <div class="col-8">
                         <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true"
                             class="scrollspy-example custom-scroll" tabindex="0">
-                            <h4 id="japao-item-1">Melhores Destinos</h4>
-                            <p>O Japão oferece uma infinidade de destinos incríveis para explorar. Tóquio, a capital
-                                vibrante, é conhecida por sua arquitetura futurista e vida noturna agitada. Quioto
-                                encanta com seus templos e jardins tradicionais, enquanto Nara é famosa pelos seus
-                                cervos amigáveis e monumentos históricos. A cidade de Hiroshima é um lembrete poderoso
-                                da história e paz mundial, e a pitoresca região de Hakone oferece vistas deslumbrantes
-                                do Monte Fuji. Estes são apenas alguns dos muitos destinos cativantes que o Japão tem a
-                                oferecer.</p>
-                            <h4 id="japao-item-2">Roteiros</h4>
-                            <p>Para aproveitar ao máximo sua viagem ao Japão, aqui estão três opções de roteiros
-                                populares. O roteiro clássico inclui Tóquio, Quioto e Osaka, permitindo que você explore
-                                a cultura, história e gastronomia do país. Outra opção é visitar as cidades de
-                                Hiroshima, Miyajima e Himeji, onde você pode aprender sobre a história da Segunda Guerra
-                                Mundial e apreciar belos castelos. Se você gosta de natureza, o roteiro pelas regiões de
-                                Hakone, Takayama e Shirakawa-go é uma excelente escolha, com paisagens deslumbrantes e
-                                experiências autênticas.</p>
-                            <h4 id="japao-item-3">Para gastar pouco:</h4>
-                            <p>Embora o Japão possa ser considerado um destino caro, há várias maneiras de economizar
-                                durante a viagem. Optar por acomodações em albergues ou cápsulas pode ser mais acessível
-                                do que hotéis tradicionais. Além disso, experimentar a culinária de rua, como ramen e
-                                takoyaki, é uma opção saborosa e econômica. Os passes de transporte, como o Japan Rail
-                                Pass, também podem ser vantajosos para economizar nos deslocamentos. Explorar parques,
-                                templos e jardins gratuitos ou com preços acessíveis também é uma forma de vivenciar a
-                                cultura japonesa sem gastar muito.
+                            <h4 id="eua-item-1">Melhores Destinos</h4>
+                            <p>Os Estados Unidos têm uma infinidade de destinos incríveis para explorar. Nova York é uma
+                                cidade vibrante e cosmopolita, conhecida por seus arranha-céus icônicos, teatros da
+                                Broadway e uma cena de arte e cultura dinâmica. San Francisco é famosa pela sua Ponte
+                                Golden Gate, colinas íngremes e charmosos bondinhos. Miami oferece praias deslumbrantes,
+                                vida noturna agitada e uma atmosfera tropical única. Outros destinos populares incluem
+                                Los Angeles, com suas praias ensolaradas e Hollywood, e Las Vegas, conhecida por seus
+                                cassinos e entretenimento.</p>
+                            <h4 id="eua-item-2">Roteiros</h4>
+                            <p>Existem várias opções de roteiros para explorar os Estados Unidos. Um roteiro clássico
+                                pode incluir Nova York, para explorar a Estátua da Liberdade, o Central Park e os museus
+                                de renome mundial, seguido de uma visita à Califórnia, com paradas em San Francisco, Los
+                                Angeles e as belas praias de San Diego. Outra opção é explorar o sudoeste americano,
+                                visitando destinos como o Grand Canyon, Monument Valley e as cidades históricas de Santa
+                                Fé e Albuquerque. Para os amantes da natureza, um roteiro pelos parques nacionais, como
+                                Yellowstone, Yosemite e o Everglades, pode ser uma experiência incrível.</p>
+                            <h4 id="eua-item-3">Para gastar pouco:</h4>
+                            <p>Embora os Estados Unidos tenham uma reputação de destino turístico caro, também é
+                                possível encontrar opções para viajar com um orçamento limitado. Optar por acomodações
+                                em hostels, albergues ou hotéis econômicos pode ajudar a reduzir os custos. Além disso,
+                                aproveitar as opções de comida de rua e mercados locais pode ser uma maneira econômica
+                                de saborear a culinária local. Muitos museus e atrações oferecem dias gratuitos ou com
+                                desconto, então é importante pesquisar as opções antes de visitá-los. Além disso,
+                                considerar destinos menos turísticos ou fora das grandes cidades pode ajudar a
+                                economizar dinheiro.
                             </p>
-                            <h4 id="japao-item-4">Moeda</h4>
-                            <p>A moeda oficial do Japão é o iene (JPY). Notas estão disponíveis em denominações de
-                                1.000, 2.000, 5.000 e 10.000 ienes, enquanto as moedas são de 1, 5, 10, 50, 100 e 500
-                                ienes. É recomendado trocar dinheiro em casas de câmbio ou usar caixas eletrônicos nos
-                                aeroportos ou grandes cidades. Cartões de crédito são amplamente aceitos em
-                                estabelecimentos turísticos, hotéis e lojas de departamento. No entanto, é sempre bom
-                                ter um pouco de dinheiro em espécie para pequenas despesas e locais que não aceitam
-                                cartões.</p>
-                            <h4 id="japao-item-5">Cultura</h4>
-                            <p>A cultura japonesa é rica em tradições milenares e costumes únicos. A etiqueta e o
-                                respeito são valores fundamentais na sociedade japonesa. Os japoneses têm grande apreço
-                                pela harmonia e valorizam a cortesia em suas interações sociais. A cerimônia do chá, o
-                                teatro Noh, a caligrafia japonesa e a arte Ikebana (arranjo de flores) são exemplos de
-                                práticas culturais que refletem a busca pela simplicidade, elegância e contemplação.</p>
-                            <h4 id="japao-item-6">Curiosidades</h4>
-                            <p>O Japão é conhecido por suas curiosidades e peculiaridades únicas. Por exemplo, os
-                                banheiros japoneses são famosos por sua alta tecnologia, com recursos como assentos
-                                aquecidos, jatos de água e até mesmo sons de música para garantir privacidade. Outra
-                                curiosidade é o fato de que o Japão tem mais de 1.500 terremotos por ano, embora a
-                                maioria deles seja imperceptível para os habitantes. Além disso, o Japão possui a maior
-                                população de idosos do mundo, com uma expectativa de vida muito alta e uma sociedade que
-                                valoriza o cuidado e respeito aos mais velhos.</p>
+                            <h4 id="eua-item-4">Moeda</h4>
+                            <p>A moeda oficial dos Estados Unidos é o dólar americano (USD). As notas estão disponíveis
+                                em denominações de 1, 5, 10, 20, 50 e 100 dólares, e as moedas são de 1 centavo (penny),
+                                5 centavos (nickel), 10 centavos (dime), 25 centavos (quarter), 50 centavos (half
+                                dollar) e 1 dólar (dollar coin). A maioria dos estabelecimentos aceita cartões de
+                                crédito, mas é sempre bom ter algum dinheiro em espécie para pequenas despesas e locais
+                                que podem não aceitar cartões..
+                            </p>
+                            <h4 id="eua-item-5">Cultura</h4>
+                            <p>A cultura dos Estados Unidos é diversa e influente em todo o mundo. A música desempenha
+                                um papel importante, com gêneros como o jazz, o rock 'n' roll, o hip-hop e o country que
+                                surgiram e tiveram impacto significativo na cultura popular. A gastronomia americana é
+                                conhecida por sua variedade e sabor único. Hambúrgueres, cachorros-quentes, pizza,
+                                batatas fritas e costelas são apenas alguns dos pratos populares da culinária americana.
+                                Além disso, os Estados Unidos são conhecidos por sua indústria cinematográfica de
+                                Hollywood, que produz filmes e programas de TV aclamados mundialmente.</p>
+                            <h4 id="eua-item-6">Curiosidades</h4>
+                            <p>Existem várias curiosidades interessantes sobre os Estados Unidos. O país abriga o Grand
+                                Canyon, uma das sete maravilhas naturais do mundo, com paisagens impressionantes
+                                esculpidas pelo rio Colorado. A Estátua da Liberdade, localizada em Nova York, é um
+                                símbolo icônico da liberdade e recebe milhões de visitantes todos os anos. Além disso, o
+                                Parque Nacional de Yellowstone é o primeiro parque nacional do mundo e abriga uma grande
+                                diversidade de vida selvagem, incluindo ursos, lobos e bisões.
+                            </p>
+                            <p>Outra curiosidade é a famosa Rota 66, uma lendária estrada que atravessa os Estados
+                                Unidos, oferecendo uma viagem nostálgica pelo coração do país. Os Estados Unidos também
+                                são conhecidos por seus festivais e eventos culturais, como o Carnaval de Mardi Gras em
+                                Nova Orleans, o Festival de Cinema de Sundance em Utah e o Dia de Ação de Graças, uma
+                                celebração tradicionalmente americana.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Indonésia -->
-        <section class="mt-4" id="indonesia">
-            <div class="container-padding">
-                <div>
-                    <h2 class="titulos-paises text-center">Halo, Indonésia!</h2>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div id="carouselExampleCaptions2" class="carousel slide">
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0"
-                                    class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1"
-                                    aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="2"
-                                    aria-label="Slide 3"></button>
-                            </div>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="./assets/img/paises/bali.png" class="d-block w-100" alt="...">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Bali</h5>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./assets/img/paises/komodo.png" class="d-block w-100" alt="...">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Komodo</h5>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./assets/img/paises/lombok.png" class="d-block w-100" alt="...">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Lombok</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button"
-                                data-bs-target="#carouselExampleCaptions2" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button"
-                                data-bs-target="#carouselExampleCaptions2" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="border-bottom border-secondary-subtle pb-3 row my-5">
-                    <div class="col-4">
-                        <div id="list-example" class="list-group">
-                            <a class="list-group-item list-group-item-action" href="#indonesia-item-1">Melhores
-                                Destinos</a>
-                            <a class="list-group-item list-group-item-action" href="#indonesia-item-2">Roteiros</a>
-                            <a class="list-group-item list-group-item-action" href="#indonesia-item-3">Para gastar
-                                pouco</a>
-                            <a class="list-group-item list-group-item-action" href="#indonesia-item-4">Moeda</a>
-                            <a class="list-group-item list-group-item-action" href="#indonesia-item-5">Cultura</a>
-                            <a class="list-group-item list-group-item-action" href="#indonesia-item-6">Curiosidades</a>
-                        </div>
-                    </div>
-                    <div class="col-8">
-                        <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true"
-                            class="scrollspy-example custom-scroll" tabindex="0">
-                            <h4 id="indonesia-item-1">Melhores Destinos</h4>
-                            <p>A Indonésia é conhecida por seus deslumbrantes destinos tropicais. Bali é um dos destinos
-                                mais populares, famoso por suas praias de areias brancas, templos hindus e atmosfera
-                                descontraída. A ilha de Lombok é famosa por suas praias intocadas e pelo famoso Monte
-                                Rinjani. As Ilhas Gili oferecem um paraíso de águas cristalinas, ideais para mergulho e
-                                snorkeling. Se você gosta de aventura, não deixe de visitar a região de Komodo, onde
-                                você pode ver os famosos dragões de Komodo em seu habitat natural. Estes são apenas
-                                alguns dos muitos destinos deslumbrantes que a Indonésia tem a oferecer.</p>
-                            <h4 id="indonesia-item-2">Roteiros</h4>
-                            <p>Existem várias opções interessantes de roteiros para explorar a Indonésia. Um roteiro
-                                clássico inclui Bali, Lombok e as Ilhas Gili, onde você pode desfrutar de praias
-                                paradisíacas, atividades aquáticas emocionantes e uma rica cultura. Outra opção é
-                                explorar a cidade cultural de Yogyakarta, com seus magníficos templos, como Borobudur e
-                                Prambanan. Além disso, você pode visitar a cidade de Bandung, famosa por suas paisagens
-                                montanhosas e plantações de chá. Se você está em busca de aventura, considere um roteiro
-                                pelas Ilhas Komodo, onde pode mergulhar com tubarões, explorar trilhas e observar a vida
-                                selvagem única da região.</p>
-                            <h4 id="indonesia-item-3">Para gastar pouco:</h4>
-                            <p>A Indonésia oferece várias opções para viajantes que desejam gastar pouco. Acomodações em
-                                albergues e pousadas são opções econômicas, especialmente nas áreas mais turísticas,
-                                como Bali e Yogyakarta. Além disso, a comida de rua é deliciosa e acessível, permitindo
-                                que você experimente a culinária local sem estourar o orçamento. Para economizar em
-                                transporte, opte por ônibus locais, táxis compartilhados ou aluguel de motos. Além
-                                disso, muitas das atrações naturais, como praias e trilhas, são gratuitas ou têm custo
-                                baixo.
-                            </p>
-                            <h4 id="indonesia-item-4">Moeda</h4>
-                            <p>A moeda oficial da Indonésia é a Rupia Indonésia (IDR). Notas estão disponíveis em
-                                denominações de 1.000, 5.000, 10.000, 20.000, 50.000 e 100.000 rupias, enquanto as
-                                moedas são de 100, 200, 500 e 1.000 rupias. É recomendado trocar dinheiro em casas de
-                                câmbio ou usar caixas eletrônicos nos principais centros urbanos. Cartões de crédito
-                                também são amplamente aceitos em hotéis, restaurantes e lojas turísticas. No entanto, é
-                                sempre bom ter dinheiro em espécie para pequenas despesas e estabelecimentos que não
-                                aceitam cartões.
-                            </p>
-                            <h4 id="indonesia-item-5">Cultura</h4>
-                            <p>A cultura da Indonésia é incrivelmente diversa e reflete a mistura de influências
-                                indígenas, asiáticas e ocidentais. Com mais de 17.000 ilhas, cada região tem suas
-                                próprias tradições e costumes únicos. A dança tradicional indonésia, como o gamelan, é
-                                uma forma de arte popular que combina música, dança e teatro. A gastronomia indonésia
-                                também é famosa, com pratos como o nasi goreng (arroz frito), o satay (espetinho de
-                                carne grelhada) e o rendang (carne cozida em molho de especiarias). Os indonésios são
-                                conhecidos por sua hospitalidade calorosa e amigável, tornando a experiência cultural
-                                ainda mais enriquecedora.</p>
-                            <h4 id="indonesia-item-6">Curiosidades</h4>
-                            <p>A Indonésia é um país cheio de curiosidades interessantes. Uma delas é a presença do
-                                maior lagarto do mundo, o dragão de Komodo, que pode ser encontrado nas Ilhas Komodo.
-                                Outra curiosidade é o Lago Toba, que é o maior lago vulcânico do mundo e abriga uma ilha
-                                no centro chamada Samosir. Além disso, a Indonésia é o lar de uma das maiores
-                                diversidades de vida marinha do mundo, tornando-se um paraíso para mergulhadores e
-                                entusiastas de snorkeling. Também é interessante notar que a Indonésia tem uma grande
-                                variedade de grupos étnicos e idiomas, com mais de 700 línguas faladas em todo o país.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+
         <!-- Grécia -->
         <section class="mt-4" id="grecia">
             <div class="container-padding">
@@ -330,7 +220,7 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <div id="carouselExampleCaptions3" class="carousel slide">
+                        <div id="carouselExampleCaptions3" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-indicators">
                                 <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="0"
                                     class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -340,19 +230,19 @@
                                     aria-label="Slide 3"></button>
                             </div>
                             <div class="carousel-inner">
-                                <div class="carousel-item active">
+                                <div class="carousel-item active" data-bs-interval="3000">
                                     <img src="./assets/img/paises/santorini.png" class="d-block w-100" alt="...">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>Santorini</h5>
                                     </div>
                                 </div>
-                                <div class="carousel-item">
+                                <div class="carousel-item" data-bs-interval="3000">
                                     <img src="./assets/img/paises/atenas.png" class="d-block w-100" alt="...">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>Atenas</h5>
                                     </div>
                                 </div>
-                                <div class="carousel-item">
+                                <div class="carousel-item" data-bs-interval="3000">
                                     <img src="./assets/img/paises/rhodes.png" class="d-block w-100" alt="...">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>Rhodes</h5>
@@ -449,50 +339,51 @@
                 </div>
             </div>
         </section>
-        <!-- EUA -->
-        <section class="mt-4" id="eua">
+
+        <!-- Indonésia -->
+        <section class="mt-4" id="indonesia">
             <div class="container-padding">
                 <div>
-                    <h2 class="titulos-paises text-center">Hello, Estados Unidos!</h2>
+                    <h2 class="titulos-paises text-center">Halo, Indonésia!</h2>
                 </div>
                 <div class="row">
                     <div class="col">
-                        <div id="carouselExampleCaptions4" class="carousel slide">
+                        <div id="carouselExampleCaptions2" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleCaptions4" data-bs-slide-to="0"
+                                <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0"
                                     class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselExampleCaptions4" data-bs-slide-to="1"
+                                <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1"
                                     aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleCaptions4" data-bs-slide-to="2"
+                                <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="2"
                                     aria-label="Slide 3"></button>
                             </div>
                             <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="./assets/img/paises/nova-york.png" class="d-block w-100" alt="...">
+                                <div class="carousel-item active" data-bs-interval="3000">
+                                    <img src="./assets/img/paises/bali.png" class="d-block w-100" alt="...">
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>Nova York</h5>
+                                        <h5>Bali</h5>
                                     </div>
                                 </div>
-                                <div class="carousel-item">
-                                    <img src="./assets/img/paises/los-angeles.png" class="d-block w-100" alt="...">
+                                <div class="carousel-item" data-bs-interval="3000">
+                                    <img src="./assets/img/paises/komodo.png" class="d-block w-100" alt="...">
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>Los Angeles</h5>
+                                        <h5>Komodo</h5>
                                     </div>
                                 </div>
-                                <div class="carousel-item">
-                                    <img src="./assets/img/paises/san-francisco.png" class="d-block w-100" alt="...">
+                                <div class="carousel-item" data-bs-interval="3000">
+                                    <img src="./assets/img/paises/lombok.png" class="d-block w-100" alt="...">
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>San Francisco</h5>
+                                        <h5>Lombok</h5>
                                     </div>
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button"
-                                data-bs-target="#carouselExampleCaptions4" data-bs-slide="prev">
+                                data-bs-target="#carouselExampleCaptions2" data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Previous</span>
                             </button>
                             <button class="carousel-control-next" type="button"
-                                data-bs-target="#carouselExampleCaptions4" data-bs-slide="next">
+                                data-bs-target="#carouselExampleCaptions2" data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Next</span>
                             </button>
@@ -502,72 +393,189 @@
                 <div class="border-bottom border-secondary-subtle pb-3 row my-5">
                     <div class="col-4">
                         <div id="list-example" class="list-group">
-                            <a class="list-group-item list-group-item-action" href="#eua-item-1">Melhores Destinos</a>
-                            <a class="list-group-item list-group-item-action" href="#eua-item-2">Roteiros</a>
-                            <a class="list-group-item list-group-item-action" href="#eua-item-3">Para gastar pouco</a>
-                            <a class="list-group-item list-group-item-action" href="#eua-item-4">Moeda</a>
-                            <a class="list-group-item list-group-item-action" href="#eua-item-5">Cultura</a>
-                            <a class="list-group-item list-group-item-action" href="#eua-item-6">Curiosidades</a>
+                            <a class="list-group-item list-group-item-action" href="#indonesia-item-1">Melhores
+                                Destinos</a>
+                            <a class="list-group-item list-group-item-action" href="#indonesia-item-2">Roteiros</a>
+                            <a class="list-group-item list-group-item-action" href="#indonesia-item-3">Para gastar
+                                pouco</a>
+                            <a class="list-group-item list-group-item-action" href="#indonesia-item-4">Moeda</a>
+                            <a class="list-group-item list-group-item-action" href="#indonesia-item-5">Cultura</a>
+                            <a class="list-group-item list-group-item-action" href="#indonesia-item-6">Curiosidades</a>
                         </div>
                     </div>
                     <div class="col-8">
                         <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true"
                             class="scrollspy-example custom-scroll" tabindex="0">
-                            <h4 id="eua-item-1">Melhores Destinos</h4>
-                            <p>Os Estados Unidos têm uma infinidade de destinos incríveis para explorar. Nova York é uma
-                                cidade vibrante e cosmopolita, conhecida por seus arranha-céus icônicos, teatros da
-                                Broadway e uma cena de arte e cultura dinâmica. San Francisco é famosa pela sua Ponte
-                                Golden Gate, colinas íngremes e charmosos bondinhos. Miami oferece praias deslumbrantes,
-                                vida noturna agitada e uma atmosfera tropical única. Outros destinos populares incluem
-                                Los Angeles, com suas praias ensolaradas e Hollywood, e Las Vegas, conhecida por seus
-                                cassinos e entretenimento.</p>
-                            <h4 id="eua-item-2">Roteiros</h4>
-                            <p>Existem várias opções de roteiros para explorar os Estados Unidos. Um roteiro clássico
-                                pode incluir Nova York, para explorar a Estátua da Liberdade, o Central Park e os museus
-                                de renome mundial, seguido de uma visita à Califórnia, com paradas em San Francisco, Los
-                                Angeles e as belas praias de San Diego. Outra opção é explorar o sudoeste americano,
-                                visitando destinos como o Grand Canyon, Monument Valley e as cidades históricas de Santa
-                                Fé e Albuquerque. Para os amantes da natureza, um roteiro pelos parques nacionais, como
-                                Yellowstone, Yosemite e o Everglades, pode ser uma experiência incrível.</p>
-                            <h4 id="eua-item-3">Para gastar pouco:</h4>
-                            <p>Embora os Estados Unidos tenham uma reputação de destino turístico caro, também é
-                                possível encontrar opções para viajar com um orçamento limitado. Optar por acomodações
-                                em hostels, albergues ou hotéis econômicos pode ajudar a reduzir os custos. Além disso,
-                                aproveitar as opções de comida de rua e mercados locais pode ser uma maneira econômica
-                                de saborear a culinária local. Muitos museus e atrações oferecem dias gratuitos ou com
-                                desconto, então é importante pesquisar as opções antes de visitá-los. Além disso,
-                                considerar destinos menos turísticos ou fora das grandes cidades pode ajudar a
-                                economizar dinheiro.
+                            <h4 id="indonesia-item-1">Melhores Destinos</h4>
+                            <p>A Indonésia é conhecida por seus deslumbrantes destinos tropicais. Bali é um dos destinos
+                                mais populares, famoso por suas praias de areias brancas, templos hindus e atmosfera
+                                descontraída. A ilha de Lombok é famosa por suas praias intocadas e pelo famoso Monte
+                                Rinjani. As Ilhas Gili oferecem um paraíso de águas cristalinas, ideais para mergulho e
+                                snorkeling. Se você gosta de aventura, não deixe de visitar a região de Komodo, onde
+                                você pode ver os famosos dragões de Komodo em seu habitat natural. Estes são apenas
+                                alguns dos muitos destinos deslumbrantes que a Indonésia tem a oferecer.</p>
+                            <h4 id="indonesia-item-2">Roteiros</h4>
+                            <p>Existem várias opções interessantes de roteiros para explorar a Indonésia. Um roteiro
+                                clássico inclui Bali, Lombok e as Ilhas Gili, onde você pode desfrutar de praias
+                                paradisíacas, atividades aquáticas emocionantes e uma rica cultura. Outra opção é
+                                explorar a cidade cultural de Yogyakarta, com seus magníficos templos, como Borobudur e
+                                Prambanan. Além disso, você pode visitar a cidade de Bandung, famosa por suas paisagens
+                                montanhosas e plantações de chá. Se você está em busca de aventura, considere um roteiro
+                                pelas Ilhas Komodo, onde pode mergulhar com tubarões, explorar trilhas e observar a vida
+                                selvagem única da região.</p>
+                            <h4 id="indonesia-item-3">Para gastar pouco:</h4>
+                            <p>A Indonésia oferece várias opções para viajantes que desejam gastar pouco. Acomodações em
+                                albergues e pousadas são opções econômicas, especialmente nas áreas mais turísticas,
+                                como Bali e Yogyakarta. Além disso, a comida de rua é deliciosa e acessível, permitindo
+                                que você experimente a culinária local sem estourar o orçamento. Para economizar em
+                                transporte, opte por ônibus locais, táxis compartilhados ou aluguel de motos. Além
+                                disso, muitas das atrações naturais, como praias e trilhas, são gratuitas ou têm custo
+                                baixo.
                             </p>
-                            <h4 id="eua-item-4">Moeda</h4>
-                            <p>A moeda oficial dos Estados Unidos é o dólar americano (USD). As notas estão disponíveis
-                                em denominações de 1, 5, 10, 20, 50 e 100 dólares, e as moedas são de 1 centavo (penny),
-                                5 centavos (nickel), 10 centavos (dime), 25 centavos (quarter), 50 centavos (half
-                                dollar) e 1 dólar (dollar coin). A maioria dos estabelecimentos aceita cartões de
-                                crédito, mas é sempre bom ter algum dinheiro em espécie para pequenas despesas e locais
-                                que podem não aceitar cartões..
+                            <h4 id="indonesia-item-4">Moeda</h4>
+                            <p>A moeda oficial da Indonésia é a Rupia Indonésia (IDR). Notas estão disponíveis em
+                                denominações de 1.000, 5.000, 10.000, 20.000, 50.000 e 100.000 rupias, enquanto as
+                                moedas são de 100, 200, 500 e 1.000 rupias. É recomendado trocar dinheiro em casas de
+                                câmbio ou usar caixas eletrônicos nos principais centros urbanos. Cartões de crédito
+                                também são amplamente aceitos em hotéis, restaurantes e lojas turísticas. No entanto, é
+                                sempre bom ter dinheiro em espécie para pequenas despesas e estabelecimentos que não
+                                aceitam cartões.
                             </p>
-                            <h4 id="eua-item-5">Cultura</h4>
-                            <p>A cultura dos Estados Unidos é diversa e influente em todo o mundo. A música desempenha
-                                um papel importante, com gêneros como o jazz, o rock 'n' roll, o hip-hop e o country que
-                                surgiram e tiveram impacto significativo na cultura popular. A gastronomia americana é
-                                conhecida por sua variedade e sabor único. Hambúrgueres, cachorros-quentes, pizza,
-                                batatas fritas e costelas são apenas alguns dos pratos populares da culinária americana.
-                                Além disso, os Estados Unidos são conhecidos por sua indústria cinematográfica de
-                                Hollywood, que produz filmes e programas de TV aclamados mundialmente.</p>
-                            <h4 id="eua-item-6">Curiosidades</h4>
-                            <p>Existem várias curiosidades interessantes sobre os Estados Unidos. O país abriga o Grand
-                                Canyon, uma das sete maravilhas naturais do mundo, com paisagens impressionantes
-                                esculpidas pelo rio Colorado. A Estátua da Liberdade, localizada em Nova York, é um
-                                símbolo icônico da liberdade e recebe milhões de visitantes todos os anos. Além disso, o
-                                Parque Nacional de Yellowstone é o primeiro parque nacional do mundo e abriga uma grande
-                                diversidade de vida selvagem, incluindo ursos, lobos e bisões.
+                            <h4 id="indonesia-item-5">Cultura</h4>
+                            <p>A cultura da Indonésia é incrivelmente diversa e reflete a mistura de influências
+                                indígenas, asiáticas e ocidentais. Com mais de 17.000 ilhas, cada região tem suas
+                                próprias tradições e costumes únicos. A dança tradicional indonésia, como o gamelan, é
+                                uma forma de arte popular que combina música, dança e teatro. A gastronomia indonésia
+                                também é famosa, com pratos como o nasi goreng (arroz frito), o satay (espetinho de
+                                carne grelhada) e o rendang (carne cozida em molho de especiarias). Os indonésios são
+                                conhecidos por sua hospitalidade calorosa e amigável, tornando a experiência cultural
+                                ainda mais enriquecedora.</p>
+                            <h4 id="indonesia-item-6">Curiosidades</h4>
+                            <p>A Indonésia é um país cheio de curiosidades interessantes. Uma delas é a presença do
+                                maior lagarto do mundo, o dragão de Komodo, que pode ser encontrado nas Ilhas Komodo.
+                                Outra curiosidade é o Lago Toba, que é o maior lago vulcânico do mundo e abriga uma ilha
+                                no centro chamada Samosir. Além disso, a Indonésia é o lar de uma das maiores
+                                diversidades de vida marinha do mundo, tornando-se um paraíso para mergulhadores e
+                                entusiastas de snorkeling. Também é interessante notar que a Indonésia tem uma grande
+                                variedade de grupos étnicos e idiomas, com mais de 700 línguas faladas em todo o país.
                             </p>
-                            <p>Outra curiosidade é a famosa Rota 66, uma lendária estrada que atravessa os Estados
-                                Unidos, oferecendo uma viagem nostálgica pelo coração do país. Os Estados Unidos também
-                                são conhecidos por seus festivais e eventos culturais, como o Carnaval de Mardi Gras em
-                                Nova Orleans, o Festival de Cinema de Sundance em Utah e o Dia de Ação de Graças, uma
-                                celebração tradicionalmente americana.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Japão -->
+        <section class="mt-5" id="japao">
+            <div class="container-padding">
+                <div>
+                    <h2 class="titulos-paises text-center">Ohayo, Japão!</h2>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div id="carouselExampleCaptions1" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="3000">
+                                    <img src="./assets/img/paises/tokyo.png" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Tokyo</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="3000">
+                                    <img src="./assets/img/paises/quioto.png" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Quioto</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="3000">
+                                    <img src="./assets/img/paises/osaka.png" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Osaka</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleCaptions1" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleCaptions1" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-bottom border-secondary-subtle pb-3 row my-5">
+                    <div class="col-4">
+                        <div id="list-example" class="list-group">
+                            <a class="list-group-item list-group-item-action" href="#japao-item-1">Melhores Destinos</a>
+                            <a class="list-group-item list-group-item-action" href="#japao-item-2">Roteiros</a>
+                            <a class="list-group-item list-group-item-action" href="#japao-item-3">Para gastar pouco</a>
+                            <a class="list-group-item list-group-item-action" href="#japao-item-4">Moeda</a>
+                            <a class="list-group-item list-group-item-action" href="#japao-item-5">Cultura</a>
+                            <a class="list-group-item list-group-item-action" href="#japao-item-6">Curiosidades</a>
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true"
+                            class="scrollspy-example custom-scroll" tabindex="0">
+                            <h4 id="japao-item-1">Melhores Destinos</h4>
+                            <p>O Japão oferece uma infinidade de destinos incríveis para explorar. Tóquio, a capital
+                                vibrante, é conhecida por sua arquitetura futurista e vida noturna agitada. Quioto
+                                encanta com seus templos e jardins tradicionais, enquanto Nara é famosa pelos seus
+                                cervos amigáveis e monumentos históricos. A cidade de Hiroshima é um lembrete poderoso
+                                da história e paz mundial, e a pitoresca região de Hakone oferece vistas deslumbrantes
+                                do Monte Fuji. Estes são apenas alguns dos muitos destinos cativantes que o Japão tem a
+                                oferecer.</p>
+                            <h4 id="japao-item-2">Roteiros</h4>
+                            <p>Para aproveitar ao máximo sua viagem ao Japão, aqui estão três opções de roteiros
+                                populares. O roteiro clássico inclui Tóquio, Quioto e Osaka, permitindo que você explore
+                                a cultura, história e gastronomia do país. Outra opção é visitar as cidades de
+                                Hiroshima, Miyajima e Himeji, onde você pode aprender sobre a história da Segunda Guerra
+                                Mundial e apreciar belos castelos. Se você gosta de natureza, o roteiro pelas regiões de
+                                Hakone, Takayama e Shirakawa-go é uma excelente escolha, com paisagens deslumbrantes e
+                                experiências autênticas.</p>
+                            <h4 id="japao-item-3">Para gastar pouco:</h4>
+                            <p>Embora o Japão possa ser considerado um destino caro, há várias maneiras de economizar
+                                durante a viagem. Optar por acomodações em albergues ou cápsulas pode ser mais acessível
+                                do que hotéis tradicionais. Além disso, experimentar a culinária de rua, como ramen e
+                                takoyaki, é uma opção saborosa e econômica. Os passes de transporte, como o Japan Rail
+                                Pass, também podem ser vantajosos para economizar nos deslocamentos. Explorar parques,
+                                templos e jardins gratuitos ou com preços acessíveis também é uma forma de vivenciar a
+                                cultura japonesa sem gastar muito.
+                            </p>
+                            <h4 id="japao-item-4">Moeda</h4>
+                            <p>A moeda oficial do Japão é o iene (JPY). Notas estão disponíveis em denominações de
+                                1.000, 2.000, 5.000 e 10.000 ienes, enquanto as moedas são de 1, 5, 10, 50, 100 e 500
+                                ienes. É recomendado trocar dinheiro em casas de câmbio ou usar caixas eletrônicos nos
+                                aeroportos ou grandes cidades. Cartões de crédito são amplamente aceitos em
+                                estabelecimentos turísticos, hotéis e lojas de departamento. No entanto, é sempre bom
+                                ter um pouco de dinheiro em espécie para pequenas despesas e locais que não aceitam
+                                cartões.</p>
+                            <h4 id="japao-item-5">Cultura</h4>
+                            <p>A cultura japonesa é rica em tradições milenares e costumes únicos. A etiqueta e o
+                                respeito são valores fundamentais na sociedade japonesa. Os japoneses têm grande apreço
+                                pela harmonia e valorizam a cortesia em suas interações sociais. A cerimônia do chá, o
+                                teatro Noh, a caligrafia japonesa e a arte Ikebana (arranjo de flores) são exemplos de
+                                práticas culturais que refletem a busca pela simplicidade, elegância e contemplação.</p>
+                            <h4 id="japao-item-6">Curiosidades</h4>
+                            <p>O Japão é conhecido por suas curiosidades e peculiaridades únicas. Por exemplo, os
+                                banheiros japoneses são famosos por sua alta tecnologia, com recursos como assentos
+                                aquecidos, jatos de água e até mesmo sons de música para garantir privacidade. Outra
+                                curiosidade é o fato de que o Japão tem mais de 1.500 terremotos por ano, embora a
+                                maioria deles seja imperceptível para os habitantes. Além disso, o Japão possui a maior
+                                população de idosos do mundo, com uma expectativa de vida muito alta e uma sociedade que
+                                valoriza o cuidado e respeito aos mais velhos.</p>
                         </div>
                     </div>
                 </div>

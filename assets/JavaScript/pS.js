@@ -1,8 +1,10 @@
+// Função botão
 var btn = document.querySelector("#back-to-top");
 btn.addEventListener("click", function () {
     window.scrollTo(0, 0);
 });
 
+// Função scroll caixa de pesquisa
 function searchAndScroll() {
     var searchTerm = document.getElementById("searchInput").value.toLowerCase();
     var countrySelect = document.getElementById("countrySelect");
@@ -17,6 +19,7 @@ function searchAndScroll() {
 
         if (headerText.includes(searchTerm) && sectionId === selectedCountry) {
             sections[i].scrollIntoView({ behavior: 'smooth' });
+            sections[i].style.paddingTop = '100px';
             break;
         }
     }

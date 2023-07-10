@@ -21,7 +21,7 @@
 
 <body>
     <!-- Cabeçalho -->
-    <header>
+    <header class="menu_fixo">
         <!-- Navbar -->
         <nav class="navbar-pages">
             <ul class="itens-navbar">
@@ -36,8 +36,7 @@
                     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
                         aria-labelledby="offcanvasRightLabel" style="background-color: #001A24;">
                         <div class="offcanvas-header">
-                            <h5 class="offcanvas-title text-white" id="offcanvasRightLabel">Menu</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
                                 aria-label="Close"></button>
                         </div>
                         <div class="offcanvas-body">
@@ -72,16 +71,16 @@
         <!-- Categorias -->
 
         <section class="categorias">
-            <a href="#quemsomos" class="opcoesCategorias">Quem Somos?</a>
+            <a href="#quemsomos" class="opcoesCategorias">Quem somos?</a>
             <a href="#colaboradores" class="opcoesCategorias">Colaboradores</a>
         </section>
 
     </header>
     <main>
         <section class="secPadding">
-            <img src="./assets/img/sobreNos/sobre-nos-img.png" class="d-block w-100 img-fluid" alt="...">
+            <img src="./assets/img/sobreNos/sobre-nos-img.png" class="img-fluid text-center" alt="img sobre nós">
         </section>
-        <section>
+        <section class="secPadding" id="quemsomos">
             <H1 class="text-titulo">Quem somos?</H1>
             <p class="paddinquemsomos">A Aterrissa Fácil foi fundada em 2020 com o objetivo de se tornar um site de
                 viagens completo, oferecendo pacotes de viagens, informações sobre destinos, compartilhar experiências e
@@ -91,7 +90,7 @@
             </p>
             </div>
         </section>
-        <section>
+        <section class="secPadding">
             <div>
                 <div class="miss">
                     <div class="textovertical cormain">
@@ -105,7 +104,7 @@
                     </div>
                 </div>
         </section>
-        <section>
+        <section class="secPadding">
             <div class="vis">
                 <div class="cormain paddin">
                     <p>Ser o principal site online para admiradores de viagens, oferecendo informações amplas e
@@ -118,7 +117,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="secPadding">
             <div class="val">
                 <div class="textovertical cormain">
                     <p>VALORES</p>
@@ -157,42 +156,68 @@
         </section>
         </div>
     </main>
-    <section class="container mb-5">
-        <div class="container text-center text-black px-5">
-            <div class="row py-3">
-                <div class="col">
-                    <h1 class="text-titulo">Colaboradores</h1>
-                </div>
+    <section class="container mb-5" id="colaboradores">
+
+        <div class="row py-3">
+            <div class="col">
+                <h1 class="text-titulo">Colaboradores</h1>
             </div>
+        </div>
+        <div class="container text-center text-black px-5">
             <div class="row">
                 <div class="col itens ">
-                    <a href="https://github.com/thaizerbinatti"><img class="imgIntegrantes"
-                            src="assets/img/sobreNos/githubimg.png" alt="Thainá Zerbinatti"></a>
+                    <img class="imgIntegrantes" src="assets/img/sobreNos/thaina.jpg" alt="Thainá Zerbinatti">
                     <p class="nome-col mt-3">Thainá <br> Zerbinatti</p>
+                    <div class="redes_sociais">
+                        <a href="https://github.com/thaizerbinatti" target="_blank"><img
+                                src="assets/img/sobreNos/github.gif" alt="github"></a>
+                        <a href="https://www.linkedin.com/in/thain%C3%A1-zerbinatti-ramos-0a686b1b3/"
+                            target="_blank"><img src="assets/img/sobreNos/linkedin.gif" alt="linkedin"></a>
+                    </div>
                 </div>
                 <div class="col itens">
-                    <a href="https://github.com/MarcosVSBlanco"><img class="imgIntegrantes"
-                            src="assets/img/sobreNos/githubimg.png" alt="Marcos Blanco"></a>
+                    <img class="imgIntegrantes" src="assets/img/sobreNos/marcos.jpg" alt="Marcos Blanco">
                     <p class="nome-col mt-3">Marcos <br> Blanco</p>
+                    <div class="redes_sociais">
+                        <a href="https://github.com/MarcosVSBlanco" target="_blank"><img
+                                src="assets/img/sobreNos/github.gif" alt="github"></a>
+                        <a href="https://www.linkedin.com/in/marcos-blanco-626bbb90" target="_blank"><img
+                                src="assets/img/sobreNos/linkedin.gif" alt="linkedin"></a>
+                    </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col itens">
-                    <a href="https://github.com/MatheusMoraes10"><img class="imgIntegrantes"
-                            src="assets/img/sobreNos/githubimg.png" alt="Matheus Moraes"></a>
+                    <img class="imgIntegrantes" src="assets/img/sobreNos/matheus_moraes.jpeg" alt="Matheus Moraes">
                     <p class="nome-col mt-3">Matheus <br> Moraes</p>
+                    <div class="redes_sociais">
+                        <a href="https://github.com/MatheusMoraes10" target="_blank"><img
+                                src="assets/img/sobreNos/github.gif" alt="github"></a>
+                        <a href="https://www.linkedin.com/in/matheus-s-a-moraes/" target="_blank"><img
+                                src="assets/img/sobreNos/linkedin.gif" alt="linkedin"></a>
+                    </div>
                 </div>
                 <div class="col itens">
-                    <a href="https://github.com/HigorFequer"><img class="imgIntegrantes"
-                            src="assets/img/sobreNos/githubimg.png" alt="Higor Fequer"></a>
+                    <img class="imgIntegrantes" src="assets/img/sobreNos/higor.jpg" alt="Higor Fequer">
                     <p class="nome-col mt-3">Higor <br> Fequer</p>
+                    <div class="redes_sociais">
+                        <a href="https://github.com/HigorFequer" target="_blank"><img
+                                src="assets/img/sobreNos/github.gif" alt="github"></a>
+                        <a href="https://www.linkedin.com/in/higor-fequer-lima-b45158262/" target="_blank"><img src="assets/img/sobreNos/linkedin.gif" alt="linkedin"></a>
+                    </div>
                 </div>
                 <div class="col itens">
-                    <a href="https://github.com/MatheusRodriguesss"><img class="imgIntegrantes"
-                            src="assets/img/sobreNos/githubimg.png" alt="Matheus Rodrigues"></a>
+                    <img class="imgIntegrantes" src="assets/img/sobreNos/matheusrodrigues.jpg" alt="Matheus Rodrigues">
                     <p class="nome-col mt-3">Matheus <br> Rodrigues</p>
+                    <div class="redes_sociais">
+                        <a href="https://github.com/MatheusRodriguesss" target="_blank"><img
+                                src="assets/img/sobreNos/github.gif" alt="github"></a>
+                        <a href="https://www.linkedin.com/in/matheusrodriguesss" target="_blank"><img
+                                src="assets/img/sobreNos/linkedin.gif" alt="linkedin"></a>
+                    </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
     </section>
