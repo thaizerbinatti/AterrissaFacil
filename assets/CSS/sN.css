@@ -6,6 +6,26 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* offcanvas */
+
+:root {
+    --offcanvas-horizontal-width: 300px;
+}
+
+#offcanvasRight {
+    width: var(--offcanvas-horizontal-width);
+}
+
+@media screen and (max-width:500px) {
+    :root {
+        --offcanvas-horizontal-width: 150px;
+    }
+
+    #offcanvasRight {
+        width: var(--offcanvas-horizontal-width);
+    }
+}
+
 body {
     background-color: #ffffff;
 }
