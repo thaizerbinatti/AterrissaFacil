@@ -6,6 +6,40 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* offcanvas */
+
+:root {
+    --offcanvas-horizontal-width: 300px;
+}
+
+#offcanvasRight {
+    width: var(--offcanvas-horizontal-width);
+}
+
+@media screen and (max-width:500px) {
+    :root {
+        --offcanvas-horizontal-width: 150px;
+    }
+
+    #offcanvasRight {
+        width: var(--offcanvas-horizontal-width);
+    }
+}
+
+@media screen and (max-width:476px) {
+    :root {
+        --offcanvas-horizontal-width: 150px;
+        --offcanvas-padding-x: 20px;
+    }
+
+    #offcanvasRight {
+        width: var(--offcanvas-horizontal-width);
+    }
+
+    .navbar-nav {
+        padding: var(--offcanvas-padding-x);
+    }
+}
 
 /* Navbar */
 
