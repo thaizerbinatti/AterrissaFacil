@@ -82,6 +82,8 @@ body {
     font-size: 1.1rem;
     border-radius: 5px;
     align-items: center;
+    font-family: 'Roboto Condensed';
+    text-transform: uppercase;
 }
 
 .secPadding {
