@@ -82,8 +82,10 @@
 .opcoesCategorias {
     text-decoration: none;
     color: #001A24;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin: 0 20px;
+    font-family: 'Roboto Condensed';
+    text-transform: uppercase;
 }
 
 .categorias a {

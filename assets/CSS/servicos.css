@@ -93,8 +93,11 @@
 }
 
 .carrinho p {
+    padding: 0 5px;
+    border-radius: 50%;
     filter: invert(100%);
-    color: #00ACEE;
+    background-color: #00ACEE;
+    color: #fff;
     font-weight: bold;
     font-size: 18px;
 }
@@ -140,6 +143,9 @@
     border-radius: 5px;
     margin: 0 20px;
     align-items: center;
+    font-family: 'Roboto Condensed';
+    text-transform: uppercase;
+    ;
 }
 
 /* Sections */
@@ -183,6 +189,15 @@
     font-size: 2.0rem;
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 0.7rem;
+}
+
+.border-cards {
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+.border-cards:hover {
+    border-color: #00ACEE;
 }
 
 /* .image {
