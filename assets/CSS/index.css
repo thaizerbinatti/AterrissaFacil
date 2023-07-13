@@ -71,7 +71,7 @@
 .logo-img {
     max-width: 100%;
     height: auto;
-    filter: drop-shadow(0px 4px 2px #001A24);
+    filter: drop-shadow(5px 5px 1px #000);
 }
 
 @media screen and (max-width: 768px) {
@@ -104,6 +104,12 @@
     text-align: center;
     color: #D9D9D9;
     filter: drop-shadow(0px 4px 2px #001A24);
+}
+
+/* sombra slogan */
+
+.sombra_slogan {
+    text-shadow: 4px 4px 4px #000, -4px 4px 4px #000, 4px -4px 4px #000, -4px -4px 4px #000;
 }
 
 @media screen and (max-width: 768px) {
