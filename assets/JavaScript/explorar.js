@@ -30,7 +30,7 @@ for (var i = 0; i < linksCategorias.length; i++) {
         if (targetElement) {
             var categoriaHeight = document.querySelector('.categorias').offsetHeight;
 
-            var targetOffset = targetElement.offsetTop - categoriaHeight - 100;
+            var targetOffset = targetElement.offsetTop - categoriaHeight - 130;
 
             window.scrollTo({
                 top: targetOffset,
