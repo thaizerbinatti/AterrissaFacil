@@ -85,7 +85,7 @@ header {
 }
 
 .card-reserva {
-    background-color: #001A24;
+    padding: 10px 0;
     color: #fff;
 }
 
@@ -171,6 +171,18 @@ header {
     .logo-nav {
         margin-left: 20%;
     }
+
+    .navbar-pages {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .logo-nav {
+        height: 80px;
+        width: auto;
+        margin-left: 5px;
+    }
 }
 
 /* Categorias */
@@ -206,6 +218,7 @@ header {
     .categorias {
         padding: 5px 0;
     }
+
     .opcoesCategorias {
         margin: 0 10px;
     }

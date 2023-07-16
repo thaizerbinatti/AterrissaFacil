@@ -128,7 +128,6 @@ main>div:last-child>div {
     text-orientation: upright;
     text-align: center;
     font-weight: bolder;
-    font-size: 1.1em;
     letter-spacing: 5px;
 }
 
@@ -165,6 +164,16 @@ main>div:last-child>div {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.cormain p {
+    font-size: 1.3rem;
+}
+
+@media (max-width:500px) {
+    .cormain p {
+        font-size: 1.0rem;
+    }
 }
 
 .paddin {
@@ -330,8 +339,8 @@ main>div:last-child>div {
     }
 
     .logo-nav {
-        height: 80px;
-        margin-left: 10px;
+        height: 90px;
+        margin-left: 5px;
         width: auto;
     }
 
@@ -340,10 +349,7 @@ main>div:last-child>div {
         grid-template-columns: 80% 20%;
         justify-content: end;
         align-content: top;
-        padding: 15px 0 0 0;
-        margin-bottom: 0;
-        margin-top: -20px;
-        /* padding: 1.2em 1em ; */
+        padding: 10px 0 10px 10px;
     }
 
     .itens-navbar {
@@ -389,7 +395,6 @@ main>div:last-child>div {
         flex-direction: column;
         width: 100%;
         margin-bottom: 20px;
-
     }
 
     .vis {
@@ -415,8 +420,6 @@ main>div:last-child>div {
     .footer-clean .item.social {
         text-align: center;
     }
-
-
 }
 
 @media (max-width:468px) {
@@ -433,18 +436,23 @@ main>div:last-child>div {
 
 }
 
-@media (min-width:469px) {
-
-    /* Menu fixo */
-
-    .menu_fixo {
-        position: fixed;
-        z-index: 9999;
-        margin-top: -165px;
-        width: 100%;
+@media screen and (max-width: 300px) {
+    .logo-nav {
+        height: 80px;
+        width: auto;
+        margin-left: 5px;
     }
+}
 
-    body {
-        padding-top: 165px;
-    }
+/* Menu fixo */
+
+.menu_fixo {
+    position: fixed;
+    z-index: 9999;
+    margin-top: -165px;
+    width: 100%;
+}
+
+body {
+    padding-top: 165px;
 }

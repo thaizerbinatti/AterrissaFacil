@@ -69,22 +69,35 @@
     </header>
     <main>
         <!-- Caixa de Busca -->
-        <div class="py-2 container-busca">
-            <div class="row">
-                <h4 class="branco">Selecione o país:</h4>
-            </div>
-            <form class="row">
-                <input type="text" id="searchInput" placeholder="Digite sua busca">
-                <select class="col border" id="countrySelect">
-                    <option value="eua">Estados Unidos</option>
-                    <option value="grecia">Grécia</option>
-                    <option value="indonesia">Indonésia</option>
-                    <option value="japao">Japão</option>
-                </select>
-                <div class="col">
-                    <button class="btn btn-sm btn-success" type="button" onclick="searchAndScroll()">Buscar</button>
+        <div class="container-busca">
+            <div class="container">
+                <div class="row">
+                    <h4 class="mt-4 branco">Viagem internacional?</h4>
+                    <p class="busca-p">Procure o país do seu destino e fique por dentro de todas as
+                        informações!</p>
                 </div>
-            </form>
+                <div class="row">
+                    <form>
+                        <input class="tirar" type="text" id="searchInput" placeholder="Digite sua busca">
+                        <select class="busca-select" id="countrySelect">
+                            <option value="eua">Selecione o país</option>
+                            <option>Argentina</option>
+                            <option>Brasil</option>
+                            <option>Chile</option>
+                            <option>Dinamarca</option>
+                            <option value="eua">Estados Unidos</option>
+                            <option>França</option>
+                            <option value="grecia">Grécia</option>
+                            <option>Holanda</option>
+                            <option value="indonesia">Indonésia</option>
+                            <option value="japao">Japão</option>
+                            
+                        </select>
+                        <button class="btn-busca" type="button"
+                            onclick="searchAndScroll()">Buscar</button>
+                    </form>
+                </div>
+            </div>
         </div>
 
         <!-- EUA -->
@@ -265,7 +278,8 @@
                 <div class="border-bottom border-secondary-subtle pb-3 row my-5">
                     <div class="col-4">
                         <div id="list-example" class="list-group">
-                            <a class="list-group-item list-group-item-action" href="#grecia-item-1">Pontos Turisticos</a>
+                            <a class="list-group-item list-group-item-action" href="#grecia-item-1">Pontos
+                                Turisticos</a>
                             <a class="list-group-item list-group-item-action" href="#grecia-item-2">Roteiros</a>
                             <a class="list-group-item list-group-item-action" href="#grecia-item-3">Para gastar
                                 pouco</a>
@@ -392,7 +406,8 @@
                 <div class="border-bottom border-secondary-subtle pb-3 row my-5">
                     <div class="col-4">
                         <div id="list-example" class="list-group">
-                            <a class="list-group-item list-group-item-action" href="#indonesia-item-1">Pontos Turisticos</a>
+                            <a class="list-group-item list-group-item-action" href="#indonesia-item-1">Pontos
+                                Turisticos</a>
                             <a class="list-group-item list-group-item-action" href="#indonesia-item-2">Roteiros</a>
                             <a class="list-group-item list-group-item-action" href="#indonesia-item-3">Para gastar
                                 pouco</a>

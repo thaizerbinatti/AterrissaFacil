@@ -160,6 +160,7 @@ function criarCard(stringBotao) {
     destinoName.style.fontSize = '18px';
     destinoName.style.marginBottom = '5px';
     destinoName.textContent = stringBotao.name;
+    destinoName.style.textAlign = 'center';
 
     // País/estado
     const estadoDesc = document.createElement('p');
@@ -167,6 +168,7 @@ function criarCard(stringBotao) {
     estadoDesc.style.fontSize = '14px';
     estadoDesc.style.marginBottom = '5px';
     estadoDesc.textContent = stringBotao.description;
+    estadoDesc.style.textAlign = 'center';
 
     // Preços
     const valorPrice = document.createElement('h5');
@@ -175,6 +177,7 @@ function criarCard(stringBotao) {
     valorPrice.style.fontWeight = 'bold';
     valorPrice.style.marginBottom = '5px';
     valorPrice.textContent = `R$ ${stringBotao.price}`;
+    valorPrice.style.textAlign = 'center';
 
     // Botão excluir
     const botaoExcluir = document.createElement('button');
@@ -186,10 +189,14 @@ function criarCard(stringBotao) {
     botaoExcluir.style.fontSize = '14px';
     botaoExcluir.style.cursor = 'pointer';
     botaoExcluir.textContent = 'Excluir';
+    botaoExcluir.style.width = '80px';
+    botaoExcluir.style.margin = '0 auto';
 
     // Remover
     botaoExcluir.addEventListener('click', () => {
         card.remove();
+        contador--;
+        atualizarContador();
     });
 
     // Adicionar os elementos ao card
