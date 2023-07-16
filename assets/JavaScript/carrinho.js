@@ -1,3 +1,24 @@
+// Incremento carrinho
+var contador = 0;
+
+var botoes = document.getElementsByClassName("incrementar-carrinho");
+for (var i = 0; i < botoes.length; i++) {
+    botoes[i].addEventListener("click", function () {
+        contador++;
+        atualizarContador();
+    });
+}
+
+function atualizarContador() {
+    document.getElementById("contador").textContent = contador;
+}
+
+var btn = document.querySelector("#back-to-top");
+btn.addEventListener("click", function () {
+    window.scrollTo(0, 0);
+});
+
+
 // Strings destinos
 const stringsBotoes = [
     {
@@ -91,13 +112,25 @@ function criarCard(stringBotao) {
     // Card
     const card = document.createElement('div');
     card.classList.add('card', 'card-carrinho');
-    card.style.backgroundColor = '#001A24'
-    card.style.color = '#fff'
     card.style.border = '1px solid #ccc';
     card.style.padding = '10px';
     card.style.marginLeft = '30px'
-    card.style.marginBottom = '10px';
+    card.style.marginBottom = '20px';
     card.style.width = '200px';
+
+    // Responsividade
+    const mediaQuery = window.matchMedia('(max-width: 600px)');
+    function applyMediaQueryStyles(mq) {
+        if (mq.matches) {
+            card.style.width = '100%';
+            card.style.marginLeft = '0';
+        } else {
+            card.style.width = '200px';
+            card.style.marginLeft = '30px';
+        }
+    }
+    applyMediaQueryStyles(mediaQuery);
+    mediaQuery.addListener(applyMediaQueryStyles);
 
     // Img
     const img = document.createElement('img');

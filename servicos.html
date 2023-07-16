@@ -32,30 +32,27 @@
                     alt="logo-aterrissa"></a>
             <div class="alinhar_carrinho">
                 <!-- Carrinho Navbar -->
-                <div class="carrinho" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                    aria-controls="offcanvasRight">
+                <div class="carrinho" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+                    aria-controls="staticBackdrop">
                     <p id="contador"></p>
                 </div>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
-                    aria-labelledby="offcanvasRightLabel" style="background-color: #001A24;">
-                    <div class="offcanvas-header">
-                        <h5 class="text-white offcanvas-title" id="offcanvasTopLabel">Meu carrinho:</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+                    aria-labelledby="staticBackdropLabel">
+                    <div class="offcanvas-header py-4 reservas-carrinho">
+                        <h5 class="text-white offcanvas-title" id="offcanvasTopLabel">Minhas Reservas</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body text-white">
                         <div id="cardsContainer"></div>
-                        <ul class="list-unstyled">
-                            <li>
-                                <p class="mb-0">Saindo de: São Paulo (GRU)<br><button
-                                        class="btn btn-sm btn-outline-light"
-                                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Clique
-                                        para alterar</button></p>
-                            </li>
-                            <li>Taxas: R$109,00</li>
-                        </ul>
-                        <div>
-                            <h5 id="soma-price">Valor final:</h5>
-                            <button class="btn btn-warning">Reservar Agora</button>
+                        <div class="card card-reserva">
+                            <ul class="m-4 list-unstyled text-center">
+                                <li>
+                                    <p class="fw-semibold">Saindo de: Sao Paulo (GRU)</p>
+                                </li>
+                                <li class="mb-3 fw-semibold">Taxas: R$109,00</li>
+                                <li><button class="btn btn-warning fw-semibold text-uppercase">Reservar Agora</button></li>
+                            </ul>
                         </div>
                     </div>
                 </div>

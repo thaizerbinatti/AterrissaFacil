@@ -41,6 +41,45 @@
     }
 }
 
+:root {
+    --offcanvas-horizontal-width: 300px;
+}
+
+#staticBackdrop {
+    width: var(--offcanvas-horizontal-width);
+}
+
+@media screen and (max-width:500px) {
+    :root {
+        --offcanvas-horizontal-width: 200px;
+    }
+
+    #staticBackdrop {
+        width: var(--offcanvas-horizontal-width);
+    }
+}
+
+.reservas-carrinho {
+    background-color: #001A24;
+    text-align: center;
+    border-bottom: 1px solid #001A24;
+    font-size: 2.0rem;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+}
+
+.card-reserva {
+    background-color: #001A24;
+    color: #fff;
+}
+
+@media screen and (max-width:500px) {
+    .reservas-carrinho {
+        font-size: 1.2rem;
+    }
+}
+
 /* Navbar */
 
 .navbar-pages {
@@ -146,6 +185,12 @@
     font-family: 'Roboto Condensed';
     text-transform: uppercase;
     ;
+}
+
+@media screen and (max-width: 600px) {
+    .categorias {
+        display: none;
+    }
 }
 
 /* Sections */
@@ -367,6 +412,8 @@
 
     .logo-nav {
         margin-left: 5px;
+        height: 90px;
+        width: auto;
     }
 
     /* Remover paddings que quebram tranalhe conosco e destino para todos */
