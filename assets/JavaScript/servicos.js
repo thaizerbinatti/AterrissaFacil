@@ -35,7 +35,7 @@ function mostrarMensagemEnviado() {
 
     setTimeout(function () {
         mensagem.remove();
-    }, 3000);
+    }, 4000);
 
     formulario.reset();
 }
@@ -53,12 +53,12 @@ function mostrarAlertaEnviado() {
     alerta.className = 'alert alert-success mt-2';
     alerta.textContent = 'Obrigada! Aguarde em seu email os envios dos formulários!';
 
-    const lista = document.querySelector('.list-unstyled');
+    const lista = document.querySelector('.email-list');
     lista.appendChild(alerta);
 
     setTimeout(function () {
         alerta.remove();
-    }, 3000);
+    }, 4000);
 
 }
 

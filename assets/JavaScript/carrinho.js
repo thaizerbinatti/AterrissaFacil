@@ -132,6 +132,19 @@ function criarCard(stringBotao) {
     applyMediaQueryStyles(mediaQuery);
     mediaQuery.addListener(applyMediaQueryStyles);
 
+    const mediaQuery1 = window.matchMedia('(min-width: 800px)');
+    function applyMediaQueryStyles(mq) {
+        if (mq.matches) {
+            card.style.width = '100%';
+            card.style.marginLeft = '0';
+        } else {
+            card.style.width = '300px';
+            card.style.marginLeft = '30px';
+        }
+    }
+    applyMediaQueryStyles(mediaQuery);
+    mediaQuery.addListener(applyMediaQueryStyles);
+
     // Img
     const img = document.createElement('img');
     img.classList.add('img-carrinho');
