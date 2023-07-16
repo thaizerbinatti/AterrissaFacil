@@ -15,7 +15,7 @@ for (var i = 0; i < linksCategorias.length; i++) {
         if (targetElement) {
             var categoriaHeight = document.querySelector('.categorias').offsetHeight;
 
-            var targetOffset = targetElement.offsetTop - categoriaHeight - 90;
+            var targetOffset = targetElement.offsetTop - categoriaHeight - 120;
 
             window.scrollTo({
                 top: targetOffset,

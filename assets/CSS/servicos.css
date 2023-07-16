@@ -6,6 +6,11 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+header {
+    padding: 0;
+    margin: 0;
+}
+
 /* offcanvas */
 
 :root {
@@ -41,6 +46,55 @@
     }
 }
 
+:root {
+    --offcanvas-horizontal-width: 300px;
+}
+
+#staticBackdrop {
+    width: var(--offcanvas-horizontal-width);
+}
+
+@media screen and (max-width:500px) {
+    :root {
+        --offcanvas-horizontal-width: 200px;
+    }
+
+    #staticBackdrop {
+        width: var(--offcanvas-horizontal-width);
+    }
+}
+
+@media screen and (min-width:800px) {
+    :root {
+        --offcanvas-horizontal-width: 400px;
+    }
+
+    #staticBackdrop {
+        width: var(--offcanvas-horizontal-width);
+    }
+}
+
+.reservas-carrinho {
+    background-color: #001A24;
+    text-align: center;
+    border-bottom: 1px solid #001A24;
+    font-size: 2.0rem;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+}
+
+.card-reserva {
+    padding: 10px 0;
+    color: #fff;
+}
+
+@media screen and (max-width:500px) {
+    .reservas-carrinho {
+        font-size: 1.2rem;
+    }
+}
+
 /* Navbar */
 
 .navbar-pages {
@@ -52,7 +106,7 @@
 }
 
 .logo-nav {
-    height: 90px;
+    height: 120px;
     width: auto;
 }
 
@@ -117,6 +171,18 @@
     .logo-nav {
         margin-left: 20%;
     }
+
+    .navbar-pages {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .logo-nav {
+        height: 80px;
+        width: auto;
+        margin-left: 5px;
+    }
 }
 
 /* Categorias */
@@ -148,6 +214,28 @@
     ;
 }
 
+@media screen and (max-width: 1080px) {
+    .categorias {
+        padding: 5px 0;
+    }
+
+    .opcoesCategorias {
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .categorias {
+        padding: 2px 0;
+        display: none;
+    }
+
+    .img-slide {
+        height: 150px;
+        width: auto;
+    }
+}
+
 /* Sections */
 
 .container-padding {
@@ -177,7 +265,7 @@
     text-align: center;
     color: #001A24;
     border-bottom: 1px solid #001A24;
-    font-size: 2.0rem;
+    font-size: 2.5rem;
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 0.7rem;
 }
@@ -186,7 +274,7 @@
     text-align: center;
     color: #001A24;
     border-bottom: 1px solid #001A24;
-    font-size: 2.0rem;
+    font-size: 2.5rem;
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 0.7rem;
 }
@@ -199,13 +287,6 @@
 .border-cards:hover {
     border-color: #00ACEE;
 }
-
-/* .image {
-    display: inline;
-    width: 104%;
-    height: 100%;
-} */
-
 
 /* Profissionais */
 
@@ -367,6 +448,8 @@
 
     .logo-nav {
         margin-left: 5px;
+        height: 90px;
+        width: auto;
     }
 
     /* Remover paddings que quebram tranalhe conosco e destino para todos */
@@ -408,18 +491,15 @@
     }
 }
 
-@media (min-width:469px) {
+/* Menu fixo */
 
-    /* Menu fixo */
+.menu_fixo {
+    position: fixed;
+    z-index: 9999;
+    margin-top: -165px;
+    width: 100%;
+}
 
-    .menu_fixo {
-        position: fixed;
-        z-index: 9999;
-        margin-top: -165px;
-        width: 100%;
-    }
-
-    body {
-        padding-top: 165px;
-    }
+body {
+    padding-top: 165px;
 }

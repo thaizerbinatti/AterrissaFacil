@@ -1,23 +1,3 @@
-// Incremento carrinho
-var contador = 0;
-
-var botoes = document.getElementsByClassName("incrementar-carrinho");
-for (var i = 0; i < botoes.length; i++) {
-    botoes[i].addEventListener("click", function () {
-        contador++;
-        atualizarContador();
-    });
-}
-
-function atualizarContador() {
-    document.getElementById("contador").textContent = contador;
-}
-
-var btn = document.querySelector("#back-to-top");
-btn.addEventListener("click", function () {
-    window.scrollTo(0, 0);
-});
-
 // Scroll categorias
 var linksCategorias = document.getElementsByClassName('opcoesCategorias');
 for (var i = 0; i < linksCategorias.length; i++) {
@@ -30,7 +10,7 @@ for (var i = 0; i < linksCategorias.length; i++) {
         if (targetElement) {
             var categoriaHeight = document.querySelector('.categorias').offsetHeight;
 
-            var targetOffset = targetElement.offsetTop - categoriaHeight - 100;
+            var targetOffset = targetElement.offsetTop - categoriaHeight - 130;
 
             window.scrollTo({
                 top: targetOffset,
@@ -55,7 +35,7 @@ function mostrarMensagemEnviado() {
 
     setTimeout(function () {
         mensagem.remove();
-    }, 3000);
+    }, 4000);
 
     formulario.reset();
 }
@@ -73,12 +53,12 @@ function mostrarAlertaEnviado() {
     alerta.className = 'alert alert-success mt-2';
     alerta.textContent = 'Obrigada! Aguarde em seu email os envios dos formulários!';
 
-    const lista = document.querySelector('.list-unstyled');
+    const lista = document.querySelector('.email-list');
     lista.appendChild(alerta);
 
     setTimeout(function () {
         alerta.remove();
-    }, 3000);
+    }, 4000);
 
 }
 

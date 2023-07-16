@@ -24,19 +24,38 @@
     <header class="menu_fixo">
         <!-- Navbar -->
         <nav class="navbar-pages">
-            <ul class="itens-navbar">
-                <li><a class="link-nav" href="./index.html"></a></li>
-                <li><a class="link-nav" href="./sN.html"></a></li>
-            </ul>
+            <ul class="itens-navbar"></ul>
             <a href="./index.html"><img class="logo-nav" src="./assets/img/home/logo-aterrissa.svg"
                     alt="logo-aterrissa"></a>
             <div class="alinhar_carrinho">
                 <!-- Carrinho Navbar -->
-                <div class="carrinho">
+                <div class="carrinho" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+                    aria-controls="staticBackdrop">
                     <p id="contador"></p>
                 </div>
+                <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+                    aria-labelledby="staticBackdropLabel">
+                    <div class="offcanvas-header py-4 reservas-carrinho">
+                        <h5 class="text-white offcanvas-title" id="offcanvasTopLabel">Carrinho Viagens</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body text-white" style="background-color: #001A24;">
+                        <div id="cardsContainer"></div>
+                        <div class="card-reserva">
+                            <ul class="m-4 list-unstyled text-center">
+                                <li>
+                                    <p class="fw-semibold">Saindo de: Sao Paulo (GRU)</p>
+                                </li>
+                                <li class="mb-3 fw-semibold">Taxas: R$109,00</li>
+                                <li><button class="btn btn-warning fw-semibold text-uppercase">IR PARA O PAGAMENTO</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Menu suspenso -->
                 <ul class="itens-navbar">
-                    <li><button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas"
+                    <li><button class="btn btn-lg text-white fs-3" type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">☰</button>
                         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
                             aria-labelledby="offcanvasRightLabel" style="background-color: #001A24;">
@@ -45,7 +64,7 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="offcanvas-body">
-                                <ul class="navbar-nav">
+                                <ul class="navbar-nav fs-4">
                                     <li class="nav-item">
                                         <a class="icon-link mb-3 text-white text-decoration-none"
                                             href="./index.html">Home</a>
@@ -88,7 +107,7 @@
 
     <main>
         <!-- Slides -->
-        <div class="container-padding row mb-5">
+        <div class="row mb-5">
             <div class="col">
                 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
@@ -104,25 +123,25 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active" data-bs-interval="3000">
                             <img src="https://drive.google.com/uc?id=1uR2R7H1qat2QxGTNpmSoUiZKxuK4CVy2"
-                                class="d-block w-100" alt="img: explore o mundo">
+                                class="d-block w-100 img-slide" alt="img: explore o mundo">
                             <div class="carousel-caption d-none d-md-block">
                             </div>
                         </div>
                         <div class="carousel-item" data-bs-interval="3000">
                             <img src="https://drive.google.com/uc?id=1pisCOz5jHCPtFKnxrvlJjnTC8moQnOPK"
-                                class="d-block w-100" alt="img: aproveite as estações">
+                                class="d-block w-100 img-slide"" alt="img: aproveite as estações">
                             <div class="carousel-caption d-none d-md-block">
                             </div>
                         </div>
                         <div class="carousel-item" data-bs-interval="3000">
                             <img src="https://drive.google.com/uc?id=1jJQRUJrqJYLYVFzlBtWa9iHJoZxYuq2T"
-                                class="d-block w-100" alt="img: programa destino para todos">
+                                class="d-block w-100 img-slide"" alt="img: programa destino para todos">
                             <div class="carousel-caption d-none d-md-block">
                             </div>
                         </div>
                         <div class="carousel-item" data-bs-interval="3000">
                             <img src="https://drive.google.com/uc?id=1liRjx22oSDgUGIEww0WmkOCsdAMOBkOP"
-                                class="d-block w-100" alt="img: trabalhe conosco">
+                                class="d-block w-100 img-slide"" alt="img: trabalhe conosco">
                             <div class="carousel-caption d-none d-md-block">
                             </div>
                         </div>
@@ -150,38 +169,40 @@
                 <div class="row">
                     <div class="col my-2 text-center justifyitem">
                         <div class="card border-cards" style="width: 18rem;">
-                            <img src="https://drive.google.com/uc?id=1O111iiK_9JY_QHtO-av1ysp7Rr6wc2Rk" class="img-cards img-thumbnail" alt="img arraial do cabo">
+                            <img src="https://drive.google.com/uc?id=1O111iiK_9JY_QHtO-av1ysp7Rr6wc2Rk"
+                                class="img-cards img-thumbnail" alt="img arraial do cabo">
                             <div class="card-body">
                                 <h5 class="card-title">Arraial do Cabo</h5>
                                 <h6 class="card-subtitle mb-2 text-body-secondary">Áereo + hotel</h6>
                                 <p class="card-text">Á partir de:</p>
-                                <p class="text-primary text-uppercase fs-5 fw-bold card-text">R$699,99</p>
-                                <button class="btn btn-success incrementar-carrinho">Comprar</button>
+                                <p class="text-primary text-uppercase fs-5 fw-bold card-text">R$499,00</p>
+                                <button class="btn btn-success incrementar-carrinho" id="1">Comprar</button>
                             </div>
                         </div>
                     </div>
                     <div class="col my-2 text-center justifyitem">
                         <div class="card border-cards" style="width: 18rem;">
-                            <img src="https://drive.google.com/uc?id=1YDiXzi9QzAZTMf0Czi8WX-TBFRRCv4Vq" class="img-cards img-thumbnail"
-                                alt="img bonito mato grosso do sul">
+                            <img src="https://drive.google.com/uc?id=1YDiXzi9QzAZTMf0Czi8WX-TBFRRCv4Vq"
+                                class="img-cards img-thumbnail" alt="img bonito mato grosso do sul">
                             <div class="card-body">
                                 <h5 class="card-title">Bonito</h5>
                                 <h6 class="card-subtitle mb-2 text-body-secondary">Áereo + hotel</h6>
                                 <p class="card-text">Á partir de:</p>
-                                <p class="text-primary text-uppercase fs-5 fw-bold card-text">R$1099,99</p>
-                                <button class="btn btn-success incrementar-carrinho">Comprar</button>
+                                <p class="text-primary text-uppercase fs-5 fw-bold card-text">R$799,00</p>
+                                <button class="btn btn-success incrementar-carrinho" id="2">Comprar</button>
                             </div>
                         </div>
                     </div>
                     <div class="col my-2 text-center justifyitem">
                         <div class="card border-cards" style="width: 18rem;">
-                            <img src="https://drive.google.com/uc?id=1D8OhxjVS2_9p7p8yQvqmB_-fLnEYqZjS" class="img-cards img-thumbnail" alt="img gramado rio grande do sul">
+                            <img src="https://drive.google.com/uc?id=1D8OhxjVS2_9p7p8yQvqmB_-fLnEYqZjS"
+                                class="img-cards img-thumbnail" alt="img gramado rio grande do sul">
                             <div class="card-body">
                                 <h5 class="card-title">Gramado</h5>
                                 <h6 class="card-subtitle mb-2 text-body-secondary">Áereo + hotel</h6>
                                 <p class="card-text">Á partir de:</p>
-                                <p class="text-primary text-uppercase fs-5 fw-bold card-text">R$699,99</p>
-                                <button class="btn btn-success incrementar-carrinho">Comprar</button>
+                                <p class="text-primary text-uppercase fs-5 fw-bold card-text">R$499,00</p>
+                                <button class="btn btn-success incrementar-carrinho" id="3">Comprar</button>
                             </div>
                         </div>
                     </div>
@@ -189,40 +210,40 @@
                 <div class="row">
                     <div class="col my-2 text-center justifyitem">
                         <div class="card border-cards" style="width: 18rem;">
-                            <img src="https://drive.google.com/uc?id=1ZtxHNoPXOMXqbfD7VVWmxo7_iksYIbwX" class="img-cards img-thumbnail"
-                                alt="img lençóis maranhenses">
+                            <img src="https://drive.google.com/uc?id=1ZtxHNoPXOMXqbfD7VVWmxo7_iksYIbwX"
+                                class="img-cards img-thumbnail" alt="img lençóis maranhenses">
                             <div class="card-body">
                                 <h5 class="card-title">Lençóis Maranhenses</h5>
                                 <h6 class="card-subtitle mb-2 text-body-secondary">Áereo + hotel</h6>
                                 <p class="card-text">Á partir de:</p>
-                                <p class="text-primary text-uppercase fs-5 fw-bold card-text">R$1099,99</p>
-                                <button class="btn btn-success incrementar-carrinho">Comprar</button>
+                                <p class="text-primary text-uppercase fs-5 fw-bold card-text">R$899,00</p>
+                                <button class="btn btn-success incrementar-carrinho" id="4">Comprar</button>
                             </div>
                         </div>
                     </div>
                     <div class="col my-2 text-center justifyitem">
                         <div class="card border-cards" style="width: 18rem;">
-                            <img src="https://drive.google.com/uc?id=1H3kdf1OR3sya0qQvbv7_4KCjRsCSj-We" class="img-cards img-thumbnail"
-                                alt="img chapada diamantina">
+                            <img src="https://drive.google.com/uc?id=1H3kdf1OR3sya0qQvbv7_4KCjRsCSj-We"
+                                class="img-cards img-thumbnail" alt="img chapada diamantina">
                             <div class="card-body">
                                 <h5 class="card-title">Chapada Diamantina</h5>
                                 <h6 class="card-subtitle mb-2 text-body-secondary">Áereo + hotel</h6>
                                 <p class="card-text">Á partir de:</p>
-                                <p class="text-primary text-uppercase fs-5 fw-bold card-text">R$999,99</p>
-                                <button class="btn btn-success incrementar-carrinho">Comprar</button>
+                                <p class="text-primary text-uppercase fs-5 fw-bold card-text">R$699,00</p>
+                                <button class="btn btn-success incrementar-carrinho" id="5">Comprar</button>
                             </div>
                         </div>
                     </div>
                     <div class="col my-2 text-center justifyitem">
                         <div class="card border-cards" style="width: 18rem;">
-                            <img src="https://drive.google.com/uc?id=1tcbufq2j9PaRvChFbICuCau0WMIvkc3j" class="img-cards img-thumbnail"
-                                alt="img campos do jordão">
+                            <img src="https://drive.google.com/uc?id=1tcbufq2j9PaRvChFbICuCau0WMIvkc3j"
+                                class="img-cards img-thumbnail" alt="img campos do jordão">
                             <div class="card-body">
                                 <h5 class="card-title">Campos do Jordão</h5>
                                 <h6 class="card-subtitle mb-2 text-body-secondary">Áereo + hotel</h6>
                                 <p class="card-text">Á partir de:</p>
-                                <p class="text-primary text-uppercase fs-5 fw-bold card-text">R$499,99</p>
-                                <button class="btn btn-success incrementar-carrinho">Comprar</button>
+                                <p class="text-primary text-uppercase fs-5 fw-bold card-text">R$499,00</p>
+                                <button class="btn btn-success incrementar-carrinho" id="6">Comprar</button>
                             </div>
                         </div>
                     </div>
@@ -239,37 +260,40 @@
                 <div class="row">
                     <div class="col my-2 text-center justifyitem">
                         <div class="card border-cards" style="width: 18rem;">
-                            <img src="https://drive.google.com/uc?id=1sMiO0mvJ0Ol7Ua59dkFvQEK2vaMjfRH2" class="img-cards img-thumbnail" alt="img tokyo">
+                            <img src="https://drive.google.com/uc?id=1sMiO0mvJ0Ol7Ua59dkFvQEK2vaMjfRH2"
+                                class="img-cards img-thumbnail" alt="img tokyo">
                             <div class="card-body">
                                 <h5 class="card-title">Tokyo - Japão</h5>
                                 <h6 class="card-subtitle mb-2 text-body-secondary">Áereo + hotel</h6>
                                 <p class="card-text">Á partir de:</p>
-                                <p class="text-primary text-uppercase fs-5 fw-bold card-text">R$3999,99</p>
-                                <button class="btn btn-success incrementar-carrinho">Comprar</button>
+                                <p class="text-primary text-uppercase fs-5 fw-bold card-text">R$3999,00</p>
+                                <button class="btn btn-success incrementar-carrinho" id="7">Comprar</button>
                             </div>
                         </div>
                     </div>
                     <div class="col my-2 text-center justifyitem">
                         <div class="card border-cards" style="width: 18rem;">
-                            <img src="https://drive.google.com/uc?id=1sO1dPpTqNVSWYYyY6tA2yBMqIHrvHQvX" class="img-cards img-thumbnail" alt="img bali">
+                            <img src="https://drive.google.com/uc?id=1sO1dPpTqNVSWYYyY6tA2yBMqIHrvHQvX"
+                                class="img-cards img-thumbnail" alt="img bali">
                             <div class="card-body">
                                 <h5 class="card-title">Bali (Indonésia)</h5>
                                 <h6 class="card-subtitle mb-2 text-body-secondary">Áereo + hotel</h6>
                                 <p class="card-text">Á partir de:</p>
-                                <p class="text-primary text-uppercase fs-5 fw-bold card-text">R$2999,99</p>
-                                <button class="btn btn-success incrementar-carrinho">Comprar</button>
+                                <p class="text-primary text-uppercase fs-5 fw-bold card-text">R$2899,00</p>
+                                <button class="btn btn-success incrementar-carrinho" id="8">Comprar</button>
                             </div>
                         </div>
                     </div>
                     <div class="col my-2 text-center justifyitem">
                         <div class="card border-cards" style="width: 18rem;">
-                            <img src="https://drive.google.com/uc?id=1cWeJ3ZdIzUeG67fgaq4VT9r0za_TFfKL" class="img-cards img-thumbnail" alt="img atenas">
+                            <img src="https://drive.google.com/uc?id=1cWeJ3ZdIzUeG67fgaq4VT9r0za_TFfKL"
+                                class="img-cards img-thumbnail" alt="img atenas">
                             <div class="card-body">
                                 <h5 class="card-title">Atenas (Grécia)</h5>
                                 <h6 class="card-subtitle mb-2 text-body-secondary">Áereo + hotel</h6>
                                 <p class="card-text">Á partir de:</p>
-                                <p class="text-primary text-uppercase fs-5 fw-bold card-text">R$2199,99</p>
-                                <button class="btn btn-success incrementar-carrinho">Comprar</button>
+                                <p class="text-primary text-uppercase fs-5 fw-bold card-text">R$2999,00</p>
+                                <button class="btn btn-success incrementar-carrinho" id="9">Comprar</button>
                             </div>
                         </div>
                     </div>
@@ -277,43 +301,45 @@
                 <div class="row">
                     <div class="col my-2 text-center justifyitem">
                         <div class="card border-cards" style="width: 18rem;">
-                            <img src="https://drive.google.com/uc?id=1qDFgEyy4h_E5uwLtuG1LplE1WSpIkxel" class="img-cards img-thumbnail" alt="img nova york">
+                            <img src="https://drive.google.com/uc?id=1qDFgEyy4h_E5uwLtuG1LplE1WSpIkxel"
+                                class="img-cards img-thumbnail" alt="img nova york">
                             <div class="card-body">
                                 <h5 class="card-title">Nova York (EUA)</h5>
                                 <h6 class="card-subtitle mb-2 text-body-secondary">Áereo + hotel</h6>
                                 <p class="card-text">Á partir de:</p>
-                                <p class="text-primary text-uppercase fs-5 fw-bold card-text">R$1899,99</p>
-                                <button class="btn btn-success incrementar-carrinho">Comprar</button>
+                                <p class="text-primary text-uppercase fs-5 fw-bold card-text">R$1899,00</p>
+                                <button class="btn btn-success incrementar-carrinho" id="10">Comprar</button>
                             </div>
                         </div>
                     </div>
                     <div class="col my-2 text-center justifyitem">
                         <div class="card border-cards" style="width: 18rem;">
-                            <img src="https://drive.google.com/uc?id=1B245mi_YVk79lGbcsP0M5NVMB_obD1Uz" class="img-cards img-thumbnail" alt="img santorini">
+                            <img src="https://drive.google.com/uc?id=1B245mi_YVk79lGbcsP0M5NVMB_obD1Uz"
+                                class="img-cards img-thumbnail" alt="img santorini">
                             <div class="card-body">
                                 <h5 class="card-title">Santorini (Grécia)</h5>
                                 <h6 class="card-subtitle mb-2 text-body-secondary">Áereo + hotel</h6>
                                 <p class="card-text">Á partir de:</p>
-                                <p class="text-primary text-uppercase fs-5 fw-bold card-text">R$3999,99</p>
-                                <button class="btn btn-success incrementar-carrinho">Comprar</button>
+                                <p class="text-primary text-uppercase fs-5 fw-bold card-text">R$3999,00</p>
+                                <button class="btn btn-success incrementar-carrinho" id="11">Comprar</button>
                             </div>
                         </div>
                     </div>
                     <div class="col my-2 text-center justifyitem">
                         <div class="card border-cards" style="width: 18rem;">
-                            <img src="https://drive.google.com/uc?id=1YFJ0cQpqCxoz3CtR3AJXPJIWMr7swVuP" class="img-cards img-thumbnail" alt="img quito">
+                            <img src="https://drive.google.com/uc?id=1YFJ0cQpqCxoz3CtR3AJXPJIWMr7swVuP"
+                                class="img-cards img-thumbnail" alt="img quito">
                             <div class="card-body">
                                 <h5 class="card-title">Quioto (Japão)</h5>
                                 <h6 class="card-subtitle mb-2 text-body-secondary">Áereo + hotel</h6>
                                 <p class="card-text">Á partir de:</p>
-                                <p class="text-primary text-uppercase fs-5 fw-bold card-text">R$4999,99</p>
-                                <button class="btn btn-success incrementar-carrinho">Comprar</button>
+                                <p class="text-primary text-uppercase fs-5 fw-bold card-text">R$4999,00</p>
+                                <button class="btn btn-success incrementar-carrinho" id="12">Comprar</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </section>
 
 
@@ -321,13 +347,14 @@
         <section class="container-padding mt-5 " id="profissionais">
             <div class="container border-bottom ">
                 <h2 class="text-titulo">Encontre seu profissional</h2>
-                <p class="text-center">Entre em contato com nossos profissionais de turismo, e tenha uma viagem
+                <p class="text-center fs-5">Entre em contato com nossos profissionais de turismo, e tenha uma viagem
                     perfeita!
                 </p>
                 <div class="row">
                     <div class="col justifyitem">
                         <div class="card card-style border-cards">
-                            <img class="profile-pic" src="https://drive.google.com/uc?id=1eQtnDv7M_0NCG7J4QqdgLhd1tLwVMivS" alt="Profile 1">
+                            <img class="profile-pic"
+                                src="https://drive.google.com/uc?id=1eQtnDv7M_0NCG7J4QqdgLhd1tLwVMivS" alt="Profile 1">
                             <div class="nome">Guilherme Silva</div>
                             <div class="profissao">Guia Turístico</div>
                             <button class="btn btn-info btn-sm mt-3">Contato</button>
@@ -335,7 +362,8 @@
                     </div>
                     <div class="col justifyitem">
                         <div class="card card-style border-cards">
-                            <img class="profile-pic" src="https://drive.google.com/uc?id=1eNYqrdeCc7cSWZPjAfjMNvbaCuc6-c0v" alt="Profile 2">
+                            <img class="profile-pic"
+                                src="https://drive.google.com/uc?id=1eNYqrdeCc7cSWZPjAfjMNvbaCuc6-c0v" alt="Profile 2">
                             <div class="nome">Gabriel Gonçalves</div>
                             <div class="profissao">Animador Turístico</div>
                             <button class="btn btn-info btn-sm mt-3">Contato</button>
@@ -343,7 +371,8 @@
                     </div>
                     <div class="col justifyitem">
                         <div class="card card-style border-cards">
-                            <img class="profile-pic" src="https://drive.google.com/uc?id=1rO41Hv0BXLKPdgwoC5J_nYU8itam_uiM" alt="Profile 3">
+                            <img class="profile-pic"
+                                src="https://drive.google.com/uc?id=1rO41Hv0BXLKPdgwoC5J_nYU8itam_uiM" alt="Profile 3">
                             <div class="nome">Rosana Bittencourt</div>
                             <div class="profissao">Cons. de Viagens</div>
                             <button class="btn btn-info btn-sm mt-3">Contato</button>
@@ -351,7 +380,8 @@
                     </div>
                     <div class="col justifyitem">
                         <div class="card card-style border-cards">
-                            <img class="profile-pic" src="https://drive.google.com/uc?id=1IPwYJaMq_NWW5OL-FSyri1nrrnkz6b09" alt="Profile 4">
+                            <img class="profile-pic"
+                                src="https://drive.google.com/uc?id=1IPwYJaMq_NWW5OL-FSyri1nrrnkz6b09" alt="Profile 4">
                             <div class="nome">Ronaldo Meneses</div>
                             <div class="profissao">Animador Turístico</div>
                             <button class="btn btn-info btn-sm mt-3">Contato</button>
@@ -361,7 +391,8 @@
                 <div class="row">
                     <div class="col justifyitem">
                         <div class="card card-style border-cards">
-                            <img class="profile-pic" src="https://drive.google.com/uc?id=1KqPg76LzJCf31NOvUtBbNMP9xKhhz3gK" alt="Profile 5">
+                            <img class="profile-pic"
+                                src="https://drive.google.com/uc?id=1KqPg76LzJCf31NOvUtBbNMP9xKhhz3gK" alt="Profile 5">
                             <div class="nome">Nikolas Meneses</div>
                             <div class="profissao">Guia Turístico</div>
                             <button class="btn btn-info btn-sm mt-3">Contato</button>
@@ -369,7 +400,8 @@
                     </div>
                     <div class="col justifyitem">
                         <div class="card card-style border-cards">
-                            <img class="profile-pic" src="https://drive.google.com/uc?id=1nYVJH5Fe8c2uVaH4NF_nm5N8IGJ3EOdL" alt="Profile 6">
+                            <img class="profile-pic"
+                                src="https://drive.google.com/uc?id=1nYVJH5Fe8c2uVaH4NF_nm5N8IGJ3EOdL" alt="Profile 6">
                             <div class="nome">Priscila Assis</div>
                             <div class="profissao">Agente de Turismo</div>
                             <button class="btn btn-info btn-sm mt-3">Contato</button>
@@ -377,7 +409,8 @@
                     </div>
                     <div class="col justifyitem">
                         <div class="card card-style border-cards">
-                            <img class="profile-pic" src="https://drive.google.com/uc?id=1E9VvDKVFaYdWQaut_RXehvCVe2flGetB" alt="Profile 7">
+                            <img class="profile-pic"
+                                src="https://drive.google.com/uc?id=1E9VvDKVFaYdWQaut_RXehvCVe2flGetB" alt="Profile 7">
                             <div class="nome">Jemima Moura</div>
                             <div class="profissao">Agente de Turismo</div>
                             <button class="btn btn-info btn-sm mt-3">Contato</button>
@@ -385,7 +418,8 @@
                     </div>
                     <div class="col justifyitem">
                         <div class="card card-style border-cards">
-                            <img class="profile-pic" src="https://drive.google.com/uc?id=1zogs_l41RuocXIAdZM96_Tpd4sPJhdVD" alt="Profile 8">
+                            <img class="profile-pic"
+                                src="https://drive.google.com/uc?id=1zogs_l41RuocXIAdZM96_Tpd4sPJhdVD" alt="Profile 8">
                             <div class="nome">Regina Moura</div>
                             <div class="profissao">Cons. de Viagens</div>
                             <button class="btn btn-info btn-sm mt-3">Contato</button>
@@ -398,7 +432,7 @@
         <!-- Trabalhe Conosco -->
         <section class="container-padding my-5" id="trabalhe-conosco">
             <h2 class="text-titulo2">Trabalhe conosco</h2>
-            <p class="text-center">Nos envie seus dados e destaque seu perfil no Aterrissa Fácil! Entraremos em contato.
+            <p class="text-center fs-5">Nos envie seus dados e destaque seu perfil no Aterrissa Fácil! Entraremos em contato.
             </p>
             <div class="border-bottom">
                 <form id="formulario">
@@ -436,8 +470,9 @@
                 <ol>
                     <li>Preencha o campo abaixo com o seu endereço de e-mail para receber o formulário de
                         inscrição.</li>
-                    <li class="list-unstyled">
-                        <input type="email" class="form-control my-2 email-limpar" id="email" placeholder="Digite seu email" required>
+                    <li class="list-unstyled email-list">
+                        <input type="email" class="form-control my-2 email-limpar" id="email"
+                            placeholder="Digite seu email" required>
                         <button class="btn btn-sm btn-success" id="enviar-email">Enviar</button>
                     </li>
                     <li>Após cadastrar o seu e-mail, você receberá um e-mail automático contendo o formulário
@@ -509,6 +544,7 @@
         integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
         crossorigin="anonymous"></script>
     <script src="./assets/JavaScript/servicos.js"></script>
+    <script src="./assets/JavaScript/carrinho.js"></script>
 </body>
 
 </html>

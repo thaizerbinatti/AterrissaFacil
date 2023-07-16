@@ -37,7 +37,7 @@
 }
 
 .logo-nav {
-    height: 90px;
+    height: 120px;
     width: auto;
 }
 
@@ -65,7 +65,21 @@
     }
 
     .logo-nav {
-        margin-left: 20%;
+        height: 90px;
+        width: auto;
+        margin-left: 5px;
+    }
+
+    .navbar-pages {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .logo-nav {
+        height: 80px;
+        width: auto;
+        margin-left: 5px;
     }
 }
 
@@ -76,16 +90,79 @@ main>div>form>input {
 }
 
 .container-busca {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 150px;
     background-color: #00ACEE;
-    padding: 1% 12%;
     font-family: 'Roboto Condensed', sans-serif;
 }
+
+@media screen and (max-width: 768px) {
+    .container-busca {
+        padding: 10px 5px;
+    }
+}
+
 
 /* cor branca selecione pais caixa de busca */
 
 .branco {
-    color: white;
+    color: #001A24;
     font-weight: 650;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.4rem;
+}
+
+.busca-p {
+    color: #001A24;
+    font-weight: 650;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.3rem;
+}
+
+.busca-select {
+    padding: 0 5px;
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    border-bottom: 2px solid #000000;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-busca {
+    padding: 5px;
+    background-color: #001A24;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+}
+
+.btn-busca:hover {
+    background-color: #002e41;
+    color: #ffffff;
+}
+
+.tirar {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    .busca-select {
+        padding: 0 5px;
+        width: 200px;
+        height: 40px;
+        border-radius: 10px;
+        border: none;
+    }
+
+    .busca-p {
+        font-size: 1.1rem;
+    }
+    .btn-busca {
+        margin-top: 5px;
+    }
 }
 
 /* Sections */
@@ -221,18 +298,16 @@ main>div>form>input {
     opacity: 0.75;
 }
 
-@media (min-width:469px) {
 
-    /* Menu fixo */
-    
-    .menu_fixo {
-        position: fixed;
-        z-index: 9999;
-        margin-top: -90px;
-        width: 100%;
-    }
-    
-    body {
-        padding-top: 90px;
-    }
-    }
+/* Menu fixo */
+
+.menu_fixo {
+    position: fixed;
+    z-index: 9999;
+    margin-top: -90px;
+    width: 100%;
+}
+
+body {
+    padding-top: 90px;
+}

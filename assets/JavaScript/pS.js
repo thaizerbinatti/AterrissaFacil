@@ -19,7 +19,7 @@ function searchAndScroll() {
 
         if (headerText.includes(searchTerm) && sectionId === selectedCountry) {
             sections[i].scrollIntoView({ behavior: 'smooth' });
-            sections[i].style.paddingTop = '100px';
+            sections[i].style.paddingTop = '110px';
             break;
         }
     }
